@@ -10,24 +10,33 @@
 <title>-- 昕傳 --</title>
 
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="css/magnific-popup.css">
-<link href="css/jquery.bxslider.css" rel="stylesheet" />
-<link rel="stylesheet" href="css/iziModal.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
 
 <link rel="stylesheet" href="css/module.css">
 
-<script src="js/jquery-1.11.1.min.js"></script>
 
-<script type="text/javascript" src="http://momentjs.com/downloads/moment.min.js"></script>
-<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+
+
+
 <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 
-<script src="js/jquery.bxslider.min.js"></script>
-<script src="js/iziModal.min.js"></script>
-
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<script src="js/slick.min.js"></script>
 <script src="js/ui.js"></script>
+<script>
+	$(document).on('ready', function() {
+		$(".main").slick({
+			dots: true,
+			infinite: true,
+			arrows: false,
+			adaptiveHeight: true
+		});
 
+	});
+
+</script>
 
 </head>
 <body>
@@ -43,13 +52,13 @@
 			<div class="deskmenu">
 				<ul>
 					<li class="l-l"></li>
-					<li><a href="">首頁</a></li>
+					<li><a href="index.html">首頁</a></li>
 					<li class="l-l"></li>
-					<li><a href="">關於我們</a></li>
+					<li><a href="about_us.html">關於我們</a></li>
 					<li class="l-l"></li>
-					<li><a href="">服務項目</a></li>
+					<li><a href="service.html">服務項目</a></li>
 					<li class="l-l"></li>
-					<li><a href="">關於我們</a></li>
+					<li><a href="index.html#contact_us">聯絡我們</a></li>
 					<li class="l-l"></li>
 				</ul>
 			</div>
@@ -85,10 +94,19 @@
 
 
 
-<div class="indside_banner">
-	<img src="img/main_01.jpg" alt="">
 
+<div class="index_slick">
+	<section class="main slider">
+	    <div class="new_photo"><img src="img/main_01.jpg"> </div>
+	    <div class="new_photo"><img src="img/main_02.jpg"> </div>
+	    <div class="new_photo"><img src="img/main_03.jpg"> </div>
+	    <div class="new_photo"><img src="img/main_04.jpg"> </div>
+	    <div class="new_photo"><img src="img/main_05.jpg"> </div>
+	</section>
 </div>
+
+
+
 
 
 <div class="middle_slogan_wrapper">
@@ -133,10 +151,10 @@
 	</div>
 </div>
 
-<div class="section_line"></div>
+<div class="section_line" id="contact_us"></div>
 
 
-<div class="contact_us">
+<div class="contact_us" >
 	<h2>CONTACT US</h2>
 	<div class="for_flex_contact">
 		<div class="contact_info">
@@ -157,11 +175,15 @@
 				<textarea name="" id="" cols="30" rows="10"></textarea>
 			</div>
 
-
+			<div class="sumit">送出</div>
 
 
 		</div>
-		<div class="contact_img"><img src="img/contact.jpg" alt=""></div>
+		<div class="contact_img">
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.8978139910973!2d121.56223865101286!3d25.03754168389206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb9dc73545d%3A0x6513f5fb17ad1f67!2z6Ie65YyX5biC5pS_5bqc!5e0!3m2!1szh-TW!2stw!4v1565017916384!5m2!1szh-TW!2stw"  frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
 
 	</div>
 

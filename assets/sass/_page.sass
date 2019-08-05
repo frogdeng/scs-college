@@ -30,6 +30,21 @@ $susy: (debug: (image: hide))
 	background: url(../img/banner_04.png) center
 
 
+.slick-dots
+	bottom: -40px !important
+
+
+
+.index_slick
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		background-size: cover
+
+		margin-bottom: 80px
 
 
 
@@ -38,7 +53,7 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
 		background-size: cover
-		height: 200px
+		height: 300px
 		display: flex
 		justify-content: center
 		align-items: center
@@ -50,14 +65,14 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
 		background-size: cover
-		height: 400px
-		margin-bottom: 50px
+		height: 350px
 		display: flex
 		justify-content: center
 		align-items: center
-		img
-			width: 100%
+		margin-bottom: 40px
 
+
+	
 
 
 .main_content
@@ -91,7 +106,8 @@ $susy: (debug: (image: hide))
 			a
 				display: block
 				width: 40%
-				margin: 30px
+				margin: 0 30px
+				margin-bottom: 30px
 				.content_item
 					width: 100%
 
@@ -458,109 +474,7 @@ $susy: (debug: (image: hide))
 		+container
 		padding: 20px 20px
 		margin-bottom: 50px
-		.form_map
-			+span(6)
-
-			.map
-				border: 3px solid #ddd
-				height: 500px
-				margin-top: 30px
-				iframe
-					width: 100%
-					height: 100%
-
-		.form_left
-			+span(6)
-			h6
-				font-size: 20px
-				color: $deep_green
-				margin-bottom: 30px
-			.info
-				margin-left: 160px
-				margin-bottom: 30px
-				p
-					font-size: 16px
-					color: #888
-					margin-bottom: 5px
-
-			.sumit
-				background: $deep_green
-				width: 200px
-				height: 40px
-				color: #FFF
-				font-size: 18px
-				display: flex
-				flex-direction: row
-				justify-content: center
-				align-items: center
-				margin-left: 160px
-				border-radius: 3px
-				transition: all .3s
-				cursor: pointer
-				&:hover
-					background: #222
-			.i-form
-				width: 100%
-				margin-bottom: 20px
-				display: flex
-				flex-direction: row
-				justify-content: flex-start
-				align-items: center
-				h4
-					width: 100px
-					margin: 0 30px
-					font-size: 16px
-					text-align: right
-				input
-					width: 70%
-					height: 40px
-					border: 1px solid #c0c0c0
-					font-size: 14px
-					padding: 0 20px
-
-				textarea
-					width: 70%
-					height: 120px
-					border: 1px solid #c0c0c0
-			.attachment_section
-				width: 70%
-				height: 60px
-				margin-bottom: 50px
-
-				h5
-					font-size: 16px
-					margin-bottom: 5px
-				p
-					font-size: 14px
-					color: #888
-				input
-					width: 100%
-					height: 40px
-					border: 1px solid #c0c0c0
-					font-size: 14px
-					padding: 0 20px
-				.attachment
-					background: #F1F1F1
-					width: 100%
-					height: 60px
-					display: flex
-					flex-direction: row
-					justify-content: flex-start
-					align-items: center
-					padding: 20px
-					margin-bottom: 10px
-					.attachment_btn
-						border: 1px solid #5AB331
-						padding: 5px 20px
-						border-radius: 3px
-						color: #5AB331
-						font-size: 16px
-						transition: all .3s
-						cursor: pointer
-						&:hover
-							background: $deep_green
-							color: #FFF
-
+		
 
 
 
@@ -573,7 +487,7 @@ $susy: (debug: (image: hide))
 			.map
 				border: 3px solid #ddd
 				height: 500px
-				margin-top: 30px
+				margin-top: 0px
 				iframe
 					width: 100%
 					height: 100%

@@ -25,9 +25,8 @@ $deep-green: #5AB331
 
 
 .middle_slogan_wrapper
-	background: #ddd
-	height: 700px
-
+	height: 500px
+	background: url('../img/slash.png')
 
 .middle_slogan
 	+susy-breakpoint($breakpoint_pad, $pad)
@@ -38,19 +37,19 @@ $deep-green: #5AB331
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
-		height: 700px
+		height: 500px
 		display: flex
 		flex-direction: column
 		justify-content: center
 		align-items: center
-		// background: url('../img/slash.png')
 		img
-			width: 50%
+			width: 40%
 
 
 
 .product_info_wrapper
 	padding: 50px 20px
+	// background: url('../img/slash.png')
 .product_info
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
@@ -68,7 +67,7 @@ $deep-green: #5AB331
 		.product_intro
 			width: 30%
 			height: 350px
-			margin: 20px 20px
+			margin: 20px 15px
 			background: #FFF
 			display: flex
 			flex-direction: column
@@ -106,7 +105,7 @@ $deep-green: #5AB331
 		width: 100%
 		height: 1px
 		background: #ddd
-		margin: 40px auto
+		margin: 60px auto
 
 
 
@@ -118,6 +117,7 @@ $deep-green: #5AB331
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
 		margin-bottom: 140px
+		padding: 0 30px
 		h2
 			font-size: 35px
 			text-align: center
@@ -130,6 +130,22 @@ $deep-green: #5AB331
 			align-items: flex-start
 			.contact_info
 				width: 48%
+				.sumit
+					background: #c63722
+					width: 200px
+					height: 40px
+					color: #FFF
+					font-size: 18px
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					margin-left: 120px
+					border-radius: 3px
+					transition: all .3s
+					cursor: pointer
+					&:hover
+						background: #222
 				.contact_row
 					width: 100%
 					display: flex
@@ -153,7 +169,12 @@ $deep-green: #5AB331
 						border: 1px solid #c0c0c0
 			.contact_img
 				width: 48%
-
+				.map
+					width: 100%
+					height: 500px
+					iframe
+						width: 100%
+						height: 400px
 
 
 
