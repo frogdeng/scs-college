@@ -33,6 +33,7 @@ $susy: (debug: (image: hide))
 
 
 
+
 .indside_banner
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
@@ -41,79 +42,21 @@ $susy: (debug: (image: hide))
 		display: flex
 		justify-content: center
 		align-items: center
-		h2
-			color: #7ED321
-			font-size: 20px
-			text-align: center
-			
+
+
 
 
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
 		background-size: cover
-		height: 350px
-		display: flex
-		justify-content: center
-		align-items: center
+		height: 400px
 		margin-bottom: 50px
-		h2
-			color: #7ED321
-			font-size: 40px
-			text-align: center
-			
-
-
-.pages
-	+susy-breakpoint($breakpoint_pad, $pad)
-		+container
-		width: 100%
-		margin-top: 10px
-		margin-bottom: 30px
-		margin-top: 30px
 		display: flex
 		justify-content: center
 		align-items: center
-		a
-			display: block
-			width: 30px
-			height: 30px
-			border: 1px solid #eee
-			font-size: 14px
-			margin: 0 5px
-			display: flex
-			justify-content: center
-			align-items: center
-			transition: all .3s
-			&:hover
-				border: 1px solid #eee
-				background: $deep_green
-				color: #FFF
-
-
-	+susy-breakpoint($breakpoint_desktop, $desktop)
-		+container
-		width: 100%
-		margin-bottom: 50px
-		margin-top: 30px
-		display: flex
-		justify-content: center
-		align-items: center
-		a
-			display: block
-			width: 30px
-			height: 30px
-			border: 1px solid #eee
-			font-size: 14px
-			margin: 0 5px
-			display: flex
-			justify-content: center
-			align-items: center
-			transition: all .3s
-			&:hover
-				border: 1px solid #eee
-				background: $deep_green
-				color: #FFF
+		img
+			width: 100%
 
 
 
@@ -129,10 +72,6 @@ $susy: (debug: (image: hide))
 			+span(6)
 			padding: 0 20px
 
-		.search_result
-			+span(6)
-			padding: 0 20px
-
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
@@ -144,10 +83,65 @@ $susy: (debug: (image: hide))
 		.content
 			+span(9)
 			padding: 0 20px
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: center
+			align-items: center
+			a
+				display: block
+				width: 40%
+				margin: 30px
+				.content_item
+					width: 100%
 
-		.search_result
-			+span(12)
-			padding: 0 20px
+					position: relative
+					img
+						display: block
+					.mask
+						position: absolute
+						width: 100%
+						height: 100%
+						display: flex
+						flex-direction: column
+						justify-content: center
+						align-items: center
+						background: rgba(0,0,0, .5)
+						transition: all .3s
+						p
+							color: #FFF
+							font-size: 20px
+							margin-bottom: 20px
+
+						.bottom_line
+							height: 1px
+							width: 10%
+							background: red
+							transition: all .3s
+						&:hover
+							background: #a8a2a2
+							.bottom_line
+								width: 40%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -156,8 +150,8 @@ $susy: (debug: (image: hide))
 		+container
 		margin-bottom: 50px
 		margin-top: 30px
-		ul 
-			li 
+		ul
+			li
 				a
 					display: block
 					border-bottom: 1px solid #eee
@@ -171,8 +165,8 @@ $susy: (debug: (image: hide))
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
-		ul 
-			li 
+		ul
+			li
 				a
 					display: block
 					border-bottom: 1px solid #eee
@@ -234,80 +228,49 @@ $susy: (debug: (image: hide))
 .product_menu
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
-		.product_title
-			background: $deep-green
-			color: #FFF
-			padding: 15px 25px
-			font-size: 18px
-			font-weight: 700
-			border-bottom: 2px solid #FFF
-			cursor: pointer
-			transition: all .3s
-			&:hover
-				transform: scale(1.05)
-
-		.product_list
-			padding: 0 5px
-			display: none
-			
-			ul
-				li
-					a
-						display: block
-						font-size: 16px
-						padding: 10px 20px
-						border-bottom: 1px solid #FFF
-						line-height: 1.4
-						background: #EDF9E7
-						color: #656565
-						transition: all .2s
-						&:hover
-							background: #222
-							color: #FFF
-							transform: scale(1.05)
-							border-bottom: 1px solid #222
 
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
 		.product_title
-			background: $deep-green
-			color: #FFF
-			padding: 15px 25px
+			background: #FFF
+			color: #999
+			padding: 23px 20px
 			font-size: 18px
-			font-weight: 700
-			border-bottom: 2px solid #FFF
+			font-weight: 300
+			border-bottom: 1px dashed #eee
 			cursor: pointer
 			transition: all .3s
-			&:hover
-				transform: scale(1.05)
+
 
 		.product_list
-			padding: 0 5px
+			padding: 0px
 			display: none
-			
+			border-top: 2px solid #d83f06
+			border-bottom: 2px solid #d83f06
 			ul
 				li
 					a
 						display: block
 						font-size: 16px
-						padding: 10px 20px
-						border-bottom: 1px solid #FFF
+						padding: 23px 20px
+						border-bottom: 1px dashed #d83f06
 						line-height: 1.4
-						background: #EDF9E7
+						background: #FFF
 						color: #656565
 						transition: all .2s
 						&:hover
 							background: #222
 							color: #FFF
-							transform: scale(1.05)
-							border-bottom: 1px solid #222
+
+
+
 
 
 
 .display_down
 	display: block !important
-	
+
 
 
 
@@ -315,35 +278,6 @@ $susy: (debug: (image: hide))
 .product_block
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
-		display: flex
-		flex-direction: column
-		justify-content: center
-		align-items: center
-		padding: 30px 0
-		margin-bottom: 20px
-		border-bottom: 1px solid #eee
-		.product_photo
-			width: 400px
-			margin-right: 20px
-			img
-				display: block
-				width: 100%
-				margin-bottom: 20px
-		
-		.product_info
-			h6
-				font-size: 30px
-				color: $deep_green
-				margin-bottom: 20px
-			p 
-				font-size: 18px
-
-			.spec
-				margin-top: 20px
-				p 
-					font-size: 16px
-					color: #888
-
 
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
@@ -360,19 +294,19 @@ $susy: (debug: (image: hide))
 			margin-right: 20px
 			img
 				display: block
-				width: 100%	
-		
+				width: 100%
+
 		.product_info
 			h6
 				font-size: 30px
 				color: $deep_green
 				margin-bottom: 20px
-			p 
+			p
 				font-size: 18px
 
 			.spec
 				margin-top: 20px
-				p 
+				p
 					font-size: 16px
 					color: #888
 
@@ -383,7 +317,7 @@ $susy: (debug: (image: hide))
 		+container
 		padding: 30px 20px
 		margin-bottom: 20px
-		
+
 		.product_wrapper
 			display: flex
 			flex-direction: row
@@ -396,20 +330,20 @@ $susy: (debug: (image: hide))
 				margin-right: 20px
 				img
 					display: block
-					width: 100%	
-			
+					width: 100%
+
 			.product_info
 				h6
 					font-size: 30px
 					color: $deep_green
 					margin-bottom: 20px
-				p 
+				p
 					font-size: 18px
 
 				.spec
 					margin-top: 20px
 					margin-bottom: 30px
-					p 
+					p
 						font-size: 16px
 						color: #888
 		.contact_us
@@ -417,7 +351,7 @@ $susy: (debug: (image: hide))
 			width: 200px
 			height: 45px
 			margin-top: 40px
-			margin-bottom: 40px	
+			margin-bottom: 40px
 			background: #E6EFE2
 			color: $deep_green
 			display: flex
@@ -442,7 +376,7 @@ $susy: (debug: (image: hide))
 				color: $deep_green
 				margin-bottom: 5px
 				margin-top: 20px
-			p 
+			p
 				font-size: 16px
 				color: #888
 
@@ -451,7 +385,7 @@ $susy: (debug: (image: hide))
 		+container
 		padding: 30px 0
 		margin-bottom: 20px
-		
+
 		.product_wrapper
 			display: flex
 			flex-direction: row
@@ -464,20 +398,20 @@ $susy: (debug: (image: hide))
 				margin-right: 20px
 				img
 					display: block
-					width: 100%	
-			
+					width: 100%
+
 			.product_info
 				h6
 					font-size: 30px
 					color: $deep_green
 					margin-bottom: 20px
-				p 
+				p
 					font-size: 18px
 
 				.spec
 					margin-top: 20px
 					margin-bottom: 30px
-					p 
+					p
 						font-size: 16px
 						color: #888
 		.contact_us
@@ -485,7 +419,7 @@ $susy: (debug: (image: hide))
 			width: 200px
 			height: 45px
 			margin-top: 40px
-			margin-bottom: 40px	
+			margin-bottom: 40px
 			background: #E6EFE2
 			color: $deep_green
 			display: flex
@@ -510,7 +444,7 @@ $susy: (debug: (image: hide))
 				color: $deep_green
 				margin-bottom: 5px
 				margin-top: 20px
-			p 
+			p
 				font-size: 16px
 				color: #888
 
@@ -526,7 +460,7 @@ $susy: (debug: (image: hide))
 		margin-bottom: 50px
 		.form_map
 			+span(6)
-			
+
 			.map
 				border: 3px solid #ddd
 				height: 500px
@@ -534,7 +468,7 @@ $susy: (debug: (image: hide))
 				iframe
 					width: 100%
 					height: 100%
-					
+
 		.form_left
 			+span(6)
 			h6
@@ -543,8 +477,8 @@ $susy: (debug: (image: hide))
 				margin-bottom: 30px
 			.info
 				margin-left: 160px
-				margin-bottom: 30px	
-				p 
+				margin-bottom: 30px
+				p
 					font-size: 16px
 					color: #888
 					margin-bottom: 5px
@@ -574,7 +508,7 @@ $susy: (debug: (image: hide))
 				align-items: center
 				h4
 					width: 100px
-					margin: 0 30px	
+					margin: 0 30px
 					font-size: 16px
 					text-align: right
 				input
@@ -586,17 +520,17 @@ $susy: (debug: (image: hide))
 
 				textarea
 					width: 70%
-					height: 120px	
+					height: 120px
 					border: 1px solid #c0c0c0
 			.attachment_section
 				width: 70%
 				height: 60px
 				margin-bottom: 50px
-				
+
 				h5
 					font-size: 16px
 					margin-bottom: 5px
-				p 
+				p
 					font-size: 14px
 					color: #888
 				input
@@ -635,7 +569,7 @@ $susy: (debug: (image: hide))
 		margin-bottom: 50px
 		.form_map
 			+span(6)
-			
+
 			.map
 				border: 3px solid #ddd
 				height: 500px
@@ -643,7 +577,7 @@ $susy: (debug: (image: hide))
 				iframe
 					width: 100%
 					height: 100%
-					
+
 		.form_left
 			+span(6)
 			h6
@@ -652,8 +586,8 @@ $susy: (debug: (image: hide))
 				margin-bottom: 30px
 			.info
 				margin-left: 160px
-				margin-bottom: 30px	
-				p 
+				margin-bottom: 30px
+				p
 					font-size: 16px
 					color: #888
 					margin-bottom: 5px
@@ -683,7 +617,7 @@ $susy: (debug: (image: hide))
 				align-items: center
 				h4
 					width: 100px
-					margin: 0 30px	
+					margin: 0 30px
 					font-size: 16px
 					text-align: right
 				input
@@ -695,17 +629,17 @@ $susy: (debug: (image: hide))
 
 				textarea
 					width: 70%
-					height: 120px	
+					height: 120px
 					border: 1px solid #c0c0c0
 			.attachment_section
 				width: 70%
 				height: 60px
 				margin-bottom: 50px
-				
+
 				h5
 					font-size: 16px
 					margin-bottom: 5px
-				p 
+				p
 					font-size: 14px
 					color: #888
 				input
@@ -751,7 +685,7 @@ $susy: (debug: (image: hide))
 			justify-content: flex-start
 			align-items: center
 			margin-bottom: 20px
-			p 
+			p
 				font-size: 16px
 				color: #888
 				margin-right: 10px
@@ -781,7 +715,7 @@ $susy: (debug: (image: hide))
 			justify-content: flex-start
 			align-items: center
 			margin-bottom: 30px
-			p 
+			p
 				font-size: 16px
 				color: #888
 				margin-right: 10px
@@ -811,23 +745,23 @@ $susy: (debug: (image: hide))
 			height: 40px
 			background: #222
 			display: flex
-			justify-content: center	
-			align-items: center	
+			justify-content: center
+			align-items: center
 			color: #FFF
 			border-radius: 3px
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
-		padding: 40px	
+		padding: 40px
 		background: #FFF
-		
+
 		.search_area
 			display: flex
 			flex-direction: row
 			justify-content: flex-start
 			align-items: center
 			margin-bottom: 20px
-			p 
+			p
 				font-size: 16px
 				color: #888
 				margin-right: 10px
@@ -857,7 +791,7 @@ $susy: (debug: (image: hide))
 			justify-content: flex-start
 			align-items: center
 			margin-bottom: 30px
-			p 
+			p
 				font-size: 16px
 				color: #888
 				margin-right: 10px
@@ -887,8 +821,8 @@ $susy: (debug: (image: hide))
 			height: 40px
 			background: #222
 			display: flex
-			justify-content: center	
-			align-items: center	
+			justify-content: center
+			align-items: center
 			color: #FFF
 			border-radius: 3px
 
