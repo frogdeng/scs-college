@@ -147,6 +147,31 @@ html {
 a {
   text-decoration: none; }
 
+@media (min-width: 0) and (max-width: 890px) {
+  .index_slick {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+  .index_slick:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 891px) {
+  .index_slick {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    margin-bottom: 80px; }
+  .index_slick:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .index_slick .main .new_photo img {
+    display: block;
+    width: 100%; } }
+
 .middle_slogan_wrapper {
   height: 500px;
   background: url("../img/slash.png"); }
