@@ -18,7 +18,6 @@ $(document).ready(function(){
     		 $(this).parent().find(".product_list").slideDown(300).addClass("display_down")
     	}
 
-
     });
 
 

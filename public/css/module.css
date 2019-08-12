@@ -403,28 +403,6 @@ a {
   bottom: -40px !important; }
 
 @media (min-width: 0) and (max-width: 990px) {
-  .index_slick {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto; }
-  .index_slick:after {
-    content: " ";
-    display: block;
-    clear: both; } }
-
-@media (min-width: 991px) {
-  .index_slick {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background-size: cover;
-    margin-bottom: 80px; }
-  .index_slick:after {
-    content: " ";
-    display: block;
-    clear: both; } }
-
-@media (min-width: 0) and (max-width: 990px) {
   .indside_banner {
     max-width: 100%;
     margin-left: auto;
@@ -553,6 +531,48 @@ a {
     background: #a8a2a2; }
   .main_content .content a .content_item .mask:hover .bottom_line {
     width: 40%; } }
+
+@media (min-width: 0) and (max-width: 990px) {
+  .service_detail {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto; }
+  .service_detail:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 991px) {
+  .service_detail {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; }
+  .service_detail:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .service_detail .service_detail_content {
+    width: 100%;
+    background: #FFF;
+    padding: 40px 50px;
+    background: url("../img/tragle.png") right bottom #FFF;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    margin-bottom: 40px; }
+  .service_detail .service_detail_content h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid #d83f06; }
+  .service_detail .service_detail_content ul {
+    padding: 0 60px; }
+  .service_detail .service_detail_content ul li {
+    font-size: 16px;
+    margin-bottom: 20px; }
+  .service_detail .service_detail_content ul li svg {
+    margin-right: 20px; } }
 
 @media (min-width: 0) and (max-width: 990px) {
   .about_menu {
