@@ -572,7 +572,9 @@ a {
     font-size: 16px;
     margin-bottom: 20px; }
   .service_detail .service_detail_content ul li svg {
-    margin-right: 20px; } }
+    margin-right: 20px;
+    color: red;
+    font-size: 20px; } }
 
 @media (min-width: 0) and (max-width: 990px) {
   .about_menu {
@@ -1463,7 +1465,7 @@ a {
 
 @media (min-width: 0) and (max-width: 990px) {
   footer {
-    max-width: 720px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px; }
@@ -1482,7 +1484,7 @@ a {
 
 @media (min-width: 991px) {
   footer {
-    max-width: 1440px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto; }
   footer:after {
