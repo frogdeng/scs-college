@@ -23,6 +23,13 @@ $(document).ready(function(){
 
 
 
+    $(".members_item").click(function(){
+       $(this).siblings().toggleClass("gone")
+       $(this).toggleClass("show_detail");
+    });
+
+
+
 
 });
 

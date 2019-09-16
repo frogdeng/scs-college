@@ -110,6 +110,103 @@ $deep-green: #5AB331
 
 
 
+
+.kid_image
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		height: 400px
+		background: url('../img/kids.jpg')
+		background-size: cover
+		background-attachment: fixed
+
+
+.members
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		.members_title
+			margin: 30px 20px
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			h6
+				font-size: 20px
+				margin-right: 20px
+			.l-l
+				height: 1px
+				width: 90%
+				background: #c0c0c0
+		.members_row
+			display: flex
+			flex-wrap: wrap
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+
+			.members_item
+				width: 30%
+				height: 600px
+				background: #FFF
+				margin: 20px 10px
+				transition: all .3s
+				cursor: pointer
+				img
+					display: block
+					margin-bottom: 0px
+				.des
+					padding: 20px 30px
+					h6
+						font-size: 23px
+						margin-bottom: 10px
+						font-weight: 900
+					p
+						font-size: 15px
+						margin-bottom: 2px
+					.more_resume
+						display: none
+						margin-top: 30px
+						border-top: 1px solid rgba(255,255,255,.5)
+
+						h6
+							font-size: 23px
+							margin-bottom: 10px
+							font-weight: 900
+							margin-top: 20px
+
+
+.show_detail
+	width: 100% !important
+	height: 700px !important
+	padding: 30px
+	background: #6E6669 !important
+	display: flex !important
+	flex-direction: row !important
+	justify-content: flex-start !important
+	align-items: flex-start !important
+	img
+		height: 350px !important
+		margin-right: 30px
+	.des
+		padding: 0px !important
+		h6, p
+			color: #FFF !important
+		.more_resume
+			display: block !important
+
+
+.gone
+	display: none
+
+
+
 .section_line
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
