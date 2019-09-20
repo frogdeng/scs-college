@@ -52,7 +52,7 @@ $deep-green: #5AB331
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
 		height: 400px
-		background: url('../img/slash.png')		
+		background: url('../img/slash.png')
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
@@ -182,6 +182,7 @@ $deep-green: #5AB331
 .members
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		padding: 0 20px
 		.members_title
 			margin: 30px 20px
 			display: flex
@@ -203,8 +204,8 @@ $deep-green: #5AB331
 			align-items: center
 
 			.members_item
-				width: 30%
-				height: 600px
+				width: 100%
+				// height: 600px
 				background: #FFF
 				margin: 20px 10px
 				transition: all .3s
@@ -222,7 +223,7 @@ $deep-green: #5AB331
 						font-size: 15px
 						margin-bottom: 2px
 					.more_resume
-						display: none
+						display: block
 						margin-top: 30px
 						border-top: 1px solid rgba(255,255,255,.5)
 
@@ -287,23 +288,31 @@ $deep-green: #5AB331
 
 
 .show_detail
-	width: 100% !important
-	height: 700px !important
-	padding: 30px
-	background: #6E6669 !important
-	display: flex !important
-	flex-direction: row !important
-	justify-content: flex-start !important
-	align-items: flex-start !important
-	img
-		height: 350px !important
-		margin-right: 30px
-	.des
-		padding: 0px !important
-		h6, p
-			color: #FFF !important
-		.more_resume
-			display: block !important
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		display: block
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		width: 100% !important
+		height: 700px !important
+		padding: 30px
+		background: #6E6669 !important
+		display: flex !important
+		flex-direction: row !important
+		justify-content: flex-start !important
+		align-items: flex-start !important
+		img
+			height: 350px !important
+			margin-right: 30px
+		.des
+			padding: 0px !important
+			h6, p
+				color: #FFF !important
+			.more_resume
+				display: block !important
+
+
 
 
 .gone
