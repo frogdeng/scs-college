@@ -113,10 +113,7 @@ $susy: (debug: (image: hide))
 							width: 13%
 							background: red
 							transition: all .3s
-						&:hover
-							background: #a8a2a2
-							.bottom_line
-								width: 40%
+
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
@@ -144,6 +141,8 @@ $susy: (debug: (image: hide))
 					position: relative
 					img
 						display: block
+						transition: all .2s
+
 					.mask
 						position: absolute
 						width: 100%
@@ -154,6 +153,7 @@ $susy: (debug: (image: hide))
 						align-items: center
 						background: rgba(0,0,0, .5)
 						transition: all .3s
+						z-index: 1000
 						p
 							color: #FFF
 							font-size: 20px
@@ -164,10 +164,14 @@ $susy: (debug: (image: hide))
 							width: 10%
 							background: red
 							transition: all .3s
-						&:hover
-							background: #a8a2a2
+					&:hover
+						img
+							transform: scale(.9)
+						.mask
+							background: rgba(0,0,0, .8)
 							.bottom_line
 								width: 40%
+
 
 
 
@@ -194,14 +198,24 @@ $susy: (debug: (image: hide))
 				border-bottom: 1px solid #d83f06
 
 			ul
-				padding: 0 0px
+				padding: 0 60px
 				li
 					font-size: 16px
 					margin-bottom: 20px
-					svg
-						margin-right: 20px
-						color: red
-						font-size: 20px
+					margin-left: 40px
+					text-indent : -40px
+					// list-style: url("../img/h-arrow.svg") outside
+					&::before
+						content: ''
+						display: inline-block
+						// height: y
+						width: 30px
+						height: 10px
+						margin-right: 10px
+						background-image: url("../img/h-arrow.svg")
+						background-repeat: no-repeat
+
+
 
 
 
@@ -229,10 +243,19 @@ $susy: (debug: (image: hide))
 				li
 					font-size: 16px
 					margin-bottom: 20px
-					svg
-						margin-right: 20px
-						color: red
-						font-size: 20px
+					margin-left: 40px
+					text-indent : -40px
+					// list-style: url("../img/h-arrow.svg") outside
+					&::before
+						content: ''
+						display: inline-block
+						// height: y
+						width: 30px
+						height: 10px
+						margin-right: 10px
+						background-image: url("../img/h-arrow.svg")
+						background-repeat: no-repeat
+
 
 
 

@@ -479,7 +479,7 @@ a {
     align-items: center; }
   .members .members_row .members_item {
     width: 30%;
-    height: 600px;
+    height: 650px;
     background: #FFF;
     margin: 20px 10px;
     transition: all .3s;
@@ -854,11 +854,7 @@ a {
     height: 1px;
     width: 13%;
     background: red;
-    transition: all .3s; }
-  .main_content .content a .content_item .mask:hover {
-    background: #a8a2a2; }
-  .main_content .content a .content_item .mask:hover .bottom_line {
-    width: 40%; } }
+    transition: all .3s; } }
 
 @media (min-width: 991px) {
   .main_content {
@@ -901,7 +897,8 @@ a {
     width: 100%;
     position: relative; }
   .main_content .content a .content_item img {
-    display: block; }
+    display: block;
+    transition: all .2s; }
   .main_content .content a .content_item .mask {
     position: absolute;
     width: 100%;
@@ -915,7 +912,8 @@ a {
     -ms-flex-align: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.5);
-    transition: all .3s; }
+    transition: all .3s;
+    z-index: 1000; }
   .main_content .content a .content_item .mask p {
     color: #FFF;
     font-size: 20px;
@@ -925,9 +923,11 @@ a {
     width: 10%;
     background: red;
     transition: all .3s; }
-  .main_content .content a .content_item .mask:hover {
-    background: #a8a2a2; }
-  .main_content .content a .content_item .mask:hover .bottom_line {
+  .main_content .content a .content_item:hover img {
+    transform: scale(0.9); }
+  .main_content .content a .content_item:hover .mask {
+    background: rgba(0, 0, 0, 0.8); }
+  .main_content .content a .content_item:hover .mask .bottom_line {
     width: 40%; } }
 
 @media (min-width: 0) and (max-width: 990px) {
@@ -954,14 +954,20 @@ a {
     text-align: center;
     border-bottom: 1px solid #d83f06; }
   .service_detail .service_detail_content ul {
-    padding: 0 0px; }
+    padding: 0 60px; }
   .service_detail .service_detail_content ul li {
     font-size: 16px;
-    margin-bottom: 20px; }
-  .service_detail .service_detail_content ul li svg {
-    margin-right: 20px;
-    color: red;
-    font-size: 20px; } }
+    margin-bottom: 20px;
+    margin-left: 40px;
+    text-indent: -40px; }
+  .service_detail .service_detail_content ul li::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 10px;
+    margin-right: 10px;
+    background-image: url("../img/h-arrow.svg");
+    background-repeat: no-repeat; } }
 
 @media (min-width: 991px) {
   .service_detail {
@@ -991,11 +997,17 @@ a {
     padding: 0 60px; }
   .service_detail .service_detail_content ul li {
     font-size: 16px;
-    margin-bottom: 20px; }
-  .service_detail .service_detail_content ul li svg {
-    margin-right: 20px;
-    color: red;
-    font-size: 20px; } }
+    margin-bottom: 20px;
+    margin-left: 40px;
+    text-indent: -40px; }
+  .service_detail .service_detail_content ul li::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 10px;
+    margin-right: 10px;
+    background-image: url("../img/h-arrow.svg");
+    background-repeat: no-repeat; } }
 
 @media (min-width: 0) and (max-width: 990px) {
   .about_menu {
