@@ -84,6 +84,77 @@ $deep-green: #5AB331
 			width: 40%
 
 
+.whatisedu_wrapper
+	width: 100%
+	background: #6d6662
+.whatisedu
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		height: auto
+		padding: 60px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		.left
+			width: 90%
+			color: #FFF
+			font-size: 30px
+			text-align: center
+			margin-bottom: 20px
+
+		.right
+			width: 90%
+			color: #FFF
+			p 
+				font-size: 16px
+				margin-bottom: 10px
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		height: auto
+		padding: 60px
+		padding-bottom: 120px
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		.left
+			width: 30%
+			color: #FFF
+			font-size: 30px
+			text-align: center
+
+		.right
+			width: 70%
+			color: #FFF
+			p 
+				font-size: 16px
+				margin-bottom: 10px
+
+
+
+
+.founder
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		background: #FFF
+		margin-top: -50px
+		margin-bottom: 100px
+
+
+
+
+
+
+
+
+
 
 .product_info_wrapper
 	padding: 50px 20px
@@ -210,7 +281,10 @@ $deep-green: #5AB331
 				margin: 20px 10px
 				transition: all .3s
 				cursor: pointer
+				.close
+					display: none
 				img
+					width: 100%
 					display: block
 					margin-bottom: 0px
 				.des
@@ -263,6 +337,8 @@ $deep-green: #5AB331
 				margin: 20px 10px
 				transition: all .3s
 				cursor: pointer
+				.close
+					display: none
 				img
 					display: block
 					margin-bottom: 0px
@@ -291,17 +367,30 @@ $deep-green: #5AB331
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
 		display: block
-
-	+susy-breakpoint($breakpoint_desktop, $desktop)
-		+container
 		width: 100% !important
-		height: 700px !important
+		height: auto !important
 		padding: 30px
 		background: #6E6669 !important
 		display: flex !important
 		flex-direction: row !important
 		justify-content: flex-start !important
 		align-items: flex-start !important
+		position: relative
+		.close
+			display: block !important
+			position: absolute
+			width: 30px
+			height: 30px
+			// background: #209
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			right: 10px
+			top: 10px
+			svg 
+				font-size: 30px
+				color: #FFF
 		img
 			height: 350px !important
 			margin-right: 30px
@@ -311,6 +400,47 @@ $deep-green: #5AB331
 				color: #FFF !important
 			.more_resume
 				display: block !important
+		
+		
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		width: 100% !important
+		height: auto !important
+		padding: 30px
+		background: #6E6669 !important
+		display: flex !important
+		flex-direction: row !important
+		justify-content: flex-start !important
+		align-items: flex-start !important
+		position: relative
+		.close
+			display: block !important
+			position: absolute
+			width: 30px
+			height: 30px
+			// background: #209
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			right: 10px
+			top: 10px
+			svg 
+				font-size: 30px
+				color: #FFF
+		img
+			height: 350px !important
+			margin-right: 30px
+		.des
+			padding: 0px !important
+			h6, p
+				color: #FFF !important
+			.more_resume
+				display: block !important
+
 
 
 
