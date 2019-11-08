@@ -18,16 +18,22 @@ $susy: (debug: (image: hide))
 
 
 .index_br
-	background: url(../img/banner_01.png) center
+	background: url(../img/commonuse.jpg) center
 
 .about_us_br
-	background: url(../img/banner_02.png) center
+	background: url(../img/commonuse.jpg) center
 
 .contact_us_br
-	background: url(../img/banner_03.png) center
+	background: url(../img/commonuse.jpg) center
 
 .product_br
-	background: url(../img/banner_04.png) center
+	background: url(../img/commonuse.jpg) center
+
+
+.product_summer_castle
+	background: url(../img/sc.jpg) center
+
+
 
 
 .slick-dots
@@ -182,6 +188,8 @@ $susy: (debug: (image: hide))
 .service_detail
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		width: 100%
+		padding: 0 10px
 		.service_detail_content
 			width: 100%
 			background: #FFF
@@ -214,6 +222,32 @@ $susy: (debug: (image: hide))
 						margin-right: 10px
 						background-image: url("../img/h-arrow.svg")
 						background-repeat: no-repeat
+			.summer_castle
+				width: 100%
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				margin-bottom: 80px
+				position: relative
+
+				img
+					margin-bottom: 30px
+				p
+					font-size: 18px
+					margin-bottom: 14px
+
+				.fb
+					display: block
+					position: absolute
+					margin: 0
+					width: 40px
+					height: 40px
+					bottom: 0
+					right: 0
+					svg
+						color: #2851A3
+						font-size: 40px
 
 
 
@@ -256,10 +290,32 @@ $susy: (debug: (image: hide))
 						background-image: url("../img/h-arrow.svg")
 						background-repeat: no-repeat
 
+			.summer_castle
+				width: 100%
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				margin-bottom: 80px
+				position: relative
 
+				img
+					margin-bottom: 30px
+				p
+					font-size: 18px
+					margin-bottom: 14px
 
-
-
+				.fb
+					display: block
+					position: absolute
+					margin: 0
+					width: 40px
+					height: 40px
+					bottom: 0
+					right: 0
+					svg
+						color: #2851A3
+						font-size: 40px
 
 
 

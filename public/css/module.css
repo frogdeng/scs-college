@@ -895,16 +895,19 @@ a {
     height: 400px; } }
 
 .index_br {
-  background: url(../img/banner_01.png) center; }
+  background: url(../img/commonuse.jpg) center; }
 
 .about_us_br {
-  background: url(../img/banner_02.png) center; }
+  background: url(../img/commonuse.jpg) center; }
 
 .contact_us_br {
-  background: url(../img/banner_03.png) center; }
+  background: url(../img/commonuse.jpg) center; }
 
 .product_br {
-  background: url(../img/banner_04.png) center; }
+  background: url(../img/commonuse.jpg) center; }
+
+.product_summer_castle {
+  background: url(../img/sc.jpg) center; }
 
 .slick-dots {
   bottom: -40px !important; }
@@ -1089,7 +1092,9 @@ a {
   .service_detail {
     max-width: 720px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    width: 100%;
+    padding: 0 10px; }
   .service_detail:after {
     content: " ";
     display: block;
@@ -1122,7 +1127,35 @@ a {
     height: 10px;
     margin-right: 10px;
     background-image: url("../img/h-arrow.svg");
-    background-repeat: no-repeat; } }
+    background-repeat: no-repeat; }
+  .service_detail .service_detail_content .summer_castle {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 80px;
+    position: relative; }
+  .service_detail .service_detail_content .summer_castle img {
+    margin-bottom: 30px; }
+  .service_detail .service_detail_content .summer_castle p {
+    font-size: 18px;
+    margin-bottom: 14px; }
+  .service_detail .service_detail_content .summer_castle .fb {
+    display: block;
+    position: absolute;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    bottom: 0;
+    right: 0; }
+  .service_detail .service_detail_content .summer_castle .fb svg {
+    color: #2851A3;
+    font-size: 40px; } }
 
 @media (min-width: 991px) {
   .service_detail {
@@ -1162,7 +1195,35 @@ a {
     height: 10px;
     margin-right: 10px;
     background-image: url("../img/h-arrow.svg");
-    background-repeat: no-repeat; } }
+    background-repeat: no-repeat; }
+  .service_detail .service_detail_content .summer_castle {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 80px;
+    position: relative; }
+  .service_detail .service_detail_content .summer_castle img {
+    margin-bottom: 30px; }
+  .service_detail .service_detail_content .summer_castle p {
+    font-size: 18px;
+    margin-bottom: 14px; }
+  .service_detail .service_detail_content .summer_castle .fb {
+    display: block;
+    position: absolute;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    bottom: 0;
+    right: 0; }
+  .service_detail .service_detail_content .summer_castle .fb svg {
+    color: #2851A3;
+    font-size: 40px; } }
 
 @media (min-width: 0) and (max-width: 990px) {
   .about_menu {
