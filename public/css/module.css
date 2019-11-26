@@ -334,7 +334,11 @@ a {
     width: 200px; }
   .whatisedu .right p {
     font-size: 16px;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  .whatisedu .right img {
+    display: block;
+    width: 200px;
+    float: right; } }
 
 @media (min-width: 0) and (max-width: 890px) {
   .founder {
@@ -639,7 +643,7 @@ a {
     margin-right: 20px; }
   .members .members_title .l-l {
     height: 1px;
-    width: 90%;
+    width: 87%;
     background: #c0c0c0; }
   .members .members_row {
     display: -ms-flexbox;
