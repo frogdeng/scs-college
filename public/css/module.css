@@ -275,6 +275,19 @@ a {
   .whatisedu .right {
     width: 90%;
     color: #FFF; }
+  .whatisedu .right .sign {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin-bottom: 30px; }
+  .whatisedu .right .sign img {
+    width: 200px; }
   .whatisedu .right p {
     font-size: 16px;
     margin-bottom: 10px; } }
@@ -307,6 +320,18 @@ a {
   .whatisedu .right {
     width: 70%;
     color: #FFF; }
+  .whatisedu .right .sign {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+  .whatisedu .right .sign img {
+    width: 200px; }
   .whatisedu .right p {
     font-size: 16px;
     margin-bottom: 10px; } }
@@ -315,11 +340,41 @@ a {
   .founder {
     max-width: 720px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    background: #FFF;
+    margin-top: -50px;
+    margin-bottom: 100px;
+    padding: 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .founder:after {
     content: " ";
     display: block;
-    clear: both; } }
+    clear: both; }
+  .founder .founder_photo {
+    width: 85%;
+    margin-right: 30px;
+    margin-bottom: 20px; }
+  .founder .founder_title {
+    width: 85%; }
+  .founder .founder_title h6 {
+    font-size: 15px;
+    color: #222;
+    font-weight: 900; }
+  .founder .founder_title h5 {
+    font-size: 25px;
+    color: #222;
+    margin-bottom: 10px; }
+  .founder .founder_title p {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 3px; } }
 
 @media (min-width: 891px) {
   .founder {
@@ -328,11 +383,37 @@ a {
     margin-right: auto;
     background: #FFF;
     margin-top: -50px;
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    padding: 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .founder:after {
     content: " ";
     display: block;
-    clear: both; } }
+    clear: both; }
+  .founder .founder_photo {
+    width: 45%;
+    margin-right: 30px; }
+  .founder .founder_title {
+    width: 50%; }
+  .founder .founder_title h6 {
+    font-size: 15px;
+    color: #222;
+    font-weight: 900; }
+  .founder .founder_title h5 {
+    font-size: 25px;
+    color: #222;
+    margin-bottom: 10px; }
+  .founder .founder_title p {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 3px; } }
 
 .product_info_wrapper {
   padding: 50px 20px; }
@@ -907,7 +988,7 @@ a {
   background: url(../img/commonuse.jpg) center; }
 
 .product_summer_castle {
-  background: url(../img/sc.jpg) center; }
+  background: url(../img/sc.jpg) right bottom; }
 
 .slick-dots {
   bottom: -40px !important; }

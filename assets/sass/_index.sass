@@ -106,7 +106,16 @@ $deep-green: #5AB331
 		.right
 			width: 90%
 			color: #FFF
-			p 
+			.sign
+				width: 100%
+				display: flex
+				flex-direction: row
+				justify-content: flex-end
+				align-items: flex-end
+				margin-bottom: 30px
+				img
+					width: 200px
+			p
 				font-size: 16px
 				margin-bottom: 10px
 
@@ -129,7 +138,15 @@ $deep-green: #5AB331
 		.right
 			width: 70%
 			color: #FFF
-			p 
+			.sign
+				width: 100%
+				display: flex
+				flex-direction: row
+				justify-content: flex-end
+				align-items: flex-end
+				img
+					width: 200px
+			p
 				font-size: 16px
 				margin-bottom: 10px
 
@@ -139,16 +156,62 @@ $deep-green: #5AB331
 .founder
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		background: #FFF
+		margin-top: -50px
+		margin-bottom: 100px
+		padding: 40px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		.founder_photo
+			width: 85%
+			margin-right: 30px
+			margin-bottom: 20px
 
+		.founder_title
+			width: 85%
+			h6
+				font-size: 15px
+				color: #222
+				font-weight: 900
+			h5
+				font-size: 25px
+				color: #222
+				margin-bottom: 10px
+			p
+				font-size: 16px
+				color: #888
+				margin-bottom: 3px
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
 		background: #FFF
 		margin-top: -50px
 		margin-bottom: 100px
+		padding: 40px
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		.founder_photo
+			width: 45%
+			margin-right: 30px
 
-
-
+		.founder_title
+			width: 50%
+			h6
+				font-size: 15px
+				color: #222
+				font-weight: 900
+			h5
+				font-size: 25px
+				color: #222
+				margin-bottom: 10px
+			p
+				font-size: 16px
+				color: #888
+				margin-bottom: 3px
 
 
 
@@ -388,7 +451,7 @@ $deep-green: #5AB331
 			align-items: center
 			right: 10px
 			top: 10px
-			svg 
+			svg
 				font-size: 30px
 				color: #FFF
 		img
@@ -400,8 +463,8 @@ $deep-green: #5AB331
 				color: #FFF !important
 			.more_resume
 				display: block !important
-		
-		
+
+
 
 
 
@@ -428,7 +491,7 @@ $deep-green: #5AB331
 			align-items: center
 			right: 10px
 			top: 10px
-			svg 
+			svg
 				font-size: 30px
 				color: #FFF
 		img
