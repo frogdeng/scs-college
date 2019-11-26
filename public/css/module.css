@@ -1240,7 +1240,29 @@ a {
     right: 0; }
   .service_detail .service_detail_content .summer_castle .fb svg {
     color: #2851A3;
-    font-size: 40px; } }
+    font-size: 40px; }
+  .service_detail .service_detail_content .vidoe_row {
+    width: 100%;
+    height: 200px;
+    background: #eee;
+    margin-bottom: 30px; }
+  .service_detail .service_detail_content .seminar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin-bottom: 30px; }
+  .service_detail .service_detail_content .seminar .slick_photo {
+    width: 100%; }
+  .service_detail .service_detail_content .seminar p {
+    width: 100%;
+    color: #888;
+    font-size: 16px;
+    padding: 5px 10px; } }
 
 @media (min-width: 991px) {
   .service_detail {
@@ -1308,7 +1330,36 @@ a {
     right: 0; }
   .service_detail .service_detail_content .summer_castle .fb svg {
     color: #2851A3;
-    font-size: 40px; } }
+    font-size: 40px; }
+  .service_detail .service_detail_content .vidoe_row {
+    width: 100%;
+    height: 200px;
+    background: #eee;
+    margin-bottom: 30px; }
+  .service_detail .service_detail_content .seminar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin-bottom: 30px; }
+  .service_detail .service_detail_content .seminar .slick_photo {
+    width: 60%; }
+  .service_detail .service_detail_content .seminar p {
+    width: 40%;
+    color: #888;
+    font-size: 16px;
+    padding: 5px 30px; } }
+
+.slick-next {
+  right: 10px; }
+
+.slick-prev {
+  left: 10px;
+  z-index: 3000; }
 
 @media (min-width: 0) and (max-width: 990px) {
   .about_menu {
