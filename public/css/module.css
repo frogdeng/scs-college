@@ -925,7 +925,7 @@ a {
     -ms-flex-align: start;
     align-items: flex-start; }
   .contact_us .for_flex_contact .contact_info {
-    width: 48%; }
+    width: 100%; }
   .contact_us .for_flex_contact .contact_info .sumit {
     background: #c63722;
     width: 200px;

@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="css/slick.css">
 <link rel="stylesheet" href="css/slick-theme.css">
 
+<link rel="stylesheet" href="css/magnific-popup.css">
 <link rel="stylesheet" href="css/module.css">
 
 
@@ -23,6 +24,9 @@
 
 <script src="js/jquery-1.11.1.min.js"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+<script src="js/jquery.magnific-popup.min.js"></script>
+
 <script src="js/slick.min.js"></script>
 <script src="js/ui.js"></script>
 <script>
@@ -31,8 +35,18 @@
 			dots: true,
 			infinite: true,
 			arrows: false,
-			adaptiveHeight: true
+			adaptiveHeight: true,
+			autoplay: true
 		});
+
+		$(".slick_photo").slick({
+			infinite: true,
+			arrows: true,
+			adaptiveHeight: true
+
+		});
+
+
 
 	});
 
@@ -88,7 +102,7 @@
 
 
 
-<div class="indside_banner product_br"></div>
+<div class="indside_banner product_summer_castle"></div>
 
 
 <div class="main_content">
@@ -118,27 +132,27 @@
 	</div>
 
 	<div class="product_menu">
-		<div class="product_title">活動花絮 <i class="fas fa-angle-down"></i></div>
+		<div class="product_title">相關企業 <i class="fas fa-angle-down"></i></div>
 		<div class="product_list">
 			<ul>
-				<li><a href="activity_hightlights_01.html">夏哲森Summer Castle 幼兒園</a></li>
+				<li><a href="activity_hightlights_01.html">夏哲森Summer Castle幼兒園-新竹校區</a></li>
+				<li><a href="activity_hightlights_02.html">夏哲森Summer Castle幼兒園-林口校區（籌備中）</a></li>
+				<li><a href="activity_hightlights_03.html">哲學院（籌備中）</a></li>
 			</ul>
 		</div>
 	</div>
 </div>
 
+
+
 	<div class="content">
 		<div class="service_detail">
 			<div class="service_detail_content">
 
-				<h2>師資培育養成</h2>
-
-				<ul>
-					<li>規劃各項教育階段、對象、專業類別課程，致力達成培育養成目標。</li>
-					<li>規劃各類教育人員發展關鍵能力養成課程。</li>
-					<li>以學習者為中心，依學習者能力劃分初階、進階等階段依序辦理，顧及學習發展。</li>
-					<li>講師皆為國內外知名專業學者和實務工作者，運用案例和理論對照強化運用思考。</li>
-				</ul>
+				
+				<br>
+				<h1 style="font-size: 20px; color: #888">籌備中</h1>
+				<br><br><br><br><br><br>
 
 			</div>
 		</div>
@@ -154,8 +168,34 @@
 
 <div class="clear"></div>
 
+<div id="notice-popup" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+
+		<div align="center" id="shadow" class="video_play_include">
+			<video src="video/summer_castle_01.mp4" class="video-js vjs-default-skin" controls="" data-setup="{}" id="example_video" preload="auto">
+			</video>
+		</div>
 
 
+    </div>
+</div>
+
+
+ <script>
+        $(function(){
+            $('.js-open-notice-popup').magnificPopup({
+                items: {
+                    src: '#notice-popup',
+                    type: 'inline'
+                },
+                mainClass: 'mfp-fade',
+                removalDelay: 300,
+                midClick: true
+            });
+
+
+        });
+    </script>
 
 
 

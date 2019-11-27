@@ -1,0 +1,71 @@
+{# index.twig #}
+{% extends "/_template/layout.twig" %}
+{% block page %}
+
+
+<div class="indside_banner product_summer_castle"></div>
+
+
+<div class="main_content">
+
+	{% include '_partial/aside.twig' %}
+
+
+	<div class="content">
+		<div class="service_detail">
+			<div class="service_detail_content">
+
+				
+				<br>
+				<h1 style="font-size: 20px; color: #888">籌備中</h1>
+				<br><br><br><br><br><br>
+
+			</div>
+		</div>
+
+	</div>
+
+
+
+</div>
+
+
+
+
+<div class="clear"></div>
+
+<div id="notice-popup" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+
+		<div align="center" id="shadow" class="video_play_include">
+			<video src="video/summer_castle_01.mp4" class="video-js vjs-default-skin" controls="" data-setup="{}" id="example_video" preload="auto">
+			</video>
+		</div>
+
+
+    </div>
+</div>
+
+
+ <script>
+        $(function(){
+            $('.js-open-notice-popup').magnificPopup({
+                items: {
+                    src: '#notice-popup',
+                    type: 'inline'
+                },
+                mainClass: 'mfp-fade',
+                removalDelay: 300,
+                midClick: true
+            });
+
+
+        });
+    </script>
+
+
+
+
+
+
+{% endblock %}
