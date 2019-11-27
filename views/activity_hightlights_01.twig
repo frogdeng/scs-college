@@ -44,9 +44,23 @@
 
 
 					<div class="vidoe_row">
-						
+
+						<a class="tag_item link-open-popup js-open-notice-popup"
+		                    data-action="click_link"
+		                    data-label="活動注意事項"
+		                    >
+						<div class="video_item">
+							<img src="img/hk-1.jpg" alt="">
+						</div>
+						</a>
 
 
+						<div class="video_item">
+							<img src="img/hk-1.jpg" alt="">
+						</div>
+						<div class="video_item">
+							<img src="img/hk-1.jpg" alt="">
+						</div>
 					</div>
 
 
@@ -76,16 +90,17 @@
 						</div>
 						<p>2019/11/13 首場迷你說明會</p>
 					</div>
-					
+
 					<div class="seminar ">
 						<div class="slick_photo slider">
-							<img src="img/1120-1.jpg" alt="">
+							<img src="img/hk-1.jpg" alt="">
+							<img src="img/hk-2.jpg" alt="">
 						</div>
 						<p>夏哲森期望培養孩子國際觀與探究精神，融合IB國際學者文憑的精神，發展出跨領域的探究式統整課程，並與新加坡IB認證學校建立姊妹校關係，進行定期互訪與學術交流。</p>
 					</div>
 
 
-					
+
 
 			</div>
 		</div>
@@ -99,11 +114,36 @@
 
 
 
-
 <div class="clear"></div>
 
+<div id="notice-popup" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+
+		<div align="center" id="shadow" class="video_play_include">
+			<video src="video/summer_castle_01.mp4" class="video-js vjs-default-skin" controls="" data-setup="{}" id="example_video" preload="auto">
+			</video>
+		</div>
 
 
+    </div>
+</div>
+
+
+ <script>
+        $(function(){
+            $('.js-open-notice-popup').magnificPopup({
+                items: {
+                    src: '#notice-popup',
+                    type: 'inline'
+                },
+                mainClass: 'mfp-fade',
+                removalDelay: 300,
+                midClick: true
+            });
+
+
+        });
+    </script>
 
 
 

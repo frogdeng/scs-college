@@ -262,7 +262,7 @@ $susy: (debug: (image: hide))
 				margin-bottom: 30px
 				.slick_photo
 					width: 100%
-				p 
+				p
 					width: 100%
 					color: #888
 					font-size: 16px
@@ -333,9 +333,17 @@ $susy: (debug: (image: hide))
 
 			.vidoe_row
 				width: 100%
-				height: 200px
 				background: #eee
 				margin-bottom: 30px
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				align-items: center
+				.video_item
+					width: 32%
+
+
+
 
 			.seminar
 				display: flex
@@ -345,7 +353,7 @@ $susy: (debug: (image: hide))
 				margin-bottom: 30px
 				.slick_photo
 					width: 60%
-				p 
+				p
 					width: 40%
 					color: #888
 					font-size: 16px
@@ -356,7 +364,7 @@ $susy: (debug: (image: hide))
 .slick-next
 	right: 10px
 
-.slick-prev 
+.slick-prev
 	left: 10px
 	z-index: 3000
 
@@ -974,5 +982,9 @@ $susy: (debug: (image: hide))
 
 
 
-
+.notice-popup
+	background: #FFF
+	max-width: 900px
+	padding: 30px
+	margin: 0 auto
 
