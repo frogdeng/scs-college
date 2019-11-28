@@ -662,7 +662,10 @@ a {
     background: #FFF;
     margin: 20px 10px;
     transition: all .3s;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all .3s; }
+  .members .members_row .members_item:hover {
+    transform: scale(1.03); }
   .members .members_row .members_item .close {
     display: none; }
   .members .members_row .members_item img {
@@ -927,6 +930,8 @@ a {
   .contact_us .for_flex_contact .contact_info {
     width: 100%; }
   .contact_us .for_flex_contact .contact_info .sumit {
+    float: right;
+    margin-right: 10%;
     background: #c63722;
     width: 200px;
     height: 40px;
@@ -2116,7 +2121,8 @@ a {
     -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    border-bottom: 1px solid #eee; }
   header:after {
     content: " ";
     display: block;
@@ -2207,7 +2213,8 @@ a {
     -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    border-bottom: 1px solid #eee; }
   header:after {
     content: " ";
     display: block;
