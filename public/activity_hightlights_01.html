@@ -137,7 +137,7 @@
 			<ul>
 				<li><a href="activity_hightlights_01.html">夏哲森Summer Castle幼兒園-新竹校區</a></li>
 				<li><a href="activity_hightlights_02.html">夏哲森Summer Castle幼兒園-林口校區（籌備中）</a></li>
-				<li><a href="activity_hightlights_03.html">哲學院（籌備中）</a></li>
+				<li><a href="activity_hightlights_03.html">哲哲學苑（籌備中）</a></li>
 			</ul>
 		</div>
 	</div>
@@ -177,25 +177,24 @@
 
 
 
-					<!-- <div class="vidoe_row">
+					<div class="vidoe_row">
 
-						<a class="tag_item link-open-popup js-open-notice-popup"
-		                    data-action="click_link"
-		                    data-label="活動注意事項"
-		                    >
-						<div class="video_item">
-							<img src="img/hk-1.jpg" alt="">
-						</div>
+						<a class="video_item js-open-video-1" >
+							<img src="img/video_01.jpg" alt="">
+						</a>
+						<a class="video_item js-open-video-2" >
+							<img src="img/video_02.jpg" alt="">
+						</a>
+						<a class="video_item js-open-video-3" >
+							<img src="img/video_03.jpg" alt="">
 						</a>
 
 
-						<div class="video_item">
-							<img src="img/hk-1.jpg" alt="">
-						</div>
-						<div class="video_item">
-							<img src="img/hk-1.jpg" alt="">
-						</div>
-					</div> -->
+					
+					</div>
+
+
+
 
 
 					<div class="seminar ">
@@ -203,7 +202,7 @@
 							<img src="img/1113-1.jpg" alt="">
 							<img src="img/1113-2.jpg" alt="">
 						</div>
-						<p>2019/11/13 首場迷你說明會</p>
+						<p>2019/11/13 家乘家工作室首場迷你說明會</p>
 					</div>
 
 
@@ -212,7 +211,7 @@
 							<img src="img/1117-1.jpg" alt="">
 							<img src="img/1117-2.jpg" alt="">
 						</div>
-						<p>11/17 興富發竹科潤隆</p>
+						<p>2019/11/17 興富發建案銷售中心說明會</p>
 					</div>
 
 					<div class="seminar ">
@@ -222,14 +221,14 @@
 							<img src="img/1120-3.jpg" alt="">
 							<img src="img/1120-4.jpg" alt="">
 						</div>
-						<p>11/20 家乘家說明會</p>
+						<p>2019/11/20 家乘家工作室說明會</p>
 					</div>
 					<div class="seminar ">
 						<div class="slick_photo slider">
 							<img src="img/1124-1.jpg" alt="">
 							<img src="img/1124-2.jpg" alt="">
 						</div>
-						<p>11/24 第四場說明會</p>
+						<p>2019/11/24 興富發建案銷售中心說明會</p>
 					</div>
 
 
@@ -241,7 +240,7 @@
 							<img src="img/hk-1.jpg" alt="">
 							<img src="img/hk-2.jpg" alt="">
 						</div>
-						夏哲森期望培養孩子國際觀與探究精神，融合IB國際學者文憑的精神，發展出跨領域的探究式統整課程，並與新加坡IB認證學校建立姊妹校關係，進行定期互訪與學術交流。</p>
+						<p>夏哲森期望培養孩子國際觀與探究精神，融合IB國際學者文憑的精神，發展出跨領域的探究式統整課程，並與新加坡IB認證學校建立姊妹校關係，進行定期互訪與學術交流。</p>
 					</div>
 
 
@@ -261,30 +260,61 @@
 
 <div class="clear"></div>
 
-<div id="notice-popup" class="notice-popup mfp-hide">
+<div id="notice-popup-01" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
-
-		<div align="center" id="shadow" class="video_play_include">
-			<video src="video/summer_castle_01.mp4" class="video-js vjs-default-skin" controls="" data-setup="{}" id="example_video" preload="auto">
-			</video>
-		</div>
-
+		<iframe src="https://www.youtube.com/embed/A9ME_6NOcdo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+<div id="notice-popup-02" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+		<iframe  src="https://www.youtube.com/embed/YMBibMfP2cM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+<div id="notice-popup-03" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+		
+	<iframe src="https://www.youtube.com/embed/1D4RES3gAmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     </div>
 </div>
 
 
+
+
+
+
  <script>
         $(function(){
-            $('.js-open-notice-popup').magnificPopup({
+            $('.js-open-video-1').magnificPopup({
                 items: {
-                    src: '#notice-popup',
+                    src: '#notice-popup-01',
                     type: 'inline'
                 },
                 mainClass: 'mfp-fade',
                 removalDelay: 300,
                 midClick: true
             });
+
+             $('.js-open-video-2').magnificPopup({
+                items: {
+                    src: '#notice-popup-02',
+                    type: 'inline'
+                },
+                mainClass: 'mfp-fade',
+                removalDelay: 300,
+                midClick: true
+            });
+
+             $('.js-open-video-3').magnificPopup({
+                items: {
+                    src: '#notice-popup-03',
+                    type: 'inline'
+                },
+                mainClass: 'mfp-fade',
+                removalDelay: 300,
+                midClick: true
+            });
+
 
 
         });

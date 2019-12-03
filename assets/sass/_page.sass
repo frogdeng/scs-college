@@ -193,7 +193,7 @@ $susy: (debug: (image: hide))
 		.service_detail_content
 			width: 100%
 			background: #FFF
-			padding: 40px 50px
+			padding: 40px 20px
 			background: url("../img/tragle.png") right bottom #FFF
 			background-repeat: no-repeat
 			background-size: 50px
@@ -229,6 +229,7 @@ $susy: (debug: (image: hide))
 				justify-content: center
 				align-items: center
 				margin-bottom: 80px
+				padding-bottom: 80px
 				position: relative
 
 				img
@@ -250,9 +251,22 @@ $susy: (debug: (image: hide))
 						font-size: 40px
 			.vidoe_row
 				width: 100%
-				height: 200px
-				background: #eee
+				// background: #eee
 				margin-bottom: 30px
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				.video_item
+					display: block
+					width: 100%
+					margin: 10px 0px	
+					cursor: pointer
+					transition: all .3s
+					&:hover
+						transform: scale(1.05)
+					img 
+						width: 100%
 
 			.seminar
 				display: flex
@@ -333,15 +347,22 @@ $susy: (debug: (image: hide))
 
 			.vidoe_row
 				width: 100%
-				background: #eee
+				// background: #eee
 				margin-bottom: 30px
 				display: flex
 				flex-direction: row
 				justify-content: space-between
 				align-items: center
 				.video_item
+					display: block
 					width: 32%
-
+					margin: 20px 0px	
+					cursor: pointer
+					transition: all .3s
+					&:hover
+						transform: scale(1.05)
+					img 
+						width: 100%
 
 
 
@@ -366,7 +387,7 @@ $susy: (debug: (image: hide))
 
 .slick-prev
 	left: 10px
-	z-index: 3000
+	z-index: 100
 
 
 
@@ -983,8 +1004,16 @@ $susy: (debug: (image: hide))
 
 
 .notice-popup
+	position: relative
 	background: #FFF
-	max-width: 900px
-	padding: 30px
+	max-width: 600px
+	padding-top: 44px
 	margin: 0 auto
+	background: #000
+	iframe
+		width: 100%
+		height: 400px
 
+
+.mfp-close-btn-in .mfp-close
+	color: #999

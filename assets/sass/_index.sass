@@ -27,6 +27,7 @@ $deep-green: #5AB331
 		+container
 		background-size: cover
 		margin-bottom: 80px
+		margin-top: 70px
 		.main
 			.new_photo
 				img
@@ -161,7 +162,7 @@ $deep-green: #5AB331
 		+container
 		background: #FFF
 		margin-top: -50px
-		margin-bottom: 100px
+		margin-bottom: 0px
 		padding: 40px
 		display: flex
 		flex-direction: column
@@ -235,7 +236,7 @@ $deep-green: #5AB331
 		justify-content: flex-start
 		align-items: center
 		.product_intro
-			width: 45%
+			width: 100%
 			height: 350px
 			margin: 20px 2.5%
 			background: #FFF
@@ -303,16 +304,18 @@ $deep-green: #5AB331
 .kid_image
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
-		height: 400px
-		background: url('../img/kids.jpg')
+		height: 300px
+		background: url('../img/kids.jpg') top
+		// background-attachment: fixed
 		background-size: cover
-		background-attachment: fixed
+
+
 
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
 		height: 400px
-		background: url('../img/kids.jpg')
+		background: url('../img/kids.jpg') center
 		background-size: cover
 		background-attachment: fixed
 
@@ -332,7 +335,7 @@ $deep-green: #5AB331
 				margin-right: 20px
 			.l-l
 				height: 1px
-				width: 70%
+				width: 50%
 				background: #c0c0c0
 		.members_row
 			display: flex
@@ -442,7 +445,7 @@ $deep-green: #5AB331
 		padding: 30px
 		background: #6E6669 !important
 		display: flex !important
-		flex-direction: row !important
+		flex-direction: column !important
 		justify-content: flex-start !important
 		align-items: flex-start !important
 		position: relative
@@ -462,16 +465,15 @@ $deep-green: #5AB331
 				font-size: 30px
 				color: #FFF
 		img
-			height: 350px !important
-			margin-right: 30px
+			// height: 350px !important
+			// margin-right: 30px
+			margin-bottom: 20px !important
 		.des
 			padding: 0px !important
 			h6, p
 				color: #FFF !important
 			.more_resume
 				display: block !important
-
-
 
 
 
@@ -575,22 +577,24 @@ $deep-green: #5AB331
 				.contact_row
 					width: 100%
 					display: flex
-					flex-direction: row
+					flex-direction: column
 					justify-content: flex-start
 					align-items: center
 					margin-bottom: 20px
 					p
-						width: 30%
+						width: 100%
+						margin-left: 10px
+						margin-bottom: 5px
 					input
 						margin-left: 10px
-						width: 70%
+						width: 100%
 						height: 40px
 						border: 1px solid #c0c0c0
 						padding: 0 10px
 
 					textarea
 						margin-left: 20px
-						width: 70%
+						width: 100%
 						padding: 10px
 						border: 1px solid #c0c0c0
 			.contact_img
