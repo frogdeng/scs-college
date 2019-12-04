@@ -169,24 +169,24 @@
 		<div class="contact_info">
 			<div class="contact_row">
 				<p>聯絡人</p>
-				<input type="text">
+				<input type="text" id="nameValue">
 			</div>
 			<div class="contact_row">
 				<p>聯絡電話</p>
-				<input type="text">
+				<input type="text" id="phoneValue">
 			</div>
-			<div class="contact_row">
+			<div class="contact_row" >
 				<p>電子郵件</p>
-				<input type="text">
+				<input type="text" id="demandValue">
 			</div>
 			<div class="contact_row">
 				<p>簡述聯絡事項</p>
-				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<input type="text" id="descriptionValue">
+		
 			</div>
 
-			<div class="sumit">送出</div>
-
-
+			<div class="sumit" id="sumit">送出</div>
+			
 		</div>
 		<!-- <div class="contact_img">
 			<div class="map">
@@ -195,9 +195,39 @@
 		</div> -->
 
 	</div>
-
-
 </div>
+
+<script>
+	$(document).ready(function(){
+
+		let sendButton = document.querySelector('.sumit');
+
+		function send() {
+		  let name = document.querySelector('#nameValue').value;
+		  let phone = document.querySelector('#phoneValue').value;
+		  let demand = document.querySelector('#demandValue').value;
+		  let description = document.querySelector('#descriptionValue').value;
+		  $.ajax({
+    		url: "https://script.google.com/macros/s/AKfycbz3ozQb-OltH5h3rrMgdyJ3vUzit4CguihDVz5ZJkKfm1XMNEc/exec",
+		    data: {
+		        "name": name,
+		        "phone": phone,
+		        "demand": demand,
+		        "description": description
+		    },
+		    success: function(response) {
+		      if(response == "成功"){
+		        alert("成功");
+		      }
+		    },
+		  });
+		};
+
+		sendButton.addEventListener('click', send);
+
+	});
+</script>
+
 
 
 
