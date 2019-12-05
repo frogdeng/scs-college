@@ -83,11 +83,11 @@
 			<div class="contact_row">
 				<p>簡述聯絡事項</p>
 				<input type="text" id="descriptionValue">
-		
+
 			</div>
 
 			<div class="sumit" id="sumit">送出</div>
-			
+
 		</div>
 		<!-- <div class="contact_img">
 			<div class="map">
@@ -109,7 +109,7 @@
 		  let demand = document.querySelector('#demandValue').value;
 		  let description = document.querySelector('#descriptionValue').value;
 		  $.ajax({
-    		url: "https://script.google.com/macros/s/AKfycbz3ozQb-OltH5h3rrMgdyJ3vUzit4CguihDVz5ZJkKfm1XMNEc/exec",
+    		url: "https://script.google.com/macros/s/AKfycbz3Vq4hnRv4Zj-FVkwvSuidrSRQWBVDCxNhATgvNG6zDsv0kpQ/exec",
 		    data: {
 		        "name": name,
 		        "phone": phone,
@@ -118,7 +118,7 @@
 		    },
 		    success: function(response) {
 		      if(response == "成功"){
-		        alert("成功");
+		        alert("資料已送出！感謝您");
 		      }
 		    },
 		  });
