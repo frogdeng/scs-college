@@ -190,8 +190,8 @@
 
 
 					<div class="vidoe_row">
-						<a class="video_item js-open-video-1" >
-							<img src="img/video_01.jpg" alt="">
+						<a class="video_item js-open-video-4" >
+							<img src="img/video_04.jpg" alt="">
 						</a>
 
 						<a class="video_item js-open-video-1" >
@@ -258,7 +258,7 @@
 					<div class="seminar ">
 						<div class="slick_photo slider">
 							<div class="video_item js-open-video-b1 hover-finger" >
-								<img src="img/hk-1.jpg" alt="">
+								<img src="img/v-01.jpg" alt="">
 							</div>
 						</div>
 						<p>課程說明會</p>
@@ -267,17 +267,21 @@
 					<div class="seminar ">
 						<div class="slick_photo slider">
 							<div class="video_item js-open-video-b2 hover-finger" >
-								<img src="img/hk-1.jpg" alt="">
+								<img src="img/v-02.jpg" alt="">
 							</div>
+
+							<img src="img/edm-1.png" alt="">
+							<img src="img/edm-2.png" alt="">
+							<img src="img/edm-3.png" alt="">
+							<img src="img/edm-4.png" alt="">
+
 						</div>
 						<p>STEAM泡泡科學營</p>
 					</div>
 
 					<div class="seminar ">
 						<div class="slick_photo slider">
-							<div class="video_item js-open-video-b3 hover-finger" >
-								<img src="img/hk-1.jpg" alt="">
-							</div>
+							<img src="img/v-03.jpg" alt="">
 						</div>
 						<p>2020/01/04新竹巨城</p>
 					</div>
@@ -285,7 +289,7 @@
 					<div class="seminar ">
 						<div class="slick_photo slider">
 							<div class="video_item js-open-video-b4 hover-finger" >
-								<img src="img/hk-1.jpg" alt="">
+								<img src="img/v-04.jpg" alt="">
 							</div>
 						</div>
 						<p>2020/01/19 OPEN DAY</p>
@@ -325,38 +329,37 @@
 
     </div>
 </div>
+<div id="notice-popup-04" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+
+	<iframe src="https://www.youtube.com/embed/tCpl5s65BTI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+</div>
 
 
 
 <div id="notice-popup-b1" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
-
-	<iframe src="https://www.youtube.com/embed/1D4RES3gAmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+	<iframe src="https://www.youtube.com/embed/CyV6jQGTcWk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
 
 <div id="notice-popup-b2" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
-
-	<iframe src="https://www.youtube.com/embed/1D4RES3gAmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+	<iframe src="https://www.youtube.com/embed/ia_tcjGFLpQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
 
 <div id="notice-popup-b3" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
-
 	<iframe src="https://www.youtube.com/embed/1D4RES3gAmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
     </div>
 </div>
 
 <div id="notice-popup-b4" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
-
-	<iframe src="https://www.youtube.com/embed/1D4RES3gAmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+	<iframe src="https://www.youtube.com/embed/Qlhe0yx1HOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
 
@@ -396,9 +399,19 @@
                 midClick: true
             });
 
+             $('.js-open-video-4').magnificPopup({
+                items: {
+                    src: '#notice-popup-04',
+                    type: 'inline'
+                },
+                mainClass: 'mfp-fade',
+                removalDelay: 300,
+                midClick: true
+            });
+
             $('.js-open-video-b1').magnificPopup({
                 items: {
-                    src: '#notice-popup-03',
+                    src: '#notice-popup-b1',
                     type: 'inline'
                 },
                 mainClass: 'mfp-fade',
@@ -407,7 +420,7 @@
             });
             $('.js-open-video-b2').magnificPopup({
                 items: {
-                    src: '#notice-popup-03',
+                    src: '#notice-popup-b2',
                     type: 'inline'
                 },
                 mainClass: 'mfp-fade',
@@ -416,7 +429,7 @@
             });
             $('.js-open-video-b3').magnificPopup({
                 items: {
-                    src: '#notice-popup-03',
+                    src: '#notice-popup-b3',
                     type: 'inline'
                 },
                 mainClass: 'mfp-fade',
@@ -425,7 +438,7 @@
             });
             $('.js-open-video-b4').magnificPopup({
                 items: {
-                    src: '#notice-popup-03',
+                    src: '#notice-popup-b4',
                     type: 'inline'
                 },
                 mainClass: 'mfp-fade',

@@ -2115,6 +2115,9 @@ a {
 .mfp-close-btn-in .mfp-close {
   color: #999; }
 
+.hover-finger {
+  cursor: pointer; }
+
 body {
   background: #f5f3f2;
   font-family: 'Noto Sans', sans-serif, Microsoft JhengHei;
