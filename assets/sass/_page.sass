@@ -193,7 +193,7 @@ $susy: (debug: (image: hide))
 		.service_detail_content
 			width: 100%
 			background: #FFF
-			padding: 40px 20px
+			padding: 40px 0px
 			background: url("../img/tragle.png") right bottom #FFF
 			background-repeat: no-repeat
 			background-size: 50px
@@ -237,20 +237,37 @@ $susy: (debug: (image: hide))
 				p
 					font-size: 18px
 					margin-bottom: 14px
+				
+				.contact_us-in
+					width: 100%
+					padding: 30px 0
+					background: #eee
+					margin-top: 30px
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+					h6
+						font-size: 25px
+						margin-bottom: 20px
 
-				.fb
-					display: block
-					position: absolute
-					margin: 0
-					width: 40px
-					height: 40px
-					bottom: 0
-					right: 0
-					svg
-						color: #2851A3
-						font-size: 40px
+					.c-row
+						margin-bottom: 15px
+						font-size: 18px
+						i
+							font-size: 20px
+							color: #4267b2
+						a 
+							display: block
+							width: 500px
+							color: #000
+							text-align: center
+							margin: 0
+					
 			.vidoe_row
-				width: 100%
+				width: 90%
+				margin: 0 auto
+
 				// background: #eee
 				margin-bottom: 30px
 				display: flex
@@ -269,6 +286,8 @@ $susy: (debug: (image: hide))
 						width: 100%
 
 			.seminar
+				width: 90%
+				margin: 0 auto
 				display: flex
 				flex-direction: column
 				justify-content: center
@@ -288,7 +307,7 @@ $susy: (debug: (image: hide))
 		.service_detail_content
 			width: 100%
 			background: #FFF
-			padding: 40px 50px
+			padding: 40px 0px
 			background: url("../img/tragle.png") right bottom #FFF
 			background-repeat: no-repeat
 			background-size: 50px
@@ -332,21 +351,36 @@ $susy: (debug: (image: hide))
 				p
 					font-size: 18px
 					margin-bottom: 14px
+				.contact_us-in
+					width: 100%
+					padding: 30px 0
+					background: #eee
+					margin-top: 30px
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+					h6
+						font-size: 25px
+						margin-bottom: 20px
 
-				.fb
-					display: block
-					position: absolute
-					margin: 0
-					width: 40px
-					height: 40px
-					bottom: 0
-					right: 0
-					svg
-						color: #2851A3
-						font-size: 40px
+					.c-row
+						margin-bottom: 15px
+						font-size: 18px
+						i
+							font-size: 20px
+							color: #4267b2
+						a 
+							display: block
+							width: 500px
+							color: #000
+							text-align: center
+							margin: 0
+					
 
 			.vidoe_row
-				width: 100%
+				width: 90%
+				margin: 0 auto
 				// background: #eee
 				margin-bottom: 30px
 				display: flex
@@ -368,6 +402,8 @@ $susy: (debug: (image: hide))
 
 
 			.seminar
+				width: 90%
+				margin: 0 auto
 				display: flex
 				flex-direction: row
 				justify-content: center
@@ -384,15 +420,57 @@ $susy: (debug: (image: hide))
 
 
 
+
+.still_video
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		.still_video_row
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: flex-start
+			margin-bottom: 40px
+			.act_name
+				width: 10%
+				margin-right: 20px
+				font-size: 16px
+			.act_video-row
+				width: 85%
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				align-items: center
+				.video_item-sd
+					width: 48%
+					margin-right: 20px
+					p 
+						font-size: 14px
+						color: #888
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .slick-next
 	right: 10px
 
 .slick-prev
 	left: 10px
 	z-index: 100
-
-
-
 
 .about_menu
 	+susy-breakpoint($breakpoint_pad, $pad)
@@ -1023,3 +1101,17 @@ $susy: (debug: (image: hide))
 
 .hover-finger
 	cursor: pointer
+
+
+
+
+
+
+
+
+
+
+
+
+
+

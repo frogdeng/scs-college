@@ -1193,7 +1193,7 @@ a {
   .service_detail .service_detail_content {
     width: 100%;
     background: #FFF;
-    padding: 40px 20px;
+    padding: 40px 0px;
     background: url("../img/tragle.png") right bottom #FFF;
     background-repeat: no-repeat;
     background-size: 50px;
@@ -1237,19 +1237,37 @@ a {
   .service_detail .service_detail_content .summer_castle p {
     font-size: 18px;
     margin-bottom: 14px; }
-  .service_detail .service_detail_content .summer_castle .fb {
-    display: block;
-    position: absolute;
-    margin: 0;
-    width: 40px;
-    height: 40px;
-    bottom: 0;
-    right: 0; }
-  .service_detail .service_detail_content .summer_castle .fb svg {
-    color: #2851A3;
-    font-size: 40px; }
-  .service_detail .service_detail_content .vidoe_row {
+  .service_detail .service_detail_content .summer_castle .contact_us-in {
     width: 100%;
+    padding: 30px 0;
+    background: #eee;
+    margin-top: 30px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .service_detail .service_detail_content .summer_castle .contact_us-in h6 {
+    font-size: 25px;
+    margin-bottom: 20px; }
+  .service_detail .service_detail_content .summer_castle .contact_us-in .c-row {
+    margin-bottom: 15px;
+    font-size: 18px; }
+  .service_detail .service_detail_content .summer_castle .contact_us-in .c-row i {
+    font-size: 20px;
+    color: #4267b2; }
+  .service_detail .service_detail_content .summer_castle .contact_us-in .c-row a {
+    display: block;
+    width: 500px;
+    color: #000;
+    text-align: center;
+    margin: 0; }
+  .service_detail .service_detail_content .vidoe_row {
+    width: 90%;
+    margin: 0 auto;
     margin-bottom: 30px;
     display: -ms-flexbox;
     display: flex;
@@ -1270,6 +1288,8 @@ a {
   .service_detail .service_detail_content .vidoe_row .video_item img {
     width: 100%; }
   .service_detail .service_detail_content .seminar {
+    width: 90%;
+    margin: 0 auto;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -1300,7 +1320,7 @@ a {
   .service_detail .service_detail_content {
     width: 100%;
     background: #FFF;
-    padding: 40px 50px;
+    padding: 40px 0px;
     background: url("../img/tragle.png") right bottom #FFF;
     background-repeat: no-repeat;
     background-size: 50px;
@@ -1343,19 +1363,37 @@ a {
   .service_detail .service_detail_content .summer_castle p {
     font-size: 18px;
     margin-bottom: 14px; }
-  .service_detail .service_detail_content .summer_castle .fb {
-    display: block;
-    position: absolute;
-    margin: 0;
-    width: 40px;
-    height: 40px;
-    bottom: 0;
-    right: 0; }
-  .service_detail .service_detail_content .summer_castle .fb svg {
-    color: #2851A3;
-    font-size: 40px; }
-  .service_detail .service_detail_content .vidoe_row {
+  .service_detail .service_detail_content .summer_castle .contact_us-in {
     width: 100%;
+    padding: 30px 0;
+    background: #eee;
+    margin-top: 30px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .service_detail .service_detail_content .summer_castle .contact_us-in h6 {
+    font-size: 25px;
+    margin-bottom: 20px; }
+  .service_detail .service_detail_content .summer_castle .contact_us-in .c-row {
+    margin-bottom: 15px;
+    font-size: 18px; }
+  .service_detail .service_detail_content .summer_castle .contact_us-in .c-row i {
+    font-size: 20px;
+    color: #4267b2; }
+  .service_detail .service_detail_content .summer_castle .contact_us-in .c-row a {
+    display: block;
+    width: 500px;
+    color: #000;
+    text-align: center;
+    margin: 0; }
+  .service_detail .service_detail_content .vidoe_row {
+    width: 90%;
+    margin: 0 auto;
     margin-bottom: 30px;
     display: -ms-flexbox;
     display: flex;
@@ -1378,6 +1416,8 @@ a {
   .service_detail .service_detail_content .vidoe_row .video_item img {
     width: 100%; }
   .service_detail .service_detail_content .seminar {
+    width: 90%;
+    margin: 0 auto;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -1394,6 +1434,56 @@ a {
     color: #888;
     font-size: 16px;
     padding: 5px 30px; } }
+
+@media (min-width: 0) and (max-width: 990px) {
+  .still_video {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+  .still_video:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 991px) {
+  .still_video {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+  .still_video:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .still_video .still_video_row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 40px; }
+  .still_video .still_video_row .act_name {
+    width: 10%;
+    margin-right: 20px;
+    font-size: 16px; }
+  .still_video .still_video_row .act_video-row {
+    width: 85%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center; }
+  .still_video .still_video_row .act_video-row .video_item-sd {
+    width: 48%;
+    margin-right: 20px; }
+  .still_video .still_video_row .act_video-row .video_item-sd p {
+    font-size: 14px;
+    color: #888; } }
 
 .slick-next {
   right: 10px; }
