@@ -193,7 +193,7 @@ $susy: (debug: (image: hide))
 		.service_detail_content
 			width: 100%
 			background: #FFF
-			padding: 40px 0px
+			padding: 40px 20px
 			background: url("../img/tragle.png") right bottom #FFF
 			background-repeat: no-repeat
 			background-size: 50px
@@ -386,18 +386,19 @@ $susy: (debug: (image: hide))
 				display: flex
 				flex-wrap: wrap
 				flex-direction: row
-				justify-content: space-between
+				justify-content: flex-start
 				align-items: center
 				.video_item
 					display: block
 					width: 32%
-					margin: 20px 0px
+					margin: 20px 5px
 					cursor: pointer
 					transition: all .3s
 					&:hover
 						transform: scale(1.05)
 					img
 						width: 100%
+						display: block
 
 
 
@@ -424,6 +425,34 @@ $susy: (debug: (image: hide))
 .still_video
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
+		.still_video_row
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: flex-start
+			margin-bottom: 40px
+			.act_name
+				width: 20%
+				margin-right: 20px
+				font-size: 16px
+				text-align: center
+				padding-bottom: 5px
+				border-bottom: 1px solid #d83f06
+			.act_video-row
+				width: 80%
+				display: flex
+				flex-wrap: wrap
+				flex-direction: column
+				justify-content: flex-start
+				align-items: center
+				.video_item-sd
+					width: 90%
+					margin-right: 3%
+					p 
+						font-size: 14px
+						color: #888
+
+
 
 
 
@@ -436,18 +465,23 @@ $susy: (debug: (image: hide))
 			align-items: flex-start
 			margin-bottom: 40px
 			.act_name
-				width: 10%
+				width: 12%
 				margin-right: 20px
 				font-size: 16px
+				text-align: center
+				padding-bottom: 5px
+				border-bottom: 1px solid #d83f06
 			.act_video-row
 				width: 85%
 				display: flex
+				flex-wrap: wrap
 				flex-direction: row
 				justify-content: flex-start
 				align-items: center
 				.video_item-sd
-					width: 48%
-					margin-right: 20px
+					width: 45%
+					margin-right: 3%
+					margin-bottom: 10px
 					p 
 						font-size: 14px
 						color: #888
@@ -1104,11 +1138,44 @@ $susy: (debug: (image: hide))
 
 
 
+.slash_bg
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		width: 100%
+		height: 250px
+		background: url('../img/slash.png')
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		margin-bottom: 20px
+		img 
+			width: 130px
+			margin-right: 20px
+		h6 
+			font-size: 20px
+			color: #888
 
 
 
 
 
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		width: 100%
+		height: 250px
+		background: url('../img/slash.png')
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		margin-bottom: 20px
+		img 
+			width: 130px
+			margin-right: 20px
+		h6 
+			font-size: 20px
+			color: #888
 
 
 

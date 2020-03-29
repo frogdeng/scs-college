@@ -3,3 +3,5 @@ wiki/
 report/
 sandbox/
 node_modules/
+
+.sublime-gulp.cache

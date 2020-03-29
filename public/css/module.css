@@ -1193,7 +1193,7 @@ a {
   .service_detail .service_detail_content {
     width: 100%;
     background: #FFF;
-    padding: 40px 0px;
+    padding: 40px 20px;
     background: url("../img/tragle.png") right bottom #FFF;
     background-repeat: no-repeat;
     background-size: 50px;
@@ -1401,20 +1401,21 @@ a {
     flex-wrap: wrap;
     -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     -ms-flex-align: center;
     align-items: center; }
   .service_detail .service_detail_content .vidoe_row .video_item {
     display: block;
     width: 32%;
-    margin: 20px 0px;
+    margin: 20px 5px;
     cursor: pointer;
     transition: all .3s; }
   .service_detail .service_detail_content .vidoe_row .video_item:hover {
     transform: scale(1.05); }
   .service_detail .service_detail_content .vidoe_row .video_item img {
-    width: 100%; }
+    width: 100%;
+    display: block; }
   .service_detail .service_detail_content .seminar {
     width: 90%;
     margin: 0 auto;
@@ -1443,7 +1444,42 @@ a {
   .still_video:after {
     content: " ";
     display: block;
-    clear: both; } }
+    clear: both; }
+  .still_video .still_video_row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 40px; }
+  .still_video .still_video_row .act_name {
+    width: 20%;
+    margin-right: 20px;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d83f06; }
+  .still_video .still_video_row .act_video-row {
+    width: 80%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center; }
+  .still_video .still_video_row .act_video-row .video_item-sd {
+    width: 90%;
+    margin-right: 3%; }
+  .still_video .still_video_row .act_video-row .video_item-sd p {
+    font-size: 14px;
+    color: #888; } }
 
 @media (min-width: 991px) {
   .still_video {
@@ -1465,13 +1501,18 @@ a {
     align-items: flex-start;
     margin-bottom: 40px; }
   .still_video .still_video_row .act_name {
-    width: 10%;
+    width: 12%;
     margin-right: 20px;
-    font-size: 16px; }
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d83f06; }
   .still_video .still_video_row .act_video-row {
     width: 85%;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -ms-flex-direction: row;
     flex-direction: row;
     -ms-flex-pack: start;
@@ -1479,8 +1520,9 @@ a {
     -ms-flex-align: center;
     align-items: center; }
   .still_video .still_video_row .act_video-row .video_item-sd {
-    width: 48%;
-    margin-right: 20px; }
+    width: 45%;
+    margin-right: 3%;
+    margin-bottom: 10px; }
   .still_video .still_video_row .act_video-row .video_item-sd p {
     font-size: 14px;
     color: #888; } }
@@ -2207,6 +2249,62 @@ a {
 
 .hover-finger {
   cursor: pointer; }
+
+@media (min-width: 0) and (max-width: 990px) {
+  .slash_bg {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 250px;
+    background: url("../img/slash.png");
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 20px; }
+  .slash_bg:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .slash_bg img {
+    width: 130px;
+    margin-right: 20px; }
+  .slash_bg h6 {
+    font-size: 20px;
+    color: #888; } }
+
+@media (min-width: 991px) {
+  .slash_bg {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 250px;
+    background: url("../img/slash.png");
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 20px; }
+  .slash_bg:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .slash_bg img {
+    width: 130px;
+    margin-right: 20px; }
+  .slash_bg h6 {
+    font-size: 20px;
+    color: #888; } }
 
 body {
   background: #f5f3f2;
