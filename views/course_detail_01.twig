@@ -10,9 +10,6 @@
 
 	{% include '_partial/aside.twig' %}
 
-
-
-
 	<div class="content">
 		<div class="service_detail">
 			<div class="service_detail_content">
@@ -30,8 +27,6 @@
 		</div>
 	
 
-  
-
 		<div class="still_video">
 
 			<div class="still_video_row">
@@ -40,37 +35,83 @@
 				</div>
 
 				<div class="act_video-row">
-					<div class="video_item-sd" >
+					<div class="img_item-sd js-open-img-01 hover-finger" >
 						<img src="img/couse_a1.jpg" alt="">
 						<p><!-- 新生體驗 --></p>
 					</div>					
 
-					<div class="video_item-sd">
+					<div class="img_item-sd js-open-img-02 hover-finger">
 						<img src="img/couse_a2.jpg" alt="">
 						<!-- <p>顏色派對</p> -->
 					</div>
 
-					<div class="video_item-sd">
+					<div class="img_item-sd js-open-img-03 hover-finger">
 						<img src="img/couse_a3.jpg" alt="">
 						<!-- <p>顏色派對</p> -->
 					</div>
 
-
 				</div>
 			</div>
-
-
-			
 		</div>
 
 	</div>
-
-
-
-
 </div>
 
 
+
+<div id="notice-popup-01" class="notice-popup2 mfp-hide">
+    <div class="notice-popup_content">
+   		<img src="img/couse_a1.jpg" alt="">
+    </div>
+</div>
+
+<div id="notice-popup-02" class="notice-popup2 mfp-hide">
+    <div class="notice-popup_content">
+   		<img src="img/couse_a2.jpg" alt="">
+    </div>
+</div>
+
+<div id="notice-popup-03" class="notice-popup2 mfp-hide">
+    <div class="notice-popup_content">
+   		<img src="img/couse_a3.jpg" alt="">
+    </div>
+</div>
+ <script>
+        $(function(){
+          
+            $('.js-open-img-01').magnificPopup({
+                items: {
+                    src: '#notice-popup-01',
+                    type: 'inline'
+                },
+                mainClass: 'mfp-fade',
+                removalDelay: 300,
+                midClick: true
+            });
+
+            $('.js-open-img-02').magnificPopup({
+                items: {
+                    src: '#notice-popup-02',
+                    type: 'inline'
+                },
+                mainClass: 'mfp-fade',
+                removalDelay: 300,
+                midClick: true
+            });
+            $('.js-open-img-03').magnificPopup({
+                items: {
+                    src: '#notice-popup-03',
+                    type: 'inline'
+                },
+                mainClass: 'mfp-fade',
+                removalDelay: 300,
+                midClick: true
+            });
+            
+
+
+        });
+    </script>
 
 
 
