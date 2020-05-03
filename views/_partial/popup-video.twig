@@ -26,6 +26,16 @@
     </div>
 </div>
 
+<div id="notice-popup-05" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+
+    <iframe src="https://www.youtube.com/embed/lvgA-ZaKJvw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+
+
 
 
 <div id="notice-popup-b1" class="notice-popup mfp-hide">
@@ -114,9 +124,19 @@
                 midClick: true
             });
 
-             $('.js-open-video-4').magnificPopup({
+            $('.js-open-video-4').magnificPopup({
                 items: {
                     src: '#notice-popup-04',
+                    type: 'inline'
+                },
+                mainClass: 'mfp-fade',
+                removalDelay: 300,
+                midClick: true
+            });
+
+            $('.js-open-video-5').magnificPopup({
+                items: {
+                    src: '#notice-popup-05',
                     type: 'inline'
                 },
                 mainClass: 'mfp-fade',

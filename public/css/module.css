@@ -1000,6 +1000,9 @@ a {
 .product_summer_castle {
   background: url(../img/sc.jpg) right bottom; }
 
+.product_wls {
+  background: url(../img/wls_bn.png) right bottom; }
+
 .slick-dots {
   bottom: -40px !important; }
 
@@ -2277,6 +2280,16 @@ a {
   margin: 0 auto; }
 
 .notice-popup2 img {
+  display: block;
+  width: 100%; }
+
+.notice-popup3 {
+  position: relative;
+  background: #FFF;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.notice-popup3 img {
   display: block;
   width: 100%; }
 

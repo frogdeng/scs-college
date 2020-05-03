@@ -70,7 +70,10 @@
 							<img src="img/video_03.jpg" alt="">
 						</a>
 						<div class="video_item" style="border: 1px solid #eee; width:32%"><img src="img/comingsoon.jpg" alt=""></div>
-
+						
+						<a class="video_item js-open-video-5" >
+							<img src="img/video_05.jpg" alt="">
+						</a>
 
 					</div>
 
@@ -158,8 +161,6 @@
 						<p>2020/01/19 OPEN DAY</p>
 					</div>
 
-
-
 					<div class="seminar ">
 						<div class="slick_photo slider">
 							<div class="video_item js-open-video-b5 hover-finger" >
@@ -197,8 +198,6 @@
 						<p>2020/3/14 轉轉機器人</p>
 					</div>
 
-
-
 					<div class="seminar ">
 						<div class="slick_photo slider">
 							<div class="video_item js-open-video-b9 hover-finger" >
@@ -208,23 +207,108 @@
 						<p>"吃飽了嗎？快跟夏哲森的孩子一起享受午餐時光吧！"</p>
 					</div>
 
+					<div class="seminar ">
+						<div class="slick_photo slider">
+							<div class="img_item-sd summer_camp-01 hover-finger">
+								<img src="img/summer_camp_01.jpg" alt="">
+							</div>
+							<div class="img_item-sd summer_camp-02 hover-finger">
+								<img src="img/summer_camp_02.jpg" alt="">
+							</div>
+							<div class="img_item-sd summer_camp-03 hover-finger">
+								<img src="img/summer_camp_03.jpg" alt="">
+							</div>
+							<div class="img_item-sd summer_camp-04 hover-finger">
+								<img src="img/summer_camp_04.jpg" alt="">
+							</div>
+						</div>
+						<p>2020夏令營</p>
+					</div>
+					<div class="seminar ">
+						<div class="slick_photo slider">
+								<img src="img/vango.jpg" alt="">
+						</div>
+						<p>梵谷：「所謂藝術，就是塑造大自然的人性，亦即塑造自然、現實、純真的人性。」
+							畢卡索：「色彩是甘泉、是美味，可以讓人快樂，讓人活起來。
+							我們把夏哲森後院當作藝術創作的壁面!</p>
+					</div>
+
 			</div>
 		</div>
 
 	</div>
 
-
-
 </div>
 
 
 
-
 <div class="clear"></div>
-
 {% include '_partial/popup-video.twig' %}
 
+<div id="summer_camp-01" class="notice-popup3 mfp-hide">
+    <div class="notice-popup_content">
+   		<img src="img/summer_camp_01.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-02" class="notice-popup3 mfp-hide">
+    <div class="notice-popup_content">
+   		<img src="img/summer_camp_02.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-03" class="notice-popup3 mfp-hide">
+    <div class="notice-popup_content">
+   		<img src="img/summer_camp_03.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-04" class="notice-popup3 mfp-hide">
+    <div class="notice-popup_content">
+   		<img src="img/summer_camp_04.jpg" alt="">
+    </div>
+</div>
 
+
+
+ <script>
+    $(function(){
+        $('.summer_camp-01').magnificPopup({
+            items: {
+                src: '#summer_camp-01',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+        $('.summer_camp-02').magnificPopup({
+            items: {
+                src: '#summer_camp-02',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-03').magnificPopup({
+            items: {
+                src: '#summer_camp-03',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-04').magnificPopup({
+            items: {
+                src: '#summer_camp-04',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+    });
+</script>
 
 
 
