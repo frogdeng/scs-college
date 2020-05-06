@@ -1205,12 +1205,41 @@ a {
     padding-bottom: 30px;
     text-align: center;
     border-bottom: 1px solid #d83f06; }
-  .service_detail .service_detail_content h4 {
+  .service_detail .service_detail_content .angel {
+    margin: 40px 100px; }
+  .service_detail .service_detail_content .angel h4 {
     font-size: 25px;
-    margin-bottom: 40px;
-    padding-bottom: 30px;
     text-align: center;
-    border-bottom: 1px solid #000; }
+    margin: 0 100px;
+    margin-bottom: 50px; }
+  .service_detail .service_detail_content .angel p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #000;
+    padding: 0 100px; }
+  .service_detail .service_detail_content .angel .l-l {
+    height: 1px;
+    background: #999;
+    margin: 40px 0; }
+  .service_detail .service_detail_content .angel a {
+    display: block;
+    width: 200px;
+    margin: 20px 0;
+    color: #4267b2;
+    border: 1px solid #4267b2;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .service_detail .service_detail_content .angel a i {
+    margin-right: 10px; }
   .service_detail .service_detail_content ul {
     padding: 0 0px; }
   .service_detail .service_detail_content ul li {
