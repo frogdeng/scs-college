@@ -1354,6 +1354,28 @@ a {
     height: 1px;
     background: #999;
     margin: 40px 0; }
+  .service_detail .service_detail_content .angel a {
+    display: block;
+    width: 200px;
+    margin: 20px 0;
+    color: #4267b2;
+    border: 1px solid #4267b2;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .service_detail .service_detail_content .angel a i {
+    margin-right: 10px; }
+  .service_detail .service_detail_content .angel a:hover {
+    background: #4267b2;
+    color: #FFF; }
   .service_detail .service_detail_content ul {
     padding: 0 60px; }
   .service_detail .service_detail_content ul li {
