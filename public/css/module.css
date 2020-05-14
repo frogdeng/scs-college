@@ -147,6 +147,24 @@ html {
 a {
   text-decoration: none; }
 
+.announce {
+  font-size: 20px;
+  padding: 50px 60px;
+  width: 100%;
+  border-bottom: 3px solid red;
+  border-top: 3px solid red; }
+
+.announce h6 {
+  font-size: 30px;
+  color: red;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 18px; }
+
+.announce p {
+  font-size: 18px;
+  line-height: 28px; }
+
 @media (min-width: 0) and (max-width: 890px) {
   .index_slick {
     max-width: 100%;
