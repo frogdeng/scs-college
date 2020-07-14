@@ -327,6 +327,11 @@ $susy: (debug: (image: hide))
 				justify-content: center
 				align-items: flex-end
 				margin-bottom: 30px
+				h6
+					font-size: 25px
+					margin-bottom: 20px
+					border-bottom: 3px solid #d83f06
+					padding-bottom: 10px
 				.slick_photo
 					width: 100%
 				p
@@ -476,9 +481,15 @@ $susy: (debug: (image: hide))
 				margin: 0 auto
 				display: flex
 				flex-direction: row
-				justify-content: center
+				justify-content: flex-start
 				align-items: flex-end
 				margin-bottom: 30px
+				h6
+					font-size: 25px
+					margin-bottom: 20px
+					border-bottom: 3px solid #d83f06
+					padding-bottom: 10px
+
 				.slick_photo
 					width: 60%
 				p
@@ -670,7 +681,7 @@ $susy: (debug: (image: hide))
 			color: #999
 			padding: 23px 20px
 			font-size: 18px
-			font-weight: 300
+			font-weight: 900
 			border-bottom: 1px dashed #eee
 			cursor: pointer
 			transition: all .3s
@@ -703,7 +714,7 @@ $susy: (debug: (image: hide))
 			color: #999
 			padding: 23px 20px
 			font-size: 18px
-			font-weight: 300
+			font-weight: 900
 			border-bottom: 1px dashed #eee
 			cursor: pointer
 			transition: all .3s
@@ -712,8 +723,8 @@ $susy: (debug: (image: hide))
 		.product_list
 			padding: 0px
 			display: none
-			border-top: 2px solid #d83f06
-			border-bottom: 2px solid #d83f06
+			border-top: 3px solid #d83f06
+			border-bottom: 3px solid #d83f06
 			ul
 				li
 					a
@@ -722,15 +733,17 @@ $susy: (debug: (image: hide))
 						padding: 23px 20px
 						border-bottom: 1px dashed #d83f06
 						line-height: 1.4
-						background: #FFF
+						background: #fff9f9
 						color: #656565
 						transition: all .2s
 						&:hover
-							background: #222
+							background: #6e6662
 							color: #FFF
+					&:nth-last-of-type(1)
+						a
+							border-bottom: none
 
-
-
+		
 
 
 
