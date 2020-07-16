@@ -23,6 +23,15 @@
 					<h6>課程照片</h6>
 				</div>
 
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-video-b1 hover-finger" >
+                            <img src="img/summer_castle/s-01.jpg" alt="">
+                        </div>
+                    </div>
+                    <p>食農--聽聽孩子們在討論什麼？</p>
+                </div>
+
 				<div class="seminar ">
 					<div class="slick_photo slider">
 						<img src="img/hk-1.jpg" alt="">
@@ -42,14 +51,7 @@
 				</div>
 				
 
-					<div class="seminar ">
-						<div class="slick_photo slider">
-							<div class="video_item js-open-video-b1 hover-finger" >
-								<img src="img/v-01.jpg" alt="">
-							</div>
-						</div>
-						<p>食農--聽聽孩子們在討論什麼？</p>
-					</div>
+					
 
 
 			</div>
@@ -62,36 +64,24 @@
 
 
 <div class="clear"></div>
-{% include '_partial/popup-video.twig' %}
 
-<div id="summer_camp-01" class="notice-popup3 mfp-hide">
+<div id="notice-popup-b1" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
-   		<img src="img/summer_camp_01.jpg" alt="">
+    <iframe src="https://www.youtube.com/embed/ZAd8m1U6-gE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
-<div id="summer_camp-02" class="notice-popup3 mfp-hide">
-    <div class="notice-popup_content">
-   		<img src="img/summer_camp_02.jpg" alt="">
-    </div>
-</div>
-<div id="summer_camp-03" class="notice-popup3 mfp-hide">
-    <div class="notice-popup_content">
-   		<img src="img/summer_camp_03.jpg" alt="">
-    </div>
-</div>
-<div id="summer_camp-04" class="notice-popup3 mfp-hide">
-    <div class="notice-popup_content">
-   		<img src="img/summer_camp_04.jpg" alt="">
-    </div>
-</div>
+
+
 
 
 
  <script>
     $(function(){
-        $('.summer_camp-01').magnificPopup({
+
+
+        $('.js-open-video-b1').magnificPopup({
             items: {
-                src: '#summer_camp-01',
+                src: '#notice-popup-b1',
                 type: 'inline'
             },
             mainClass: 'mfp-fade',
@@ -99,33 +89,8 @@
             midClick: true
         });
 
-        $('.summer_camp-02').magnificPopup({
-            items: {
-                src: '#summer_camp-02',
-                type: 'inline'
-            },
-            mainClass: 'mfp-fade',
-            removalDelay: 300,
-            midClick: true
-        });
-        $('.summer_camp-03').magnificPopup({
-            items: {
-                src: '#summer_camp-03',
-                type: 'inline'
-            },
-            mainClass: 'mfp-fade',
-            removalDelay: 300,
-            midClick: true
-        });
-        $('.summer_camp-04').magnificPopup({
-            items: {
-                src: '#summer_camp-04',
-                type: 'inline'
-            },
-            mainClass: 'mfp-fade',
-            removalDelay: 300,
-            midClick: true
-        });
+
+
     });
 </script>
 

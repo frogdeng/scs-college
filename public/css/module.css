@@ -1455,6 +1455,11 @@ a {
     align-items: center;
     margin-bottom: 80px;
     position: relative; }
+  .service_detail .service_detail_content .summer_castle .text {
+    width: 60%;
+    text-align: center; }
+  .service_detail .service_detail_content .summer_castle .text img {
+    width: 300px; }
   .service_detail .service_detail_content .summer_castle img {
     margin-bottom: 30px; }
   .service_detail .service_detail_content .summer_castle p {
@@ -1514,7 +1519,7 @@ a {
     width: 100%;
     display: block; }
   .service_detail .service_detail_content .seminar {
-    width: 90%;
+    width: 93%;
     margin: 0 auto;
     display: -ms-flexbox;
     display: flex;
@@ -1522,21 +1527,27 @@ a {
     flex-direction: row;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    -ms-flex-align: end;
-    align-items: flex-end;
+    -ms-flex-align: start;
+    align-items: flex-start;
     margin-bottom: 30px; }
   .service_detail .service_detail_content .seminar h6 {
+    width: 100%;
+    text-align: center;
     font-size: 25px;
-    margin-bottom: 20px;
-    border-bottom: 3px solid #d83f06;
-    padding-bottom: 10px; }
+    margin-bottom: 30px;
+    border-bottom: 2px solid #d83f06;
+    padding-bottom: 20px; }
   .service_detail .service_detail_content .seminar .slick_photo {
-    width: 60%; }
+    width: 72%;
+    -ms-flex-order: 1;
+    order: 1; }
   .service_detail .service_detail_content .seminar p {
-    width: 40%;
+    width: 25%;
+    margin-right: 20px;
     color: #888;
     font-size: 16px;
-    padding: 5px 30px; } }
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d83f06; } }
 
 @media (min-width: 0) and (max-width: 990px) {
   .still_video {
