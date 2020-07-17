@@ -1530,7 +1530,33 @@ a {
     background: url("../img/tragle.png") right bottom #FFF;
     background-repeat: no-repeat;
     background-size: 50px;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    position: relative; }
+  .service_detail .service_detail_content .goback {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    background: #FFF;
+    line-height: 1.3;
+    right: -90px;
+    top: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: url(../img/tragle.png) right bottom #FFF;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    transition: all .3s; }
+  .service_detail .service_detail_content .goback i {
+    margin-bottom: 10px; }
+  .service_detail .service_detail_content .goback:hover {
+    transform: scale(1.1); }
   .service_detail .service_detail_content h2 {
     font-size: 25px;
     margin-bottom: 40px;
@@ -1608,10 +1634,11 @@ a {
   .service_detail .service_detail_content .summer_castle .text img {
     width: 300px; }
   .service_detail .service_detail_content .summer_castle img {
-    margin-bottom: 30px; }
+    margin-bottom: 0px; }
   .service_detail .service_detail_content .summer_castle p {
     font-size: 18px;
-    margin-bottom: 14px; }
+    margin-bottom: 14px;
+    line-height: 1.8; }
   .service_detail .service_detail_content .summer_castle .contact_us-in {
     width: 100%;
     padding: 30px 0;
@@ -1694,7 +1721,10 @@ a {
     color: #888;
     font-size: 16px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #d83f06; } }
+    border-bottom: 1px solid #d83f06; }
+  .service_detail .service_detail_content .seminar p span {
+    color: #d83f06;
+    font-weight: 900; } }
 
 @media (min-width: 0) and (max-width: 990px) {
   .still_video {
@@ -2596,6 +2626,7 @@ a {
 
 .red_line {
   width: 40%;
+  margin: 0 auto;
   height: 1px;
   background: #d83f06;
   margin-bottom: 30px; }
