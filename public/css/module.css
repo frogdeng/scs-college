@@ -1606,16 +1606,8 @@ a {
   .service_detail .service_detail_content ul li {
     font-size: 16px;
     margin-bottom: 20px;
-    margin-left: 40px;
+    margin-left: 10px;
     text-indent: -40px; }
-  .service_detail .service_detail_content ul li::before {
-    content: '';
-    display: inline-block;
-    width: 30px;
-    height: 10px;
-    margin-right: 10px;
-    background-image: url("../img/h-arrow.svg");
-    background-repeat: no-repeat; }
   .service_detail .service_detail_content .summer_castle {
     width: 100%;
     display: -ms-flexbox;
@@ -1711,6 +1703,14 @@ a {
     margin-bottom: 30px;
     border-bottom: 2px solid #d83f06;
     padding-bottom: 20px; }
+  .service_detail .service_detail_content .seminar .main_page_slide {
+    width: 80%;
+    margin: 0 auto; }
+  .service_detail .service_detail_content .seminar .main_page_slide a {
+    display: block;
+    width: 100%; }
+  .service_detail .service_detail_content .seminar .main_page_slide a img {
+    width: 100%; }
   .service_detail .service_detail_content .seminar .slick_photo {
     width: 72%;
     -ms-flex-order: 1;
@@ -1825,11 +1825,15 @@ a {
     transform: scale(1.05); } }
 
 .slick-next {
-  right: 10px; }
+  right: 10px;
+  width: 20px;
+  height: 20px; }
 
 .slick-prev {
   left: 10px;
-  z-index: 100; }
+  z-index: 100;
+  width: 20px;
+  height: 20px; }
 
 @media (min-width: 0) and (max-width: 990px) {
   .about_menu {

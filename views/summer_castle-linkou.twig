@@ -55,32 +55,15 @@
 
 					</div>
 
+					<div class="seminar ">
+						<div class="main_page_slide slider">
+							<a class="video_item js-open-video-1" >
+								<img src="http://i3.ytimg.com/vi/zHZ8RYDvNuI/hqdefault.jpg" alt="">
+							</a>
 
-					<div class="vidoe_row">
-						<a class="video_item js-open-video-4" >
-							<img src="img/video_04.jpg" alt="">
-						</a>
-
-						<a class="video_item js-open-video-1" >
-							<img src="img/video_01.jpg" alt="">
-						</a>
-						<a class="video_item js-open-video-2" >
-							<img src="img/video_02.jpg" alt="">
-						</a>
-						<a class="video_item js-open-video-3" >
-							<img src="img/video_03.jpg" alt="">
-						</a>
-						<div class="video_item" style="border: 1px solid #eee; width:32%"><img src="img/comingsoon.jpg" alt=""></div>
-						
-						<a class="video_item js-open-video-5" >
-							<img src="img/video_05.jpg" alt="">
-						</a>
-
+							
+						</div>
 					</div>
-
-
-					
-
 			</div>
 		</div>
 
@@ -91,36 +74,20 @@
 
 
 <div class="clear"></div>
-{% include '_partial/popup-video.twig' %}
+	<div id="notice-popup-01" class="notice-popup mfp-hide">
+	    <div class="notice-popup_content">
+			<iframe src="https://www.youtube.com/embed/zHZ8RYDvNuI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    </div>
+	</div>
 
-<div id="summer_camp-01" class="notice-popup3 mfp-hide">
-    <div class="notice-popup_content">
-   		<img src="img/summer_camp_01.jpg" alt="">
-    </div>
-</div>
-<div id="summer_camp-02" class="notice-popup3 mfp-hide">
-    <div class="notice-popup_content">
-   		<img src="img/summer_camp_02.jpg" alt="">
-    </div>
-</div>
-<div id="summer_camp-03" class="notice-popup3 mfp-hide">
-    <div class="notice-popup_content">
-   		<img src="img/summer_camp_03.jpg" alt="">
-    </div>
-</div>
-<div id="summer_camp-04" class="notice-popup3 mfp-hide">
-    <div class="notice-popup_content">
-   		<img src="img/summer_camp_04.jpg" alt="">
-    </div>
-</div>
 
 
 
  <script>
     $(function(){
-        $('.summer_camp-01').magnificPopup({
+        $('.js-open-video-1').magnificPopup({
             items: {
-                src: '#summer_camp-01',
+                src: '#notice-popup-01',
                 type: 'inline'
             },
             mainClass: 'mfp-fade',
@@ -128,33 +95,7 @@
             midClick: true
         });
 
-        $('.summer_camp-02').magnificPopup({
-            items: {
-                src: '#summer_camp-02',
-                type: 'inline'
-            },
-            mainClass: 'mfp-fade',
-            removalDelay: 300,
-            midClick: true
-        });
-        $('.summer_camp-03').magnificPopup({
-            items: {
-                src: '#summer_camp-03',
-                type: 'inline'
-            },
-            mainClass: 'mfp-fade',
-            removalDelay: 300,
-            midClick: true
-        });
-        $('.summer_camp-04').magnificPopup({
-            items: {
-                src: '#summer_camp-04',
-                type: 'inline'
-            },
-            mainClass: 'mfp-fade',
-            removalDelay: 300,
-            midClick: true
-        });
+       
     });
 </script>
 
