@@ -1723,8 +1723,7 @@ a {
     padding-bottom: 10px;
     border-bottom: 1px solid #d83f06; }
   .service_detail .service_detail_content .seminar p span {
-    color: #d83f06;
-    font-weight: 900; } }
+    color: #d83f06; } }
 
 @media (min-width: 0) and (max-width: 990px) {
   .still_video {
@@ -2634,6 +2633,9 @@ a {
   height: 1px;
   background: #d83f06;
   margin-bottom: 30px; }
+
+.slick-slide img {
+  width: 100%; }
 
 body {
   background: #f5f3f2;
