@@ -24,14 +24,64 @@
 					<h6>課程照片</h6>
 				</div>
 
+				<div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-video-b4 hover-finger" >
+                            <img src="http://i3.ytimg.com/vi/M4Em_KnV8Jw/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <h5>大熊體能老師活動好好玩</h5>
+                        <p>謝謝體能老師大熊哥哥， <br>
+							幫我們準備了好玩的體能器材， <br>
+							讓孩子們可以強健體魄， <br>
+							一邊玩，一邊訓練身體的協調性。 <br>
+							看看我們的小寶貝們是不是都很💪 
+                         </p>
+                    </div>
+                </div>
+
+				<div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-video-b3 hover-finger" >
+                            <img src="http://i3.ytimg.com/vi/MwwxTJzcsUQ/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <h5>聽他們說些甚麼?認識植物課程</h5>
+                        <p>聽聽孩子們在討論什麼...<br>
+							你會發現他們純淨的眼睛，<br>
+							可以看見許多大人沒看見的美好🙂
+                         </p>
+                    </div>
+                </div>
+				
+				<div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-video-b2 hover-finger" >
+                            <img src="http://i3.ytimg.com/vi/38yuOIwvfmg/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <h5>光和影的科學</h5>
+                        <p>猜猜孩子們在做什麼😀
+                         </p>
+                    </div>
+                </div>
+
+
+
+
                 <div class="seminar ">
                     <div class="slick_photo slider">
                         <div class="video_item js-open-video-b1 hover-finger" >
                             <img src="img/summer_castle/s-01.jpg" alt="">
                         </div>
                     </div>
-                    <p>食農--聽聽孩子們在討論什麼？ <br>
-                    <span>#我們的植物都用火箭速度在成長</span></p>
+					<div class="t-text">
+                        <h5>食農--聽聽孩子們在討論什麼？</h5>
+                        <p>我們的植物都用火箭速度在成長</p>
+                    </div>
                 </div>
 					
 				<div class="seminar ">
@@ -53,11 +103,7 @@
 				</div>
 
 				
-				
-
-					
-
-
+	
 			</div>
 		</div>
 
@@ -69,6 +115,21 @@
 
 <div class="clear"></div>
 
+<div id="notice-popup-b4" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/M4Em_KnV8Jw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+<div id="notice-popup-b3" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/MwwxTJzcsUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+<div id="notice-popup-b2" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/38yuOIwvfmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
 <div id="notice-popup-b1" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
     <iframe src="https://www.youtube.com/embed/ZAd8m1U6-gE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -76,12 +137,37 @@
 </div>
 
 
-
-
-
  <script>
     $(function(){
+    	
 
+        $('.js-open-video-b4').magnificPopup({
+            items: {
+                src: '#notice-popup-b4',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.js-open-video-b3').magnificPopup({
+            items: {
+                src: '#notice-popup-b3',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.js-open-video-b2').magnificPopup({
+            items: {
+                src: '#notice-popup-b2',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
 
         $('.js-open-video-b1').magnificPopup({
             items: {

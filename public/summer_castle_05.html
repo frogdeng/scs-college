@@ -199,29 +199,45 @@
 
 				
                 <div class="seminar ">
+
                     <div class="slick_photo slider">
                         <div class="video_item js-open-video-b1 hover-finger" >
                             <img src="http://i3.ytimg.com/vi/ftAbzmxFM_w/hqdefault.jpg" alt="">
                         </div>
                     </div>
-                    <p>雙語國際課程 <br>外師繪本會話
-                     我們邀請了一個特別的嘉賓陪孩子們玩❤️ 
-                        讓孩子們可以透過特殊的活動，
-                        認識不同的語言，不同國家的人，
-                        雖然一開始孩子們有點害羞，
-                        但是故事一開始，就慢慢的被吸引了...
-                        每一個新的體驗，對孩子們來說，
-                        都是全新的開始，是開啟對世界的認識。</p>
+
+                    <div class="t-text">
+                       
+                           <h5>雙語國際課程 <br>外師繪本會話  </h5>
+
+                            <p>我們邀請了一個特別的嘉賓陪孩子們玩❤️ 
+
+                            讓孩子們可以透過特殊的活動，
+                            認識不同的語言，不同國家的人，
+                            雖然一開始孩子們有點害羞，
+                            但是故事一開始，就慢慢的被吸引了...
+                            每一個新的體驗，對孩子們來說，
+                            都是全新的開始，是開啟對世界的認識。
+                            </p>
+                    </div>
+
                 </div>
+
 
                  <div class="seminar ">
                     <div class="slick_photo slider">
-                        <div class="video_item js-open-video-b1 hover-finger" >
-                            <img src="http://i3.ytimg.com/vi/ftAbzmxFM_w/hqdefault.jpg" alt="">
+                        <div class="video_item js-open-video-b2 hover-finger" >
+                            <img src="http://i3.ytimg.com/vi/bMAOlvAlZKw/hqdefault.jpg" alt="">
                         </div>
                     </div>
-                    <p>雙語國際課程 <br>外師繪本會話</p>
+                    <div class="t-text">
+                       
+                           <h5>雙語帶起孩子自我探索</h5>
 
+                            <p>我們邀請了一個特別的嘉賓陪孩子們玩❤️  <br>
+                            看看孩子們如何透過雙語學習認識不同的情緒，從單字、顏色、表情各個角度，帶孩子探索自我。
+                            </p>
+                    </div>
                 </div>
 
 
@@ -244,6 +260,12 @@
     </div>
 </div>
 
+<div id="notice-popup-b2" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/bMAOlvAlZKw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
 
  <script>
     $(function(){
@@ -256,6 +278,16 @@
             removalDelay: 300,
             midClick: true
         });
+
+      $('.js-open-video-b2').magnificPopup({
+        items: {
+            src: '#notice-popup-b2',
+            type: 'inline'
+        },
+        mainClass: 'mfp-fade',
+        removalDelay: 300,
+        midClick: true
+    });
 
 
     });

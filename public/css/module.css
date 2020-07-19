@@ -1712,18 +1712,38 @@ a {
   .service_detail .service_detail_content .seminar .main_page_slide a img {
     width: 100%; }
   .service_detail .service_detail_content .seminar .slick_photo {
-    width: 72%;
+    width: 68%;
     -ms-flex-order: 1;
     order: 1; }
+  .service_detail .service_detail_content .seminar .slick_photo .video_item {
+    width: 100%; }
+  .service_detail .service_detail_content .seminar .slick_photo .video_item img {
+    width: 100%; }
   .service_detail .service_detail_content .seminar p {
-    width: 25%;
+    width: 30%;
     margin-right: 20px;
     color: #888;
     font-size: 16px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #d83f06; }
+    border-bottom: 1px solid #d83f06;
+    font-weight: 900; }
   .service_detail .service_detail_content .seminar p span {
-    color: #d83f06; } }
+    color: #d83f06;
+    font-weight: 400; }
+  .service_detail .service_detail_content .seminar .t-text {
+    width: 30%;
+    margin-right: 20px; }
+  .service_detail .service_detail_content .seminar .t-text h5 {
+    border-bottom: 1px solid #d83f06;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-weight: 900; }
+  .service_detail .service_detail_content .seminar .t-text p {
+    width: 100%;
+    border-bottom: none;
+    font-weight: 400;
+    color: #d83f06;
+    line-height: 1.5; } }
 
 @media (min-width: 0) and (max-width: 990px) {
   .still_video {
