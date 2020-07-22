@@ -1696,6 +1696,8 @@ a {
     -ms-flex-align: start;
     align-items: flex-start;
     margin-bottom: 30px; }
+  .service_detail .service_detail_content .seminar h5 {
+    text-align: center; }
   .service_detail .service_detail_content .seminar h6 {
     width: 100%;
     text-align: center;
@@ -1737,13 +1739,19 @@ a {
     border-bottom: 1px solid #d83f06;
     margin-bottom: 10px;
     padding-bottom: 10px;
-    font-weight: 900; }
+    font-weight: 900;
+    text-align: left; }
   .service_detail .service_detail_content .seminar .t-text p {
     width: 100%;
     border-bottom: none;
     font-weight: 400;
     color: #d83f06;
-    line-height: 1.5; } }
+    line-height: 1.5; }
+  .service_detail .service_detail_content .aaa {
+    text-align: center;
+    color: #888;
+    font-size: 18px;
+    margin-bottom: 100px; } }
 
 @media (min-width: 0) and (max-width: 990px) {
   .still_video {

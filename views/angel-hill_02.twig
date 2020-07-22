@@ -1,0 +1,71 @@
+{# index.twig #}
+{% extends "/_template/layout.twig" %}
+{% block page %}
+
+
+<div class="indside_banner product_summer_castle"></div>
+
+
+<div class="main_content">
+
+<!-- aside -->
+{% include '_partial/aside_angel-hill.twig' %}
+
+
+
+
+<!-- content -->
+	<div class="content">
+		<div class="service_detail">
+			<div class="service_detail_content">
+				<a href="angel-hill.html" class="goback">
+                        <i class="fas fa-redo"></i> 
+                        返<br>回
+                    </a>
+				<div class="seminar ">
+					<h6>營隊／體驗</h6>
+				</div>
+				
+				 <div class="aaa ">
+                    照片規劃建置中
+                </div>
+
+					
+
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+
+
+<div class="clear"></div>
+<div id="wisdom-01" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/aGiFGUcUaQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+
+ <script>
+    $(function(){
+        $('.js-open-video-b1').magnificPopup({
+            items: {
+                src: '#wisdom-01',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+       
+    });
+</script>
+
+
+
+{% endblock %}

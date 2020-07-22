@@ -1,0 +1,115 @@
+{# index.twig #}
+{% extends "/_template/layout.twig" %}
+{% block page %}
+
+
+<div class="indside_banner product_summer_castle"></div>
+
+
+<div class="main_content">
+
+<!-- aside -->
+    {% include '_partial/aside_wisdom.twig' %}
+
+
+<!-- content -->
+	<div class="content">
+		<div class="service_detail">
+			<div class="service_detail_content">
+				<a href="wisdom.html" class="goback">
+                    <i class="fas fa-redo"></i> 
+                    返<br>回
+                </a>
+				<div class="seminar ">
+					<h6>課程照片</h6>
+				</div>
+
+				<div class="aaa ">
+                    照片規劃建置中
+                </div>
+
+				
+	
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+
+
+<div class="clear"></div>
+
+<div id="notice-popup-b4" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/M4Em_KnV8Jw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+<div id="notice-popup-b3" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/MwwxTJzcsUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+<div id="notice-popup-b2" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/38yuOIwvfmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+<div id="notice-popup-b1" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/ZAd8m1U6-gE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+ <script>
+    $(function(){
+    	
+
+        $('.js-open-video-b4').magnificPopup({
+            items: {
+                src: '#notice-popup-b4',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.js-open-video-b3').magnificPopup({
+            items: {
+                src: '#notice-popup-b3',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.js-open-video-b2').magnificPopup({
+            items: {
+                src: '#notice-popup-b2',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+        $('.js-open-video-b1').magnificPopup({
+            items: {
+                src: '#notice-popup-b1',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+
+
+    });
+</script>
+
+
+
+{% endblock %}
