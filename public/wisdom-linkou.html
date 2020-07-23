@@ -209,17 +209,17 @@
 
 						<h6>CONTACT US</h6>
 
-						<div class="c-row">
+						<!-- <div class="c-row">
 							<i class="fas fa-phone-alt"></i> 03-5783937
-						</div>
+						</div> -->
 						<div class="c-row">
 							<a href="https://www.facebook.com/%E5%93%B2%E5%93%B2%E5%AD%B8%E8%8B%91-Wisdom-language-school-104223541237060
 " target="_blank"> <i class="fab fa-facebook-f"></i>  哲哲學苑（林口校區）</a>
 						</div>
 						
-						<div class="c-row">
+						<!-- <div class="c-row">
 							  <i class="fas fa-map-marker-alt"></i>  300新竹市東區光復路一段651號
-						</div>	
+						</div> -->	
 
 					
 						</div>
@@ -228,26 +228,21 @@
 
 					<div class="seminar ">
 						<div class="main_page_slide slider">
-							<a class="summer_camp-01 js-open-video-4" >
-								<img src="img/wisdom/wisdom-linkou_01.jpg" alt="">
+							<a class="summer_camp-01" >
+								<img src="img/wisdom/wisdom-linkou_01s.jpg" alt="">
 							</a>
-							<a class="summer_camp-02 js-open-video-1" >
-								<img src="img/wisdom/wisdom-linkou_02.jpg" alt="">
+							<a class="summer_camp-02" >
+								<img src="img/wisdom/wisdom-linkou_02s.jpg" alt="">
 							</a>
-							<a class="summer_camp-03 js-open-video-2" >
-								<img src="img/wisdom/wisdom-linkou_03.jpg" alt="">
+							<a class="summer_camp-03" >
+								<img src="img/wisdom/wisdom-linkou_03s.jpg" alt="">
 							</a>
 							
 						</div>
 					</div>
-
 			</div>
 		</div>
-
 	</div>
-	
-
-
 
 </div>
 
@@ -255,6 +250,58 @@
 
 
 <div class="clear"></div>
+
+<div id="wisdom-linkou-01" class="notice-popup2 mfp-hide">
+    <div class="notice-popup_content">
+   		<img src="img/wisdom/wisdom-linkou_01.jpg" alt="">
+    </div>
+</div>
+<div id="wisdom-linkou-02" class="notice-popup2 mfp-hide">
+    <div class="notice-popup_content">
+   		<img src="img/wisdom/wisdom-linkou_02.jpg" alt="">
+    </div>
+</div>
+<div id="wisdom-linkou-03" class="notice-popup2 mfp-hide">
+    <div class="notice-popup_content">
+   		<img src="img/wisdom/wisdom-linkou_03.jpg" alt="">
+    </div>
+</div>
+
+
+ <script>
+    $(function(){
+        $('.summer_camp-01').magnificPopup({
+            items: {
+                src: '#wisdom-linkou-01',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+        $('.summer_camp-02').magnificPopup({
+            items: {
+                src: '#wisdom-linkou-02',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-03').magnificPopup({
+            items: {
+                src: '#wisdom-linkou-03',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+       
+    });
+</script>
+
 
 
 
