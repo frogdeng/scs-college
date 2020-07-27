@@ -211,40 +211,70 @@
 					<li>講師皆為國內外知名專業學者和實務工作者，運用案例和理論對照強化運用思考。</li>
 				</ul>
 
+                <br>
+                <br>
+                <br>
+            
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-video-b1 hover-finger" >
+                            <div class="play_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                            </div>
+                            <img src="http://i3.ytimg.com/vi/kjMlBzGZm_M/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <h5>2020/7/10 <br>湘妤老師數學職能研習-幼小銜接</h5>
+                        <p>「數學」一看到這兩個字，第一個跳出來的念頭是什麼？
+                            以往習慣，遇到數學，「算」就對了！但數學真的只是計算嗎？
+                            很多時候我們以為孩子「算出」正確答案，就代表他會了！
+                            隨著課業加深時卻發現孩子追得越來越吃力，
+                            才驚覺學習的歷程中似乎漏掉了什麼環節！
+
+                            原來，
+                            數學不只是『算』對就好了，更要讓孩子說出其思考邏輯、解題策略，
+                            讓他能強化數學成就的信心。
+                            在教學的過程輔以教具、素材以及大量閱讀理解的培養， 
+                            讓數學，再也不是令人困擾的習題！
+                         </p>
+                    </div>
+                </div>
+
+            
+            
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd js-open-img-01 hover-finger" >
+                        <img src="img/couse_a1.jpg" alt="">
+                    </div>                  
+
+                    <div class="img_item-sd js-open-img-02 hover-finger">
+                        <img src="img/couse_a2.jpg" alt="">
+                    </div>
+
+                    <div class="img_item-sd js-open-img-03 hover-finger">
+                        <img src="img/couse_a3.jpg" alt="">
+                    </div>
+                    </div>
+                    <div class="t-text">
+                        <h5>2020/03/21</h5>
+                        <p>食農課程培訓課程</p>
+                    </div>
+                </div>
+
 			</div>
 		</div>
 	
-
-		<div class="still_video">
-
-			<div class="still_video_row">
-				<div class="act_name">
-					2020.3.21食農課程培訓課程
-				</div>
-
-				<div class="act_video-row">
-					<div class="img_item-sd js-open-img-01 hover-finger" >
-						<img src="img/couse_a1.jpg" alt="">
-						<p><!-- 新生體驗 --></p>
-					</div>					
-
-					<div class="img_item-sd js-open-img-02 hover-finger">
-						<img src="img/couse_a2.jpg" alt="">
-						<!-- <p>顏色派對</p> -->
-					</div>
-
-					<div class="img_item-sd js-open-img-03 hover-finger">
-						<img src="img/couse_a3.jpg" alt="">
-						<!-- <p>顏色派對</p> -->
-					</div>
-
-				</div>
-			</div>
-		</div>
-
 	</div>
 </div>
 
+<div id="notice-popup-b1" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/kjMlBzGZm_M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
 
 
 <div id="notice-popup-01" class="notice-popup2 mfp-hide">
@@ -265,8 +295,20 @@
     </div>
 </div>
 
+
  <script>
     $(function(){
+
+         $('.js-open-video-b1').magnificPopup({
+            items: {
+                src: '#notice-popup-b1',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
         $('.js-open-img-01').magnificPopup({
             items: {
                 src: '#notice-popup-01',
