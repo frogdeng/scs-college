@@ -2643,6 +2643,16 @@ a {
   display: block;
   width: 100%; }
 
+.notice-popup4 {
+  position: relative;
+  background: #FFF;
+  max-width: 600px;
+  margin: 0 auto; }
+
+.notice-popup4 img {
+  display: block;
+  width: 100%; }
+
 .mfp-close-btn-in .mfp-close {
   color: #999; }
 
