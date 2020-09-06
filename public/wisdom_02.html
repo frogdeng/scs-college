@@ -206,6 +206,57 @@
 				<div class="seminar ">
 					<h6>營隊／體驗</h6>
 				</div>
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-video-b2 hover-finger" >
+                            <div class="play_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                            </div>
+                            <img src="http://i3.ytimg.com/vi/_6k-arxMvXg/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <h5>開放哲哲學苑試讀囉!</h5>
+                        <p>教育，是一輩子的責任！<br>
+                            我們和您一樣重視孩子的學習，<br>
+                            知道爸爸媽媽有多用心，<br>
+                            想為孩子找到適合他們的學習方式，
+                            找到願意用專業陪伴孩子成長的機構。<br>
+                            所以，哲哲願意開放免費試讀課程，<br>
+                            讓孩子、爸爸媽媽直接感受，<br>
+                            哲哲老師們的用心和真實！<br>
+                            可能沒有絢麗的道具，<br>
+                            沒有驚喜禮物，<br>
+                            有的是站在孩子的角度，<br>
+                            給出他們的需要，<br>
+                            因為，我們想做的教育是一種專業的責任。
+                         </p>
+                    </div>
+                </div>   
+
+            
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd summer_camp-01 hover-finger">
+                            <img src="img/wisdom/liuxia-2020.jpg" alt="" style="border: 1px solid #c0c0c0">
+                        </div>
+                       
+                      
+                    </div>
+                    <div class="t-text">
+                        <h5>2020哲哲學苑夏令營</h5>
+                        <p>謝謝你們來哲哲一起渡過兩週夏令營！<br>
+                            謝謝你們讓老師每天都很開心、有活力！<br>
+                            謝謝你們隨時可以丟出想法和點子！<br>
+                            謝謝你們留下的笑聲和一切！<br>
+                            We will miss you 😘 <br>
+                            學期後還有美語STEAM喔！🤙🤙🤙
+                         </p>
+                    </div>
+                </div>
+
 				
 				<div class="seminar ">
                     <div class="slick_photo slider">
@@ -237,6 +288,11 @@
 
 
 <div class="clear"></div>
+<div id="wisdom-02" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/_6k-arxMvXg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
 <div id="wisdom-01" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
     <iframe src="https://www.youtube.com/embed/aGiFGUcUaQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -247,6 +303,15 @@
 
  <script>
     $(function(){
+         $('.js-open-video-b2').magnificPopup({
+            items: {
+                src: '#wisdom-02',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
         $('.js-open-video-b1').magnificPopup({
             items: {
                 src: '#wisdom-01',

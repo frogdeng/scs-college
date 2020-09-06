@@ -2660,6 +2660,23 @@ a {
   cursor: pointer;
   position: relative; }
 
+.hover-finger .des {
+  position: absolute;
+  width: 100%;
+  height: 8%;
+  color: #FFF;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 .hover-finger .play_btn {
   position: absolute;
   width: 100%;

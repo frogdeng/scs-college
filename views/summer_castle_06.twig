@@ -26,6 +26,44 @@
 					<h6>主題活動</h6>
 				</div>
 
+                 <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-video-b4 hover-finger" >
+                            <div class="play_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                            </div>
+                            <img src="http://i3.ytimg.com/vi/yZA98gYeg48/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <h5>我會自己做pizza</h5>
+                        <p>孩子們從麵糰開始，用小手拍一拍揉一揉，再鋪上農場自己種的番茄，好吃的雞肉、香濃的起司，還有調味到恰到好處的白醬。放進烤窯裡，一邊等待一邊唱歌，一邊聞著傳出來的香氣，滿滿的期待感，肚子隨著等待發出咕嚕咕嚕的聲音，出爐的時候，感覺pizza閃閃發光，咬一口，起司拉得長長的....看著孩子滿足的表情，老師也跟著感覺幸福了起來。
+                         </p>
+                    </div>
+                </div>
+
+
+                 <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-video-b3 hover-finger" >
+                            <div class="play_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                            </div>
+                            <img src="http://i3.ytimg.com/vi/lw1EJE5JUSE/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <h5>溝貝農場超好玩</h5>
+                        <p>孩子們去了溝貝農場超好玩， <br>
+                            有超多的有趣體驗和活動， <br>
+                            快來看看，他們今天變成小小🐔農， <br>
+                            和母雞發生了什麼好玩的互動吧！  <br>
+                         </p>
+                    </div>
+                </div>
+
+
+
                 <div class="seminar ">
                     <div class="slick_photo slider">
                         <div class="video_item js-open-video-b2 hover-finger" >
@@ -93,7 +131,16 @@
 
 
 <div class="clear"></div>
-
+<div id="notice-popup-b4" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/yZA98gYeg48" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+<div id="notice-popup-b3" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/lw1EJE5JUSE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
 <div id="notice-popup-b2" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
     <iframe src="https://www.youtube.com/embed/h1LDG4cWKW4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -105,7 +152,11 @@
     </div>
 </div>
 
-
+<div id="summer_camp-01" class="notice-popup3 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/summer_castle/registered_dat_01.jpg" alt="">
+    </div>
+</div>
 
 <div id="summer_camp-01" class="notice-popup3 mfp-hide">
     <div class="notice-popup_content">
@@ -132,7 +183,25 @@
 
  <script>
     $(function(){
-          $('.js-open-video-b2').magnificPopup({
+        $('.js-open-video-b4').magnificPopup({
+            items: {
+                src: '#notice-popup-b4',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.js-open-video-b3').magnificPopup({
+            items: {
+                src: '#notice-popup-b3',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.js-open-video-b2').magnificPopup({
             items: {
                 src: '#notice-popup-b2',
                 type: 'inline'
