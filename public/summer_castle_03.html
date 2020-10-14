@@ -206,6 +206,29 @@
 					<h6>照片</h6>
 				</div>
 
+                  <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-video-b7 hover-finger" >
+                            <div class="play_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                            </div>
+                            <img src="http://i3.ytimg.com/vi/2Yygi-NXXYM/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <h5>週三大雄體適能課程開學囉！</h5>
+                        <p>每週一次的體能活動， <br>
+                            是孩子們最期待的時刻， <br>
+                            快樂是掩蓋不住的， <br>
+                            看孩子們的表情就知道有多開心❤️ <br>
+                            有品質的動起來， <br>
+                            可以提升孩子們的專注力唷！ <br>
+
+                            #背景音樂來源是miki老師的「我最喜歡」
+                         </p>
+                    </div>
+                </div>
+ 
 
 
                 <div class="seminar ">
@@ -381,6 +404,13 @@
 
 <div class="clear"></div>
 
+<div id="notice-popup-b7" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/2Yygi-NXXYM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+
 <div id="notice-popup-b6" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
     <iframe src="https://www.youtube.com/embed/0XbxlNsHjrs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -418,6 +448,16 @@
 
  <script>
     $(function(){
+        $('.js-open-video-b7').magnificPopup({
+            items: {
+                src: '#notice-popup-b7',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
     	$('.js-open-video-b6').magnificPopup({
             items: {
                 src: '#notice-popup-b6',
