@@ -2653,6 +2653,16 @@ a {
   display: block;
   width: 100%; }
 
+.notice-popup5 {
+  position: relative;
+  background: #FFF;
+  max-width: 650px;
+  margin: 0 auto; }
+
+.notice-popup5 img {
+  display: block;
+  width: 100%; }
+
 .mfp-close-btn-in .mfp-close {
   color: #999; }
 
