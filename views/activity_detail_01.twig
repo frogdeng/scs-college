@@ -32,7 +32,27 @@
 
         <div class="still_video">
 
+
+
 			<div class="still_video_row">
+				<div class="act_name">
+					髒兮兮藝術派對-野獸國
+				</div>
+				
+				<div class="act_video-row">
+					<div class="video_item-sd aaa-01 hover-finger" >
+						<img src="img/wisdom/dirtyparty_01s.jpg" alt="">
+					</div>					
+
+					<div class="video_item-sd aaa-02 hover-finger" >
+						<img src="img/wisdom/dirtyparty_02s.jpg" alt="">
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- <div class="still_video_row">
 				<div class="act_name">
 					髒兮兮藝術派對-野獸國
 				</div>
@@ -44,7 +64,7 @@
 
 					</div>					
 				</div>
-			</div>
+			</div> -->
 		</div>
 
         <div class="still_video">
@@ -131,6 +151,46 @@
 
 
 </div>
+
+<div id="aaa-01" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/dirtyparty_01.jpg" alt="">
+    </div>
+</div>
+<div id="aaa-02" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/dirtyparty_02.jpg" alt="">
+    </div>
+</div>
+
+
+ <script>
+    $(function(){
+        
+        $('.aaa-01').magnificPopup({
+            items: {
+                src: '#aaa-01',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+        $('.aaa-02').magnificPopup({
+            items: {
+                src: '#aaa-02',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+       
+    });
+</script>
+
 
 {% include '_partial/popup-video.twig' %}
 
