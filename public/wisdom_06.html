@@ -202,6 +202,31 @@
                     <p>返</p>
                     <p>回</p>
                 </a>
+                <div class="seminar ">
+                    <h6>主題活動</h6>
+                </div>
+
+                 <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-video-b1 hover-finger" >
+                            <div class="play_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                            </div>
+                            <img src="http://i3.ytimg.com/vi/JY8eB7Qo6kQ/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <!-- <h5>2020/9/26</h5> -->
+                        <p>哲哲第一屆《萬聖節遊街尋寶去》<br>
+                            謝謝爸爸媽媽和小朋友一起來玩！<br>
+                            也謝謝用心的大朋友和小朋友裝飾自己的南瓜提袋、滿載而歸的回家去！<br>
+                            願大家都有開心的一天！<br>
+                         </p>
+                    </div>
+                </div>
+
+
+
 				<div class="seminar ">
                     <div class="slick_photo slider">
                         <div class="img_item-sd summer_camp-01 hover-finger">
@@ -222,7 +247,6 @@
                     </div>
                 </div>
 
-
 			</div>
 		</div>
 
@@ -236,6 +260,11 @@
 
 
 
+<div id="notice-popup-b1" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/JY8eB7Qo6kQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
 
 <div id="summer_camp-01" class="notice-popup5 mfp-hide">
     <div class="notice-popup_content">
@@ -253,6 +282,17 @@
 
  <script>
     $(function(){
+        $('.js-open-video-b1').magnificPopup({
+            items: {
+                src: '#notice-popup-b1',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+
           $('.summer_camp-01').magnificPopup({
             items: {
                 src: '#summer_camp-01',
