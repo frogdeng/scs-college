@@ -26,10 +26,42 @@
 
                 <div class="seminar ">
                     <div class="slick_photo slider">
-                         <div class="img_item-sd summer_camp-03 hover-finger">
+                        <div class="video_item js-open-video-a1 hover-finger" >
+                            <div class="play_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                            </div>
+                            <img src="http://i3.ytimg.com/vi/Ozi15bsWTFY/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <!-- <h5>2020/9/26</h5> -->
+                        <p>聖誕節闖關</p>
+                    </div>
+                </div>
+
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd xmas-01 hover-finger">
+                            <img src="img/summer_castle/xmas-01s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd xmas-02 hover-finger">
+                            <img src="img/summer_castle/xmas-02s.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <p>聖誕節闖關</p>
+                    </div>
+                </div>
+
+
+                
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd summer_camp-03 hover-finger">
                             <img src="img/summer_castle/summer_castle-i01s.jpg" alt="">
                         </div>
-                         <div class="img_item-sd summer_camp-04 hover-finger">
+                        <div class="img_item-sd summer_camp-04 hover-finger">
                             <img src="img/summer_castle/summer_castle-i02s.jpg" alt="">
                         </div>
                         <div class="img_item-sd summer_camp-05 hover-finger">
@@ -44,7 +76,7 @@
                         <div class="img_item-sd summer_camp-08 hover-finger">
                             <img src="img/summer_castle/summer_castle-i06s.jpg" alt="">
                         </div>
-                      
+                    
                     </div>
                     <div class="t-text">
                         <h5>Happy National Day!</h5>
@@ -61,13 +93,13 @@
 
 				<div class="seminar ">
                     <div class="slick_photo slider">
-                          <div class="img_item-sd summer_camp-01 hover-finger">
+                        <div class="img_item-sd summer_camp-01 hover-finger">
                             <img src="img/summer_castle/summer_castle-g01s.jpg" alt="">
                         </div>
                         <div class="img_item-sd summer_camp-02 hover-finger">
                             <img src="img/summer_castle/summer_castle-g02s.jpg" alt="">
                         </div>
-                      
+                    
                     </div>
                     <div class="t-text">
                         <h5>自己做月餅</h5>
@@ -95,14 +127,37 @@
 <div class="clear"></div>
 {% include '_partial/popup-video.twig' %}
 
-<div id="summer_camp-01" class="notice-popup5 mfp-hide">
+<div id="notice-popup-a1" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
-   		<img src="img/summer_castle/summer_castle-g01.jpg" alt="">
+    <iframe src="https://www.youtube.com/embed/Ozi15bsWTFY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
+
+
+
+
+<div id="xmas-01" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/summer_castle/xmas-01.jpg" alt="">
+    </div>
+</div>
+<div id="xmas-02" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/summer_castle/xmas-02.jpg" alt="">
+    </div>
+</div>
+
+
+
+<div id="summer_camp-01" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/summer_castle/summer_castle-g01.jpg" alt="">
+    </div>
+</div>
+
 <div id="summer_camp-02" class="notice-popup5 mfp-hide">
     <div class="notice-popup_content">
-   		<img src="img/summer_castle/summer_castle-g02.jpg" alt="">
+        <img src="img/summer_castle/summer_castle-g02.jpg" alt="">
     </div>
 </div>
 
@@ -148,6 +203,16 @@
 
  <script>
     $(function(){
+        $('.js-open-video-a1').magnificPopup({
+            items: {
+                src: '#notice-popup-a1',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
         $('.summer_camp-01').magnificPopup({
             items: {
                 src: '#summer_camp-01',
@@ -228,6 +293,26 @@
         });
 
 
+        $('.xmas-01').magnificPopup({
+            items: {
+                src: '#xmas-01',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+
+        $('.xmas-02').magnificPopup({
+            items: {
+                src: '#xmas-02',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
 
 
 
@@ -240,10 +325,7 @@
 
 
 
-
-
-
-       
+    
     });
 </script>
 
