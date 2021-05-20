@@ -2772,6 +2772,32 @@ a {
 .slick-slide img {
   width: 100%; }
 
+.media_report {
+  width: 100%;
+  background: #eee; }
+
+.media_report .media_report_item {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 20px 20px; }
+
+.media_report .media_report_item .date {
+  color: #d83f06; }
+
+.media_report .media_report_item a {
+  width: 100%;
+  margin-bottom: 0; }
+
+.media_report .media_report_item a:hover {
+  color: #000; }
+
 body {
   background: #f5f3f2;
   font-family: 'Noto Sans', sans-serif, Microsoft JhengHei;
