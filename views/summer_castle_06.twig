@@ -25,6 +25,80 @@
 				<div class="seminar ">
 					<h6>主題活動</h6>
 				</div>
+                
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd summer_camp-april-01 hover-finger">
+                            <img src="img/wisdom/april_a01s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-april-02 hover-finger">
+                            <img src="img/wisdom/april_a02s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-april-03 hover-finger">
+                            <img src="img/wisdom/april_a03s.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <!-- <h5>《Double Ten National Day》</h5> -->
+                        <p>我們即將迎來我們的第一屆畢業生，
+                            一邊整理照片，一邊看著這一路的點滴，
+                            始終感謝你們在一開始就相信也選擇夏哲森，
+                            謝謝對我們說，各個部分你們一直都做得很好，
+                            因為有這些，我們才能一直前行，
+                            一定還有很多可以更好的地方，
+                            我們會繼續努力，不辜負你們的期待。
+                            謝謝從最開始，陪我們走到現在，
+                            剩下最後一小段路，我們也會繼續，
+                            陪伴孩子們創造更多的回憶：)
+                    </div>
+                </div>
+
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd summer_camp-03 hover-finger">
+                            <img src="img/wisdom/jun_03s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-04-1 hover-finger">
+                            <img src="img/wisdom/jun_04s.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <!-- <h5>《Double Ten National Day》</h5> -->
+                        <p>在疫情又再度升高的現在，
+                            除了教導孩子保護自己之外，
+                            也要引導孩子們了解，
+                            我們能夠正常生活，
+                            是有很多人的共同努力所成就的喔！
+                            感謝醫護人員的付出，
+                            而我們能做的，就是把自己照顧好，
+                            這樣就是最好的防疫小尖兵。</p>
+                    </div>
+                </div>
+
+
+
+				<div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd summer_camp-05 hover-finger">
+                            <img src="img/wisdom/jun_05s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-06 hover-finger">
+                            <img src="img/wisdom/jun_06s.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <!-- <h5>《Double Ten National Day》</h5> -->
+                        <p>今天我們去了一個神秘的地方，
+                            是阿姨的菜園，那裡面有好多的蔬果，
+                            有木瓜，辣椒，還有蔥薑蒜...
+                            阿姨還送我們一人一種菜喔，
+                            有人拿到地瓜葉，
+                            有人拿到香菜，還有菠菜跟百香果！
+                            我們跟阿姨約好了，
+                            下次我們還要再去散步找她玩！</p>
+                    </div>
+                </div>
 
                 <div class="seminar ">
                     <div class="slick_photo slider">
@@ -267,7 +341,7 @@
 
 <div id="summer_camp-04" class="notice-popup3 mfp-hide">
     <div class="notice-popup_content">
-   		<img src="img/summer_castle/registered_dat_04.jpg" alt="">
+        <img src="img/summer_castle/registered_dat_04.jpg" alt="">
     </div>
 </div>
 
@@ -283,9 +357,81 @@
 </div>
 
 
+<div id="summer_camp-03" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/jun_03.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-04-1" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/jun_04.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-05" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/jun_05.jpeg" alt="">
+    </div>
+</div>
+<div id="summer_camp-06" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/jun_06.jpeg" alt="">
+    </div>
+</div>
+
+<!-- //  -->
+<div id="summer_camp-april-01" class="notice-popup3 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/april_a01.jpeg" alt="">
+    </div>
+</div>
+
+<div id="summer_camp-april-02" class="notice-popup3 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/april_a03.jpeg" alt="">
+    </div>
+</div>
+
+<div id="summer_camp-april-03" class="notice-popup3 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/april_a03.jpeg" alt="">
+    </div>
+</div>
+
+
+
 
  <script>
     $(function(){
+
+        $('.summer_camp-april-01').magnificPopup({
+            items: {
+                src: '#summer_camp-april-01',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-april-02').magnificPopup({
+            items: {
+                src: '#summer_camp-april-02',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-april-03').magnificPopup({
+            items: {
+                src: '#summer_camp-april-03',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+
         $('.js-open-video-b7').magnificPopup({
             items: {
                 src: '#notice-popup-b7',
@@ -381,7 +527,7 @@
             midClick: true
         });
 
-         $('.js-open-photo-activity_a02').magnificPopup({
+        $('.js-open-photo-activity_a02').magnificPopup({
             items: {
                 src: '#js-open-photo-activity_a02',
                 type: 'inline'
@@ -390,7 +536,46 @@
             removalDelay: 300,
             midClick: true
         });
-      
+        $('.summer_camp-03').magnificPopup({
+            items: {
+                src: '#summer_camp-03',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-04-1').magnificPopup({
+            items: {
+                src: '#summer_camp-04-1',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-05').magnificPopup({
+            items: {
+                src: '#summer_camp-05',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-06').magnificPopup({
+            items: {
+                src: '#summer_camp-06',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+        
+       
+
     });
 </script>
 

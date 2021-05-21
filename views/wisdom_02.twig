@@ -17,7 +17,7 @@
 	<div class="content">
 		<div class="service_detail">
 			<div class="service_detail_content">
-				 <a href="wisdom.html" class="goback">
+				<a href="wisdom.html" class="goback">
                     <i class="fas fa-redo"></i> 
                     <p>返</p>
                     <p>回</p>
@@ -25,6 +25,39 @@
 				<div class="seminar ">
 					<h6>營隊／體驗</h6>
 				</div>
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd summer_camp-april-01 hover-finger">
+                            <img src="img/wisdom/april_b01s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-april-02 hover-finger">
+                            <img src="img/wisdom/april_b02s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-april-03 hover-finger">
+                            <img src="img/wisdom/april_b03s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-april-04 hover-finger">
+                            <img src="img/wisdom/april_b04s.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        {# <h5>髒兮兮藝術派對-野獸國</h5> #}
+                        <p>在都市的孩子，
+                            很少機會到大自然探索，
+                            上次我們的昆蟲營，
+                            帶著孩子們看見大自然的造物神奇，
+                            看看孩子們的眼神，
+                            無不閃閃發光...
+                            今年夏天，
+                            快帶孩子們來參加哲哲的
+                            <自然探索營>，
+                            體驗大自然的恩惠，
+                            感受大自然的美好，
+                            夏天，不就是應該走出教室，奔向戶外嗎？</p>
+                    </div>
+                </div>
+
 
 
 
@@ -36,8 +69,6 @@
                         <div class="img_item-sd summer_camp-02 hover-finger">
                             <img src="img/wisdom/dirtyparty_02s.jpg" alt="">
                         </div>
-                  
-                      
                     </div>
                     <div class="t-text">
                         <h5>髒兮兮藝術派對-野獸國</h5>
@@ -162,10 +193,72 @@
 </div>
 
 
+<div id="summer_camp-april-01" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/april_b01.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-april-02" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/april_b02.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-april-03" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/april_b03.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-april-04" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/april_b04.jpg" alt="">
+    </div>
+</div>
+
+
 
  <script>
     $(function(){
-         $('.js-open-video-b2').magnificPopup({
+        $('.summer_camp-april-01').magnificPopup({
+            items: {
+                src: '#summer_camp-april-01',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-april-02').magnificPopup({
+            items: {
+                src: '#summer_camp-april-02',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-april-03').magnificPopup({
+            items: {
+                src: '#summer_camp-april-03',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-april-04').magnificPopup({
+            items: {
+                src: '#summer_camp-april-04',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+
+
+
+        $('.js-open-video-b2').magnificPopup({
             items: {
                 src: '#wisdom-02',
                 type: 'inline'

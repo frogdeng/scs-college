@@ -24,17 +24,46 @@
 
                 <div class="seminar ">
                     <div class="slick_photo slider">
+                        <div class="img_item-sd summer_camp-may01 hover-finger">
+                            <img src="img/wisdom/may_d01s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-may02 hover-finger">
+                            <img src="img/wisdom/may_d02s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-may03 hover-finger">
+                            <img src="img/wisdom/may_d03s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-may04 hover-finger">
+                            <img src="img/wisdom/may_d04s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-may05 hover-finger">
+                            <img src="img/wisdom/may_d05s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-may06 hover-finger">
+                            <img src="img/wisdom/may_d06s.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        {# <h5>2020/8/22</h5> #}
+                        <p>為什麼，你要選擇，夏哲森？</p>
+                    </div>
+                </div>
+
+
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
                         <div class="img_item-sd summer_camp-01 hover-finger">
                             <img src="img/summer_castle/summer_castle_linkou-0822-1.jpg" alt="">
                         </div>
-                      <div class="img_item-sd summer_camp-01 hover-finger">
+                        <div class="img_item-sd summer_camp-01 hover-finger">
                             <img src="img/summer_castle/summer_castle_linkou-0822-2.jpg" alt="">
                         </div>
-                      <div class="img_item-sd summer_camp-01 hover-finger">
+                        <div class="img_item-sd summer_camp-01 hover-finger">
                             <img src="img/summer_castle/summer_castle_linkou-0822-3.jpg" alt="">
                         </div>
-                      
-                      
+                    
+                    
                     </div>
                     <div class="t-text">
                         <h5>2020/8/22</h5>
@@ -118,9 +147,99 @@
     </div>
 </div>
 
+<div id="summer_camp-may01" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/may_d01.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-may02" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/may_d02.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-may03" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/may_d03.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-may04" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/may_d04.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-may05" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/may_d05.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-may06" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/may_d06.jpg" alt="">
+    </div>
+</div>
 
- <script>
+
+
+<script>
     $(function(){
+        $('.summer_camp-may01').magnificPopup({
+            items: {
+                src: '#summer_camp-may01',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-may02').magnificPopup({
+            items: {
+                src: '#summer_camp-may02',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-may03').magnificPopup({
+            items: {
+                src: '#summer_camp-may03',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+    
+        $('.summer_camp-may04').magnificPopup({
+            items: {
+                src: '#summer_camp-may04',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-may05').magnificPopup({
+            items: {
+                src: '#summer_camp-may05',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-may06').magnificPopup({
+            items: {
+                src: '#summer_camp-may06',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+
+
         $('.js-open-video-b1').magnificPopup({
             items: {
                 src: '#notice-popup-01',
@@ -131,7 +250,7 @@
             midClick: true
         });
 
-       
+    
     });
 </script>
 

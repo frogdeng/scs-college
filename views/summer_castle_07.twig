@@ -26,6 +26,34 @@
                 
                 <div class="seminar ">
                     <div class="slick_photo slider">
+                        <div class="img_item-sd summer_camp_may hover-finger">
+                            <img src="img/wisdom/may_c01s.jpg" alt="">
+                        </div>
+                
+                    
+                    </div>
+                    <div class="t-text">
+                        <h5>祝媽媽們母親節快樂♥️</h5>
+                        <p>孩子幾歲，
+                            你們就當了媽媽幾年，
+                            每一分每一秒都無法停歇，
+                            謝謝你們用時光換取孩子的成長。
+                            
+                            每天都要提醒自己，
+                            不用當一百分的媽媽，
+                            不需要完美，
+                            要記得，你要先愛自己，
+                            才能更有力量給孩子們愛。
+                            
+                            辛苦了。</p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
                         <div class="video_item js-open-video-a2 hover-finger" >
                             <div class="play_btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
@@ -35,7 +63,7 @@
                     </div>
                     <div class="t-text">
                         <!-- <h5>2020/9/26</h5> -->
-                        <p>老師們用心的準備了一連串的新年活動，慢慢的帶領孩子認識新年的傳統活動和習俗，放年假前，孩子們用吉祥話拜年，再去逛年貨大街，建立金錢觀念，每個孩子都收穫滿滿。/p>
+                        <p>老師們用心的準備了一連串的新年活動，慢慢的帶領孩子認識新年的傳統活動和習俗，放年假前，孩子們用吉祥話拜年，再去逛年貨大街，建立金錢觀念，每個孩子都收穫滿滿。</p>
                     </div>
                 </div>
 
@@ -157,6 +185,12 @@
 </div>
 
 
+<div id="summer_camp_may" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/may_c01.jpeg" alt="">
+    </div>
+</div>
+
 
 
 <div id="xmas-01" class="notice-popup5 mfp-hide">
@@ -226,6 +260,16 @@
 
  <script>
     $(function(){
+        $('.summer_camp_may').magnificPopup({
+            items: {
+                src: '#summer_camp_may',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
         $('.js-open-video-a2').magnificPopup({
             items: {
                 src: '#notice-popup-a2',
