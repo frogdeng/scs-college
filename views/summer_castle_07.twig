@@ -24,13 +24,71 @@
                     <p>回</p>
                 </a>
                 
+                
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-video-a3 hover-finger" >
+                            <div class="play_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                            </div>
+                            <img src="http://i3.ytimg.com/vi/yrhPVt7-H0s/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <p>親愛的爸爸媽媽：<br>
+                            恭喜你們的孩子要從夏哲森畢業了，<br>
+                            他們是夏哲森第一屆的畢業生，<br>
+                            對於我們，有很特別的意義，<br>
+                            雖然無法有畢業典禮，當面對你們表達感謝，<br>
+                            但還是想對你們說，謝謝。<br>
+                            
+                            謝謝你們在一開始就選擇相信我們，<br>
+                            謝謝你們這一路來的信任，<br>
+                            希望我們沒有讓你們失望，<br>
+                            未來我們也會秉持著初衷繼續努力。<br>
+                            
+                            疫情讓我們很多的規劃無法如計畫進行，<br>
+                            但我們依然看重這一切，<br>
+                            希望能給你們滿滿的回憶，<br>
+                            也希望孩子們能感受到滿滿的愛，<br>
+                            老師們親筆寫下一字一句對孩子們的祝福，<br>
+                            在下班的深夜在安靜的時刻錄下祝福的話，<br>
+                            都是希望能夠忠實傳達我們的心情。<br>
+                            
+                            恭喜你們和孩子打破了一關，<br>
+                            即將邁向下一個階段，<br>
+                            面對新的關卡，一定會苦惱，會煩躁，<br>
+                            但是一定要記得華華最常跟你們說的，<br>
+                            這都是過程...<br>
+                            
+                            要把自己的心安定，<br>
+                            孩子就可以安定，<br>
+                            要關心，但不要操心煩心，<br>
+                            都會好的。<br>
+                            
+                            祝福你們和孩子，<br>
+                            期待下次見面，<br>
+                            你們有很多的故事，<br>
+                            和我們分享。<br>
+                            
+                            #畢業快樂<br>
+                            #謝謝音樂童年授權歌曲<br>
+                            #謝欣芷老師的再見好催淚<br>
+                            #請原諒我深夜錄音的聲音的不完美<br>
+                            #謝謝這一路的扶持</p>
+                            <br>
+                    </div>
+                </div>
+
+
+
+
                 <div class="seminar ">
                     <div class="slick_photo slider">
                         <div class="img_item-sd summer_camp_may hover-finger">
                             <img src="img/wisdom/may_c01s.jpg" alt="">
                         </div>
-                
-                    
                     </div>
                     <div class="t-text">
                         <h5>祝媽媽們母親節快樂♥️</h5>
@@ -172,9 +230,9 @@
 <div class="clear"></div>
 
 {% include '_partial/popup-video.twig' %}
-<div id="notice-popup-a2" class="notice-popup mfp-hide">
+<div id="notice-popup-a3" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
-    <iframe src="https://www.youtube.com/embed/nloPAbOZolk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/yrhPVt7-H0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
 
@@ -270,6 +328,15 @@
             midClick: true
         });
 
+        $('.js-open-video-a3').magnificPopup({
+            items: {
+                src: '#notice-popup-a3',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
         $('.js-open-video-a2').magnificPopup({
             items: {
                 src: '#notice-popup-a2',

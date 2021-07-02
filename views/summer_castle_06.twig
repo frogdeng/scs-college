@@ -25,6 +25,57 @@
 				<div class="seminar ">
 					<h6>主題活動</h6>
 				</div>
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-video-b8 hover-finger" >
+                            <div class="play_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                            </div>
+                            <img src="http://i3.ytimg.com/vi/RiRHeS9QlRs/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <!-- <h5>2020/9/26</h5> -->
+                        <p>這是一段關於夢想的影片，<br>
+                            不知道大家還記得6歲的時候的夢想嗎?<br>
+                            
+                            長大以後的你們，<br>
+                            都已經實現你們小時候的夢想了嗎?<br>
+                            
+                            Winnie小時候的夢想，<br>
+                            就是要當一名老師，<br>
+                            雖然幼教老師跟本來想像的老師，有點不同，<br>
+                            但是我一直很喜歡在這個位置上的自己，<br>
+                            不知道你們也是嗎?<br>
+                            
+                            今年之初，<br>
+                            我們規劃畢業紀念冊的時候，<br>
+                            就和孩子們討論了這個話題，<br>
+                            每個孩子們都非常有自己的想法，<br>
+                            也謝謝爸爸媽媽在拍照的時候，<br>
+                            為孩子們準備了很棒的服裝和造型，<br>
+                            相信這一切，對孩子來說都是最珍貴的回憶。<br>
+                            
+                            不知道未來的他們，<br>
+                            聽見自己現在的夢想，<br>
+                            會是怎樣的心情，<br>
+                            但無論如何，我都希望他們會喜歡自己...<br>
+                            
+                            不論未來會成為怎樣的人，<br>
+                            有沒有成功，都一定要善良，要懂得付出，被愛，與愛人。<br>
+                            
+                            這是我們獻給孩子們的第一道祝福，<br>
+                            希望你們跟我們一樣，<br>
+                            被他們單純而偉大的夢想，給感動。</p>
+                    </div>
+                </div>
+
+
+
+
+                
+
                 
                 <div class="seminar ">
                     <div class="slick_photo slider">
@@ -288,6 +339,13 @@
 
 
 <div class="clear"></div>
+<div id="notice-popup-b8" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/RiRHeS9QlRs " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+
 <div id="notice-popup-b7" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
     <iframe src="https://www.youtube.com/embed/Uw8XHTmt61I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -431,6 +489,15 @@
             midClick: true
         });
 
+        $('.js-open-video-b8').magnificPopup({
+            items: {
+                src: '#notice-popup-b8',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
 
         $('.js-open-video-b7').magnificPopup({
             items: {
