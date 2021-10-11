@@ -29,9 +29,6 @@
 
 
 
-
-
-
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css'/>
 
 <script src="js/jquery-1.11.1.min.js"></script>
@@ -65,7 +62,6 @@
 			adaptiveHeight: true
 
 
-
 		});
 
 
@@ -86,7 +82,7 @@
 			<!-- logo -->
 			<div class="logo"><a href="index.html" class="m-first"><img src="img/scs_logo.svg" alt=""></a></div>
 
-			 <!-- deskmenu -->
+			<!-- deskmenu -->
 			<div class="deskmenu">
 				<ul>
 					<li class="l-l"></li>
@@ -211,6 +207,46 @@
 				
 				<div class="seminar ">
 					<div class="slick_photo slider">
+						<div class="img_item-sd summer_camp-oct-b01 hover-finger">
+							<img src="img/wisdom/oct/l01s.jpeg" alt="">
+						</div>
+						<div class="img_item-sd summer_camp-oct-b02 hover-finger">
+							<img src="img/wisdom/oct/l02s.jpeg" alt="">
+						</div>
+						<div class="img_item-sd summer_camp-oct-b03 hover-finger">
+							<img src="img/wisdom/oct/l03s.jpeg" alt="">
+						</div>
+						<div class="img_item-sd summer_camp-oct-b04 hover-finger">
+							<img src="img/wisdom/oct/l04s.jpeg" alt="">
+						</div>
+						<div class="img_item-sd summer_camp-oct-b05 hover-finger">
+							<img src="img/wisdom/oct/l05s.jpeg" alt="">
+						</div>
+						<div class="img_item-sd summer_camp-oct-b06 hover-finger">
+							<img src="img/wisdom/oct/l06s.jpeg" alt="">
+						</div>
+						<div class="img_item-sd summer_camp-oct-b07 hover-finger">
+							<img src="img/wisdom/oct/l01s.jpeg" alt="">
+						</div>
+					</div>
+					<div class="t-text">
+							<p>認識注音符號，<br>
+								一定得用傳統的方式，<br>
+								排排坐、吃果果，<br>
+								才會有成效嗎？<br>
+								Let’s go! 頂樓探險吧！ <br>
+								帶上你的工具，<br>
+								還有一顆挖寶的好奇心，<br>
+								挖挖看，你發現了什麼寶藏呢？</p>
+					</div>
+				</div>
+
+
+
+
+
+				<div class="seminar ">
+					<div class="slick_photo slider">
 							<div class="img_item-sd summer_camp-aug11 hover-finger">
 								<img src="img/wisdom/aug/aug_11s.jpeg" alt="">
 							</div>
@@ -281,9 +317,7 @@
 							孩子們除了吃飯跟午休時間，
 							其餘時間緊戴口罩（孩子們超棒)</p>
 				</div>
-		</div>
-
-
+			</div>
 
 
 
@@ -328,6 +362,49 @@
 
 <div class="clear"></div>
 
+<div id="summer_camp-oct-b01" class="notice-popup5 mfp-hide">
+	<div class="notice-popup_content">
+		<img src="img/wisdom/oct/l01.jpg" alt="">
+	</div>
+</div>
+<div id="summer_camp-oct-b02" class="notice-popup5 mfp-hide">
+	<div class="notice-popup_content">
+		<img src="img/wisdom/oct/l02.jpg" alt="">
+	</div>
+</div>
+<div id="summer_camp-oct-b03" class="notice-popup5 mfp-hide">
+	<div class="notice-popup_content">
+		<img src="img/wisdom/oct/l03.jpg" alt="">
+	</div>
+</div>
+<div id="summer_camp-oct-b04" class="notice-popup5 mfp-hide">
+	<div class="notice-popup_content">
+		<img src="img/wisdom/oct/l04.jpg" alt="">
+	</div>
+</div>
+<div id="summer_camp-oct-b05" class="notice-popup5 mfp-hide">
+	<div class="notice-popup_content">
+		<img src="img/wisdom/oct/l05.jpg" alt="">
+	</div>
+</div>
+<div id="summer_camp-oct-b06" class="notice-popup5 mfp-hide">
+	<div class="notice-popup_content">
+		<img src="img/wisdom/oct/l06.jpg" alt="">
+	</div>
+</div>
+<div id="summer_camp-oct-b07" class="notice-popup5 mfp-hide">
+	<div class="notice-popup_content">
+		<img src="img/wisdom/oct/l07.jpg" alt="">
+	</div>
+</div>
+
+
+
+
+
+
+
+
 <div id="summer_camp-aug11" class="notice-popup5 mfp-hide">
 	<div class="notice-popup_content">
 			<img src="img/wisdom/aug/aug_11.jpeg" alt="">
@@ -370,19 +447,85 @@
 </div>
 
 
- <script>
+<script>
     $(function(){
-		$('.summer_camp-aug11').magnificPopup({
+
+		$('.summer_camp-oct-b01').magnificPopup({
 			items: {
-					src: '#summer_camp-aug11',
+				src: '#summer_camp-oct-b01',
+				type: 'inline'
+			},
+			mainClass: 'mfp-fade',
+			removalDelay: 300,
+			midClick: true
+		});
+		$('.summer_camp-oct-b02').magnificPopup({
+			items: {
+				src: '#summer_camp-oct-b02',
+				type: 'inline'
+			},
+			mainClass: 'mfp-fade',
+			removalDelay: 300,
+			midClick: true
+		});
+		$('.summer_camp-oct-b03').magnificPopup({
+			items: {
+				src: '#summer_camp-oct-b03',
+				type: 'inline'
+			},
+			mainClass: 'mfp-fade',
+			removalDelay: 300,
+			midClick: true
+		});
+		$('.summer_camp-oct-b04').magnificPopup({
+			items: {
+				src: '#summer_camp-oct-b04',
+				type: 'inline'
+			},
+			mainClass: 'mfp-fade',
+			removalDelay: 300,
+			midClick: true
+		});
+		$('.summer_camp-oct-b05').magnificPopup({
+			items: {
+				src: '#summer_camp-oct-b05',
+				type: 'inline'
+			},
+			mainClass: 'mfp-fade',
+			removalDelay: 300,
+			midClick: true
+		});
+		$('.summer_camp-oct-b06').magnificPopup({
+			items: {
+				src: '#summer_camp-oct-b06',
+				type: 'inline'
+			},
+			mainClass: 'mfp-fade',
+			removalDelay: 300,
+			midClick: true
+		});
+		$('.summer_camp-oct-b07').magnificPopup({
+			items: {
+				src: '#summer_camp-oct-b07',
+				type: 'inline'
+			},
+			mainClass: 'mfp-fade',
+			removalDelay: 300,
+			midClick: true
+		});
+
+
+
+
+		$('.summer_camp-oct-b01').magnificPopup({
+			items: {
+					src: '#summer_camp-oct-b01',
 					type: 'inline'
 			},
 			mainClass: 'mfp-fade',
 			removalDelay: 300,
 			midClick: true
-	});
-
-	
+		});
 		$('.summer_camp-may-a01').magnificPopup({
 				items: {
 						src: '#summer_camp-may-a01',
