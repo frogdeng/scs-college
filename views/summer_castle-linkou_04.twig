@@ -23,10 +23,86 @@
 				<div class="seminar ">
 					<h6>學習區營造</h6>
 				</div>
-
-                <div class="aaa ">
-                    照片規劃建置中
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd summer_camp-aug01 hover-finger">
+                            <img src="img/wisdom/aug/aug_01s.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        {# <h5>2020/8/22</h5> #}
+                        <p>孩子們第一次上學， <br>
+                            不安的不只是孩子， <br>
+                            還有爸爸媽媽們也是... 
+                            
+                            這些都是過程， <br>
+                            讓我們一起安定內心， <br>
+                            做最好的教育夥伴，<br>
+                            用最密切的合作，<br>
+                            最open mind的心胸，<br>
+                            陪伴孩子們成長。<br>
+                            
+                            夏哲森想做不一樣的學校，<br>
+                            想用陪伴的角色，<br>
+                            陪你們走孩子們人生的第一段。</p>
+                    </div>
                 </div>
+
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd summer_camp-aug02 hover-finger">
+                            <img src="img/wisdom/aug/aug_02s.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        {# <h5>2020/8/22</h5> #}
+                        <p>老師們正在努力地準備教室環境，<br>
+                            等待孩子們來上學喔！<br>
+                            
+                            同時我們也已經把學用品打包好，<br>
+                            期待把它交到大家的手中，<br>
+                            希望你們跟我們一樣，<br>
+                            已經迫不及待開學日的到來！<br>
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd summer_camp-july01 hover-finger">
+                            <img src="img/wisdom/july/j_01s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-july02 hover-finger">
+                            <img src="img/wisdom/july/j_02s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-july03 hover-finger">
+                            <img src="img/wisdom/july/j_03s.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        {# <h5>2020/8/22</h5> #}
+                        <p>夏哲森的建築總是保留許多的窗，<br>
+                            因為，我們希望孩子能夠保有對環境的敏感度，<br>
+                            四季的變化，天光的日常，<br>
+                            周遭的人事物，每天都有新發現...<br>
+                            
+                            環境是第三個老師，<br>
+                            不只說的是課室裡的一切，<br>
+                            還包含了孩子們每天五感所接受到的。<br>
+                            
+                            綠意盎然，生氣勃勃的夏季，<br>
+                            如果多了孩子們對於一切事物新奇的驚呼，<br>
+                            一定會更加熱鬧歡騰...<br>
+                            
+                            認真防疫，潛心等待♥️
+                            
+                            祝好。</p>
+                    </div>
+                </div>
+
 
 			</div>
 		</div>
@@ -38,36 +114,52 @@
 
 
 <div class="clear"></div>
-{% include '_partial/popup-video.twig' %}
-
-<div id="summer_camp-01" class="notice-popup3 mfp-hide">
+<!-- aug -->
+<div id="summer_camp-aug01" class="notice-popup5 mfp-hide">
     <div class="notice-popup_content">
-   		<img src="img/summer_camp_01.jpg" alt="">
+        <img src="img/wisdom/aug/aug_01.jpeg" alt="">
     </div>
 </div>
-<div id="summer_camp-02" class="notice-popup3 mfp-hide">
+<div id="summer_camp-aug02" class="notice-popup5 mfp-hide">
     <div class="notice-popup_content">
-   		<img src="img/summer_camp_02.jpg" alt="">
-    </div>
-</div>
-<div id="summer_camp-03" class="notice-popup3 mfp-hide">
-    <div class="notice-popup_content">
-   		<img src="img/summer_camp_03.jpg" alt="">
-    </div>
-</div>
-<div id="summer_camp-04" class="notice-popup3 mfp-hide">
-    <div class="notice-popup_content">
-   		<img src="img/summer_camp_04.jpg" alt="">
+        <img src="img/wisdom/aug/aug_02.jpeg" alt="">
     </div>
 </div>
 
 
 
- <script>
+<!-- july -->
+<div id="summer_camp-july01" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/july/j_01.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-july02" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/july/j_02.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-july03" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/july/j_03.jpg" alt="">
+    </div>
+</div>
+
+
+<script>
     $(function(){
-        $('.summer_camp-01').magnificPopup({
+        $('.summer_camp-aug01').magnificPopup({
             items: {
-                src: '#summer_camp-01',
+                src: '#summer_camp-aug01',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-aug02').magnificPopup({
+            items: {
+                src: '#summer_camp-aug02',
                 type: 'inline'
             },
             mainClass: 'mfp-fade',
@@ -75,33 +167,35 @@
             midClick: true
         });
 
-        $('.summer_camp-02').magnificPopup({
+        
+        $('.summer_camp-july01').magnificPopup({
             items: {
-                src: '#summer_camp-02',
+                src: '#summer_camp-july01',
                 type: 'inline'
             },
             mainClass: 'mfp-fade',
             removalDelay: 300,
             midClick: true
         });
-        $('.summer_camp-03').magnificPopup({
+        $('.summer_camp-july02').magnificPopup({
             items: {
-                src: '#summer_camp-03',
+                src: '#summer_camp-july02',
                 type: 'inline'
             },
             mainClass: 'mfp-fade',
             removalDelay: 300,
             midClick: true
         });
-        $('.summer_camp-04').magnificPopup({
+        $('.summer_camp-july03').magnificPopup({
             items: {
-                src: '#summer_camp-04',
+                src: '#summer_camp-july03',
                 type: 'inline'
             },
             mainClass: 'mfp-fade',
             removalDelay: 300,
             midClick: true
         });
+
     });
 </script>
 

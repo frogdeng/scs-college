@@ -24,6 +24,55 @@
 				<div class="seminar ">
 					<h6>照片</h6>
 				</div>
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-video-b10 hover-finger" >
+                            <div class="play_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                            </div>
+                            <img src="http://i3.ytimg.com/vi/E3Sq28fbT-Y/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        {# <h5>來分享你的親子作業吧！</h5> #}
+                        <p>夏哲森的主題課程，幼幼班著重關係的培養，小班開始有更多的學習區探索，中大班開始展開更全面的專案式課程，從幼兒自身開始探索，進而發展至探究人我、人人、人與環境、人與世界之間的關係，從近到遠，從小社會到大社會，帶狀式的課程，積累孩子們的經驗與探究，希望透過跨領域的方式，帶著孩子們去認識自我，保持開放的眼睛去探索世界的每一天。
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-video-b9 hover-finger" >
+                            <div class="play_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                            </div>
+                            <img src="http://i3.ytimg.com/vi/jSd1FBhv3xk/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        {# <h5>來分享你的親子作業吧！</h5> #}
+                        
+                        <p>主題課程迷人的地方在於，
+                            他是跨領域不分科的，
+                            他是充滿可能的，
+                            他離孩子們的生活總是很近，
+                            孩子們是主動而充滿熱情的...
+                            主題課程沒辦法像有簿本立即可以看到「成效」，
+                            但是探究的過程，思考的邏輯，
+                            那些深入到孩子血液呼吸裡面的好奇，
+                            會陪孩子們一直長大，成為學習的養分
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
                 <div class="seminar ">
                     <div class="slick_photo slider">
                         <div class="video_item js-open-video-b8 hover-finger" >
@@ -362,6 +411,19 @@
     </div>
 </div>
 
+
+<div id="notice-popup-b10" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/E3Sq28fbT-Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+<div id="notice-popup-b9" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/jSd1FBhv3xk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+
 <div id="notice-popup-b8" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
     <iframe src="https://www.youtube.com/embed/ei-kMCtK0eI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -473,6 +535,26 @@
         $('.summer_camp-03').magnificPopup({
             items: {
                 src: '#summer_camp-03',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+
+        $('.js-open-video-b10').magnificPopup({
+            items: {
+                src: '#notice-popup-b10',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.js-open-video-b9').magnificPopup({
+            items: {
+                src: '#notice-popup-b9',
                 type: 'inline'
             },
             mainClass: 'mfp-fade',

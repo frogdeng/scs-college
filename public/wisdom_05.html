@@ -199,7 +199,7 @@
 	<div class="content">
 		<div class="service_detail">
 			<div class="service_detail_content">
-				 <a href="wisdom.html" class="goback">
+				<a href="wisdom.html" class="goback">
                     <i class="fas fa-redo"></i> 
                     <p>返</p>
                     <p>回</p>
@@ -208,6 +208,58 @@
 					<h6>雙語學習</h6>
 				</div>
                 
+            
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd summer_camp-aug04 hover-finger">
+                            <img src="img/wisdom/aug/aug_04s.jpeg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-aug05 hover-finger">
+                            <img src="img/wisdom/aug/aug_05s.jpeg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-aug06 hover-finger">
+                            <img src="img/wisdom/aug/aug_06s.jpeg" alt="">
+                        </div>
+                    
+                    </div>
+                    <div class="t-text">
+                        <h5>Alphabet Hunting </h5>
+                        <p>從英文字母中，<br>
+                            找到你需要的部分吧！<br>
+                            
+                            大寫是什麼樣子？<br>
+                            小寫是什麼樣子？<br>
+                            
+                            什麼時候又要用哪一種呢？<br>
+                            
+                            考考你會不會分辨😁<br>
+                            
+                            #幼兒及國小美語體驗<br>
+                            官方賴👇<br>
+                            <a href="https://lin.ee/eNMrFXJ">https://lin.ee/eNMrFXJ</a>   </p>
+                    </div>
+                </div>
+
+
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-video-b4 hover-finger" >
+                            <div class="play_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                            </div>
+                            <img src="http://i3.ytimg.com/vi/zgj3hNadWUE/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <h5>sh~~Listen carefully! </h5>
+                        <p>Let’s play Monopoly! 
+                            When the teacher reads the vocabulary randomly, the child needs to answer whether the words he hears are in the options, and if the words are correct, there is a chance to roll the dice forward.
+                        </p>
+                    </div>
+                </div>
+
+
                 <div class="seminar ">
                     <div class="slick_photo slider">
                         <div class="img_item-sd summer_camp-01 hover-finger">
@@ -270,7 +322,32 @@
 
 <div class="clear"></div>
 
+<!-- aug -->
+<div id="summer_camp-aug04" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/aug/aug_04.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-aug05" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/aug/aug_05.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-aug06" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/aug/aug_06.jpg" alt="">
+    </div>
+</div>
 
+
+
+
+
+<div id="notice-popup-b4" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/zgj3hNadWUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
 
 <div id="notice-popup-b3" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
@@ -279,9 +356,47 @@
 </div>
 
 
- <script>
+<script>
     $(function(){
-         $('.js-open-video-b3').magnificPopup({
+        $('.summer_camp-aug04').magnificPopup({
+            items: {
+                src: '#summer_camp-aug04',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-aug05').magnificPopup({
+            items: {
+                src: '#summer_camp-aug05',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-aug06').magnificPopup({
+            items: {
+                src: '#summer_camp-aug06',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+        $('.js-open-video-b4').magnificPopup({
+            items: {
+                src: '#notice-popup-b4',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+        $('.js-open-video-b3').magnificPopup({
             items: {
                 src: '#notice-popup-b3',
                 type: 'inline'

@@ -209,6 +209,31 @@
 					<h6>學習區營造</h6>
 				</div>
 				
+				<div class="seminar ">
+					<div class="slick_photo slider">
+							<div class="img_item-sd summer_camp-aug11 hover-finger">
+								<img src="img/wisdom/aug/aug_11s.jpeg" alt="">
+							</div>
+						
+					</div>
+					<div class="t-text">
+							<p>4歲，5歲，6歲... <br>
+
+								中大班的姊姊去哪裡，<br>
+								都帶著小班的新生一起玩，<br>
+								這是夏哲森，夏哲森的孩子們，<br>
+								總是充滿了愛❤️<br>
+								
+								孩子們會把他們感受到的，<br>
+								學習起來，同樣的對待它人。<br>
+								
+								這是課本上沒有，<br>
+								卻是會陪伴孩子們一輩子的...<br>
+								
+								“頂樓就是，隨時躺下來休息一下，<br>
+								都可以成就網美照（笑）”</p>
+					</div>
+			</div>
 
 				
 				<div class="seminar ">
@@ -303,6 +328,13 @@
 
 <div class="clear"></div>
 
+<div id="summer_camp-aug11" class="notice-popup5 mfp-hide">
+	<div class="notice-popup_content">
+			<img src="img/wisdom/aug/aug_11.jpeg" alt="">
+	</div>
+</div>
+
+
 <div id="summer_camp-may-a01" class="notice-popup5 mfp-hide">
 	<div class="notice-popup_content">
 			<img src="img/wisdom/may_a01.jpg" alt="">
@@ -340,7 +372,18 @@
 
  <script>
     $(function(){
-			$('.summer_camp-may-a01').magnificPopup({
+		$('.summer_camp-aug11').magnificPopup({
+			items: {
+					src: '#summer_camp-aug11',
+					type: 'inline'
+			},
+			mainClass: 'mfp-fade',
+			removalDelay: 300,
+			midClick: true
+	});
+
+	
+		$('.summer_camp-may-a01').magnificPopup({
 				items: {
 						src: '#summer_camp-may-a01',
 						type: 'inline'
