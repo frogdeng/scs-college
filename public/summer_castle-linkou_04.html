@@ -202,9 +202,41 @@
                     <p>返</p>
                     <p>回</p>
                 </a>
+
 				<div class="seminar ">
 					<h6>學習區營造</h6>
 				</div>
+
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd summer_camp-nov-b10 hover-finger">
+                            <img src="img/wisdom/nov/n10s.jpeg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-nov-b11 hover-finger">
+                            <img src="img/wisdom/nov/n11s.jpeg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-nov-b12 hover-finger">
+                            <img src="img/wisdom/nov/n12s.jpeg" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="t-text">
+                        <h5>學習區</h5> 
+                        <p>
+                            還記得前些日子發佈球在軌道上滾動的影片嗎？ <br>
+                            
+                            木球在軌道上滾動<br>
+                            透過不同形式的軌道上<br>
+                            而有了更多樣的滾動路徑<br>
+                            學習區正也是這樣 <br>
+                            尊重不同的想法<br> 
+                            可以發現更多樣的觀點與探究的機會唷</p>
+                    </div>
+                </div>
+
+
+
                 <div class="seminar ">
                     <div class="slick_photo slider">
                         <div class="img_item-sd summer_camp-oct01 hover-finger">
@@ -325,6 +357,26 @@
 
 
 <div class="clear"></div>
+
+<div id="summer_camp-nov-b10" class="notice-popup4 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/nov/n10.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-nov-b11" class="notice-popup4 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/nov/n11.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-nov-b12" class="notice-popup4 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/nov/n12.jpg" alt="">
+    </div>
+</div>
+
+
+
+
 <!-- oct -->
 <div id="summer_camp-oct01" class="notice-popup5 mfp-hide">
     <div class="notice-popup_content">
@@ -387,6 +439,37 @@
 
 <script>
     $(function(){
+        $('.summer_camp-nov-b10').magnificPopup({
+            items: {
+                src: '#summer_camp-nov-b10',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-nov-b11').magnificPopup({
+            items: {
+                src: '#summer_camp-nov-b11',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-nov-b12').magnificPopup({
+            items: {
+                src: '#summer_camp-nov-b12',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+
+
+
         $('.summer_camp-oct01').magnificPopup({
             items: {
                 src: '#summer_camp-oct01',

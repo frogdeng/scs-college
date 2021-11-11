@@ -27,6 +27,36 @@
 					<h6>學習區營造</h6>
 				</div>
 				
+
+				<div class="seminar ">
+					<div class="slick_photo slider">
+						<div class="img_item-sd summer_camp-nov-b01 hover-finger">
+							<img src="img/wisdom/nov/n01s.jpeg" alt="">
+						</div>
+						<div class="img_item-sd summer_camp-nov-b02 hover-finger">
+							<img src="img/wisdom/nov/n02s.jpeg" alt="">
+						</div>
+						<div class="img_item-sd summer_camp-nov-b03 hover-finger">
+							<img src="img/wisdom/nov/n03s.jpeg" alt="">
+						</div>
+						
+					</div>
+					<div class="t-text">
+							<p>你看出端倪了嗎？ <br>
+								顏色、形狀、平面、立體… <br>
+								單一個方塊拆解後，<br>
+								上下左右前後，又分別是什麼顏色 ？<br>
+								這甚至可以談論到空間概念！<br>
+								每個小方塊有幾個面？<br>
+								於是我們又談論到了數學、邏輯…等等<br>
+								學習區真的很值得探索啊！</p>
+					</div>
+				</div>
+
+
+
+
+
 				<div class="seminar ">
 					<div class="slick_photo slider">
 						<div class="img_item-sd summer_camp-oct-b01 hover-finger">
@@ -183,6 +213,25 @@
 
 <div class="clear"></div>
 
+<div id="summer_camp-nov-b01" class="notice-popup5 mfp-hide">
+	<div class="notice-popup_content">
+		<img src="img/wisdom/nov/n01.jpg" alt="">
+	</div>
+</div>
+
+<div id="summer_camp-nov-b02" class="notice-popup5 mfp-hide">
+	<div class="notice-popup_content">
+		<img src="img/wisdom/nov/n02.jpg" alt="">
+	</div>
+</div>
+
+<div id="summer_camp-nov-b03" class="notice-popup5 mfp-hide">
+	<div class="notice-popup_content">
+		<img src="img/wisdom/nov/n03.jpg" alt="">
+	</div>
+</div>
+
+
 <div id="summer_camp-oct-b01" class="notice-popup5 mfp-hide">
 	<div class="notice-popup_content">
 		<img src="img/wisdom/oct/l01.jpg" alt="">
@@ -264,6 +313,35 @@
 
 <script>
     $(function(){
+		$('.summer_camp-nov-b01').magnificPopup({
+			items: {
+				src: '#summer_camp-nov-b01',
+				type: 'inline'
+			},
+			mainClass: 'mfp-fade',
+			removalDelay: 300,
+			midClick: true
+		});
+		$('.summer_camp-nov-b02').magnificPopup({
+			items: {
+				src: '#summer_camp-nov-b02',
+				type: 'inline'
+			},
+			mainClass: 'mfp-fade',
+			removalDelay: 300,
+			midClick: true
+		});
+		$('.summer_camp-nov-b03').magnificPopup({
+			items: {
+				src: '#summer_camp-nov-b03',
+				type: 'inline'
+			},
+			mainClass: 'mfp-fade',
+			removalDelay: 300,
+			midClick: true
+		});
+
+
 		$('.summer_camp-oct-b01').magnificPopup({
 			items: {
 				src: '#summer_camp-oct-b01',
