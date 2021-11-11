@@ -206,9 +206,28 @@
 				<div class="seminar ">
 					<h6>照片</h6>
 				</div>
-                <div class="aaa ">
-                    照片規劃建置中
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd summer_camp-oct01 hover-finger">
+                            <img src="img/wisdom/oct/j01s.jpeg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-oct02 hover-finger">
+                            <img src="img/wisdom/oct/j02s.jpeg" alt="">
+                        </div>
+            
+                    </div>
+                    <div class="t-text">
+                        <h5>鏡像之美</h5> 
+                        <p>魔鏡呀～ 魔鏡～<br>
+							誰是世界上最可愛的孩子？👧🏻🙋🏻‍♂️<br>
+							認真在學習區操作💠的孩子<br>
+							最可愛<br>
+							等等！孩子 除了鏡中可愛的臉龐跟小手<br>
+							是否也發現了數量集合跟規律之美？<br>
+							期待你從各個角度來發現我的不一樣喔✌️</p>
+                    </div>
                 </div>
+
 
                     
 	
@@ -223,71 +242,40 @@
 
 <div class="clear"></div>
 
-<div id="notice-popup-b4" class="notice-popup mfp-hide">
-    <div class="notice-popup_content">
-    <iframe src="https://www.youtube.com/embed/M4Em_KnV8Jw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div id="summer_camp-oct01" class="notice-popup5 mfp-hide">
+        <div class="notice-popup_content">
+            <img src="img/wisdom/oct/j01.jpg" alt="">
+        </div>
     </div>
-</div>
-<div id="notice-popup-b3" class="notice-popup mfp-hide">
-    <div class="notice-popup_content">
-    <iframe src="https://www.youtube.com/embed/MwwxTJzcsUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div id="summer_camp-oct02" class="notice-popup5 mfp-hide">
+        <div class="notice-popup_content">
+            <img src="img/wisdom/oct/j02.jpg" alt="">
+        </div>
     </div>
-</div>
-<div id="notice-popup-b2" class="notice-popup mfp-hide">
-    <div class="notice-popup_content">
-    <iframe src="https://www.youtube.com/embed/38yuOIwvfmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-</div>
-<div id="notice-popup-b1" class="notice-popup mfp-hide">
-    <div class="notice-popup_content">
-    <iframe src="https://www.youtube.com/embed/ZAd8m1U6-gE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-</div>
+    
 
 
- <script>
+<script>
     $(function(){
-    	
-
-        $('.js-open-video-b4').magnificPopup({
-            items: {
-                src: '#notice-popup-b4',
-                type: 'inline'
-            },
-            mainClass: 'mfp-fade',
-            removalDelay: 300,
-            midClick: true
-        });
-        $('.js-open-video-b3').magnificPopup({
-            items: {
-                src: '#notice-popup-b3',
-                type: 'inline'
-            },
-            mainClass: 'mfp-fade',
-            removalDelay: 300,
-            midClick: true
-        });
-        $('.js-open-video-b2').magnificPopup({
-            items: {
-                src: '#notice-popup-b2',
-                type: 'inline'
-            },
-            mainClass: 'mfp-fade',
-            removalDelay: 300,
-            midClick: true
-        });
-
-        $('.js-open-video-b1').magnificPopup({
-            items: {
-                src: '#notice-popup-b1',
-                type: 'inline'
-            },
-            mainClass: 'mfp-fade',
-            removalDelay: 300,
-            midClick: true
-        });
-
-
+            $('.summer_camp-oct01').magnificPopup({
+                items: {
+                    src: '#summer_camp-oct01',
+                    type: 'inline'
+                    },
+                mainClass: 'mfp-fade',
+                removalDelay: 300,
+                midClick: true
+                });
+            $('.summer_camp-oct02').magnificPopup({
+                items: {
+                    src: '#summer_camp-oct02',
+                    type: 'inline'
+                },
+                mainClass: 'mfp-fade',
+                removalDelay: 300,
+                midClick: true
+                });
+            
 
     });
 </script>
