@@ -206,6 +206,27 @@
 				<div class="seminar ">
 					<h6>學習區營造</h6>
 				</div>
+                
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd summer_camp-dec-b09 hover-finger">
+							<img src="img/wisdom/dec/dec09s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-dec-b10 hover-finger">
+							<img src="img/wisdom/dec/dec10s.jpg" alt="">
+                        </div>
+                    
+                        
+                    </div>
+                    <div class="t-text">
+                        <p>
+                            學習區<br>
+                            創作靈感 <br>
+                            看見你笑瞇瞇的臉<br>
+                            讓涼涼的秋天也變得暖暖的</p>
+                    </div>
+                </div>
+
 
 
                 <div class="seminar ">
@@ -358,6 +379,20 @@
 
 <div class="clear"></div>
 
+<div id="summer_camp-dec-b09" class="notice-popup4 mfp-hide">
+    <div class="notice-popup_content">
+		<img src="img/wisdom/dec/dec09.jpg" alt="">
+    </div>
+</div>
+
+<div id="summer_camp-dec-b10" class="notice-popup4 mfp-hide">
+    <div class="notice-popup_content">
+		<img src="img/wisdom/dec/dec10.jpg" alt="">
+    </div>
+</div>
+
+
+
 <div id="summer_camp-nov-b10" class="notice-popup4 mfp-hide">
     <div class="notice-popup_content">
         <img src="img/wisdom/nov/n10.jpg" alt="">
@@ -439,6 +474,28 @@
 
 <script>
     $(function(){
+        $('.summer_camp-dec-b09').magnificPopup({
+            items: {
+                src: '#summer_camp-dec-b09',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+        $('.summer_camp-dec-b10').magnificPopup({
+            items: {
+                src: '#summer_camp-dec-b10',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+
+
         $('.summer_camp-nov-b10').magnificPopup({
             items: {
                 src: '#summer_camp-nov-b10',

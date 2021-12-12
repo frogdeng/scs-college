@@ -206,6 +206,31 @@
 				<div class="seminar ">
 					<h6>照片</h6>
 				</div>
+                
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd summer_camp-dec-b11 hover-finger">
+							<img src="img/wisdom/dec/dec11s.jpg" alt="">
+						</div>
+                        <div class="img_item-sd summer_camp-dec-b12 hover-finger">
+							<img src="img/wisdom/dec/dec12s.jpg" alt="">
+						</div>
+                        <div class="img_item-sd summer_camp-dec-b13 hover-finger">
+							<img src="img/wisdom/dec/dec13s.jpg" alt="">
+						</div>
+                    </div>
+                    <div class="t-text">
+                        <p>秋收的時節、蔬果好鼻師<br>
+                            用我的眼睛看看它<br>
+                            用我的鼻子聞聞它<br>
+                            用我的小手摸摸它<br>
+                            原來餐桌上美味的菜肴就！是！你！</p>
+                    </div>
+                </div>
+
+
+
+
 
                 <div class="seminar ">
                     <div class="slick_photo slider">
@@ -261,6 +286,22 @@
 
 <div class="clear"></div>
 
+    <div id="summer_camp-dec-b11" class="notice-popup5 mfp-hide">
+        <div class="notice-popup_content">
+            <img src="img/wisdom/dec/dec11.jpg" alt="">
+        </div>
+    </div>
+    <div id="summer_camp-dec-b12" class="notice-popup5 mfp-hide">
+        <div class="notice-popup_content">
+            <img src="img/wisdom/dec/dec12.jpg" alt="">
+        </div>
+    </div>
+    <div id="summer_camp-dec-b13" class="notice-popup5 mfp-hide">
+        <div class="notice-popup_content">
+            <img src="img/wisdom/dec/dec13.jpg" alt="">
+        </div>
+    </div>
+
     <div id="summer_camp-n13" class="notice-popup5 mfp-hide">
         <div class="notice-popup_content">
             <img src="img/wisdom/nov/n13.jpg" alt="">
@@ -290,6 +331,37 @@
 
 <script>
     $(function(){
+        $('.summer_camp-dec-b11').magnificPopup({
+			items: {
+				src: '#summer_camp-dec-b11',
+				type: 'inline'
+			},
+			mainClass: 'mfp-fade',
+			removalDelay: 300,
+			midClick: true
+		});
+
+        $('.summer_camp-dec-b12').magnificPopup({
+			items: {
+				src: '#summer_camp-dec-b12',
+				type: 'inline'
+			},
+			mainClass: 'mfp-fade',
+			removalDelay: 300,
+			midClick: true
+		});
+
+        $('.summer_camp-dec-b13').magnificPopup({
+			items: {
+				src: '#summer_camp-dec-b13',
+				type: 'inline'
+			},
+			mainClass: 'mfp-fade',
+			removalDelay: 300,
+			midClick: true
+		});
+
+
         $('.summer_camp-n13').magnificPopup({
             items: {
                 src: '#summer_camp-n13',
