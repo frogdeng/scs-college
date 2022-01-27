@@ -208,7 +208,31 @@
                 </div>
                 
 
-                
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd summer_camp-jan-13 hover-finger">
+							<img src="img/wisdom/jan/jan13s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-jan-14 hover-finger">
+							<img src="img/wisdom/jan/jan14s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd summer_camp-jan-15 hover-finger">
+							<img src="img/wisdom/jan/jan15s.jpg" alt="">
+                        </div>
+                    
+                        
+                    </div>
+                    <div class="t-text">
+                        <p>
+                            #降臨節日曆 <br>
+                            在12月初，Tr.Stephan就拿了這盒可愛的小熊來哲哲，<br>
+                            並跟小編說：“在歐洲，孩子們到12月就很常會問還剩幾天就聖誕節？
+                            所以在歐洲都會給孩子們這個禮物🎁這個日曆上有24個小窗，<br>
+                            孩子們每天開啟一扇小窗，可以拿到一個巧克力，<br>
+                            也可以得知離聖誕節還有幾天 🥰
+                            在哲哲的孩子們除了學習語言也能學到文化節慶的意涵。</p>
+                    </div>
+                </div>
 				
 
 
@@ -264,6 +288,21 @@
 
 <div class="clear"></div>
 
+<div id="summer_camp-jan-13" class="notice-popup4 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/jan/jan13.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-jan-14" class="notice-popup4 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/jan/jan14.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-jan-15" class="notice-popup4 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/jan/jan15.jpg" alt="">
+    </div>
+</div>
 
 
 <div id="notice-popup-b1" class="notice-popup mfp-hide">
@@ -287,8 +326,36 @@
 
 
 
- <script>
+<script>
     $(function(){
+        $('.summer_camp-jan-13').magnificPopup({
+            items: {
+                src: '#summer_camp-jan-13',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-jan-14').magnificPopup({
+            items: {
+                src: '#summer_camp-jan-14',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.summer_camp-jan-15').magnificPopup({
+            items: {
+                src: '#summer_camp-jan-15',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
         $('.js-open-video-b1').magnificPopup({
             items: {
                 src: '#notice-popup-b1',
@@ -319,7 +386,7 @@
             removalDelay: 300,
             midClick: true
         });
-       
+
     
     });
 </script>

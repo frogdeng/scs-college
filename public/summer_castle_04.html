@@ -211,6 +211,31 @@
 				
 				<div class="seminar ">
 					<div class="slick_photo slider">
+						<div class="img_item-sd summer_camp-jan-05 hover-finger">
+							<img src="img/wisdom/jan/jan05s.jpg" alt="">
+						</div>
+						<div class="img_item-sd summer_camp-jan-06 hover-finger">
+							<img src="img/wisdom/jan/jan06s.jpg" alt="">
+						</div>
+						<div class="img_item-sd summer_camp-jan-07 hover-finger">
+							<img src="img/wisdom/jan/jan07s.jpg" alt="">
+						</div>
+					</div>
+					<div class="t-text">
+							<p>揉呀揉！捏呀捏！  <br>
+								小麥油土質地較硬，<br>
+								孩子們需要花更大的力氣去塑型，<br>
+								可是你知道嗎？<br>
+								當孩子的每一根手指頭都有了大大的力氣後，<br>
+								我們也就不必擔心孩子握筆的問題了！</p>
+					</div>
+				</div>
+
+
+
+
+				<div class="seminar ">
+					<div class="slick_photo slider">
 						<div class="img_item-sd summer_camp-dec-b01 hover-finger">
 							<img src="img/wisdom/dec/dec01s.jpg" alt="">
 						</div>
@@ -220,7 +245,6 @@
 						<div class="img_item-sd summer_camp-dec-b03 hover-finger">
 							<img src="img/wisdom/dec/dec03s.jpg" alt="">
 						</div>
-
 					</div>
 					<div class="t-text">
 							<p>主題高峰活動即將登場， <br>
@@ -448,6 +472,24 @@
 
 <div class="clear"></div>
 
+
+<div id="summer_camp-jan-05" class="notice-popup4 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/jan/jan05.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-jan-06" class="notice-popup4 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/jan/jan06.jpg" alt="">
+    </div>
+</div>
+<div id="summer_camp-jan-07" class="notice-popup4 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/jan/jan07.jpg" alt="">
+    </div>
+</div>
+
+
 <div id="summer_camp-dec-b01" class="notice-popup5 mfp-hide">
 	<div class="notice-popup_content">
 		<img src="img/wisdom/dec/dec01.jpg" alt="">
@@ -577,6 +619,37 @@
 
 <script>
     $(function(){
+
+		$('.summer_camp-jan-05').magnificPopup({
+            items: {
+                src: '#summer_camp-jan-05',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+		$('.summer_camp-jan-06').magnificPopup({
+            items: {
+                src: '#summer_camp-jan-06',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+		$('.summer_camp-jan-07').magnificPopup({
+            items: {
+                src: '#summer_camp-jan-07',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+
+
 		$('.summer_camp-dec-b01').magnificPopup({
 			items: {
 				src: '#summer_camp-dec-b01',
