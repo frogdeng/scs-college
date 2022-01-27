@@ -206,7 +206,49 @@
                 <div class="seminar ">
                     <h6>主題活動</h6>
                 </div>
-                
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-2022video-b1 hover-finger" >
+                            <div class="play_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                            </div>
+                            <img src="http://i3.ytimg.com/vi/IFGEMGqLwW8/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <!-- <h5>2020/9/26</h5> -->
+                        <p>親子郊遊趣，香山賞候鳥<br>
+                            孩子們還記得今天做了什麼嗎？<br>
+
+                            除了聽老師們專業的介紹與故事分享，我們還有學習如何使用自己的雙筒望遠鏡喔！<br>
+                            也透過老師的高倍望遠鏡觀察鳥兒戲水的模樣，並回答老師的問題、畫出自己看到的畫面！<br>
+                            最後還分成了賞鳥組、繪畫組、聽故事組、摺紙組，真的好豐富、好有趣呀！
+                        </p>
+                    </div>
+                </div>
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-2022video-b2 hover-finger" >
+                            <div class="play_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                            </div>
+                            <img src="http://i3.ytimg.com/vi/-Vz3ztBabs4/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <!-- <h5>2020/9/26</h5> -->
+                        <p>MerryChristmas!<br>
+                            Guess what we are doing?<br>
+                            聖誕節就是 PartyTime <br>
+                            
+                            今天Tr.Stephan帶著孩子們認識各式各樣的工具及食材，並讓孩子們合力製作聖誕節的小蛋糕，再帶回與家人分享。<br>
+                            玩中學，從廚房玩中學習生活英語。
+                        </p>
+                    </div>
+                </div>
+
+
 
                 <div class="seminar ">
                     <div class="slick_photo slider">
@@ -305,6 +347,21 @@
 </div>
 
 
+<div id="js-open-2022video-b1" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/IFGEMGqLwW8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+<div id="js-open-2022video-b2" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/-Vz3ztBabs4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+
+
+
 <div id="notice-popup-b1" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
     <iframe src="https://www.youtube.com/embed/JY8eB7Qo6kQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -355,6 +412,28 @@
             removalDelay: 300,
             midClick: true
         });
+
+        $('.js-open-2022video-b1').magnificPopup({
+            items: {
+                src: '#js-open-2022video-b1',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.js-open-2022video-b2').magnificPopup({
+            items: {
+                src: '#js-open-2022video-b2',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+
+
 
         $('.js-open-video-b1').magnificPopup({
             items: {
