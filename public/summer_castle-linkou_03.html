@@ -206,7 +206,28 @@
 				<div class="seminar ">
 					<h6>照片</h6>
 				</div>
-                
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd lb-2022feb-08 hover-finger">
+                            <img src="img/wisdom/2022_feb/feb08s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd lb-2022feb-09 hover-finger">
+                            <img src="img/wisdom/2022_feb/feb09s.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <p>肥沃的土壤，<br>
+                            溫暖和煦的陽光，<br>
+                            孩子們圍在種植區的周圍。<br>
+                            不知道跟老師在討論什麼秘密計畫?<br>
+                            在即將到來的春天，我們可以持續關注小小綠手指們準備要大展身手囉：）</p>
+                    </div>
+                </div>
+
+
+
+
                 <div class="seminar ">
                     <div class="slick_photo slider">
                         <div class="img_item-sd summer_camp-dec-b11 hover-finger">
@@ -286,6 +307,18 @@
 
 <div class="clear"></div>
 
+    <div id="lb-2022feb-08" class="notice-popup4 mfp-hide">
+        <div class="notice-popup_content">
+            <img src="img/wisdom/2022_feb/feb08.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="lb-2022feb-09" class="notice-popup4 mfp-hide">
+        <div class="notice-popup_content">
+            <img src="img/wisdom/2022_feb/feb09.jpg" alt="">
+        </div>
+    </div>
+
     <div id="summer_camp-dec-b11" class="notice-popup5 mfp-hide">
         <div class="notice-popup_content">
             <img src="img/wisdom/dec/dec11.jpg" alt="">
@@ -331,6 +364,25 @@
 
 <script>
     $(function(){
+        $('.lb-2022feb-08').magnificPopup({
+            items: {
+                src: '#lb-2022feb-08',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.lb-2022feb-09').magnificPopup({
+            items: {
+                src: '#lb-2022feb-09',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
         $('.summer_camp-dec-b11').magnificPopup({
 			items: {
 				src: '#summer_camp-dec-b11',
