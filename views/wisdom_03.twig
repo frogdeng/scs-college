@@ -25,7 +25,26 @@
             <div class="seminar ">
                 <h6>平日課程</h6>
             </div>
-            
+
+            <div class="seminar ">
+                <div class="slick_photo slider">
+                    <div class="img_item-sd lb-2022mar-13 hover-finger">
+                        <img src="img/wisdom/2022_march/mar13s.jpg" alt="">
+                    </div>
+                    <div class="img_item-sd lb-2022mar-14 hover-finger">
+                        <img src="img/wisdom/2022_march/mar14s.jpg" alt="">
+                    </div>
+                </div>
+                <div class="t-text">
+                        <p>讓我們一起在綠色的草皮上，<br>
+                            妝點上繽紛的彩虹。<br>
+                            對應、排序、集合的幼兒數概念，<br>
+                            也同時在這裡蓬勃發展中喔！</p>
+                </div>
+            </div>
+
+
+
             <div class="seminar ">
                 <div class="slick_photo slider">
                     <div class="img_item-sd summer_camp-jan-16 hover-finger">
@@ -502,6 +521,17 @@
 
 <div class="clear"></div>
 
+<div id="lb-2022mar-13" class="notice-popup4 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_march/mar13.jpg" alt="">
+    </div>
+</div>
+<div id="lb-2022mar-14" class="notice-popup4 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_march/mar14.jpg" alt="">
+    </div>
+</div>
+
 <div id="summer_camp-jan-16" class="notice-popup4 mfp-hide">
     <div class="notice-popup_content">
         <img src="img/wisdom/jan/jan16.jpg" alt="">
@@ -670,6 +700,24 @@
 
  <script>
     $(function(){
+        $('.lb-2022mar-13').magnificPopup({
+            items: {
+                src: '#lb-2022mar-13',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.lb-2022mar-14').magnificPopup({
+            items: {
+                src: '#lb-2022mar-14',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
         $('.summer_camp-jan-16').magnificPopup({
             items: {
                 src: '#summer_camp-jan-16',

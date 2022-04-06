@@ -25,7 +25,23 @@
                 <h6>照片</h6>
             </div>
 
-            
+            <div class="seminar ">
+                <div class="slick_photo slider">
+                    <div class="img_item-sd lb-2022mar-08 hover-finger">
+                        <img src="img/wisdom/2022_march/mar08s.jpg" alt="">
+                    </div>
+                </div>
+                <div class="t-text">
+                        <p>語文區裡的孩子們玩什麼？ <br>
+                            聽、說、讀、演、寫（仿寫）這樣而已嗎？<br>
+                            其實細看之下，還有包含了許多素養在裡頭！<br>
+                            故事偶台讓寶貝成了說書人，<br>
+                            能自信表達、運用所學的詞彙，<br>
+                            來詮釋每一則我們聽過、或沒聽過的創新內容！<br>
+                            夏哲森寶貝下台一鞠躬！</p>
+                </div>
+            </div>
+
 
             <div class="seminar ">
                 <div class="slick_photo slider">
@@ -461,7 +477,7 @@
                 <div class="t-text">
                     <h5>水的秘密</h5>
                     <p>Do you think that water is truly magical? Kids know this, and they really love it! When I showed them how to do this experiment, the kids were super excited and said, "Wow, that’s cool. I really want to try!" I’m really glad to see them ready to test their hypothesis. Even though they have tried many times to be successful, they still kept trying. These are our lovely kids. Don’t they look adorable?
-                     </p>
+                    </p>
                 </div>
             </div>
 
@@ -621,6 +637,13 @@
 
 
 <div class="clear"></div>
+<div id="lb-2022mar-08" class="notice-popup4 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_march/mar08.jpg" alt="">
+    </div>
+</div>
+
+
 
 <div id="lb-2022feb-01" class="notice-popup4 mfp-hide">
     <div class="notice-popup_content">
@@ -868,6 +891,17 @@
 
 <script>
     $(function(){
+        $('.lb-2022mar-08').magnificPopup({
+            items: {
+                src: '#lb-2022mar-08',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+
         $('.lb-2022feb-01').magnificPopup({
             items: {
                 src: '#lb-2022feb-01',
