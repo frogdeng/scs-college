@@ -205,6 +205,21 @@
 				<div class="seminar ">
 					<h6>平日課程</h6>
 				</div>
+                
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd lb-2022april-21 hover-finger">
+                            <img src="img/wisdom/2022_april/april21s.jpg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="t-text">
+                            <p>國小寫作班體驗課 <br>
+                                咩咩老師熟悉孩子心理的教學技巧，擅長運用豐富多變的寫作題材，引導孩子表達心中的想法。<br>
+                                針對不同程度、學習進度，為每個孩子設計個人化練習題目，<br>帶領孩子們觀察並感受生活中的細節，探索與表達自我。<br>
+                                小班制，名額有限，歡迎私訊詢問唷～</p>
+                    </div>
+                </div>
 
 				<div class="seminar ">
                     <div class="slick_photo slider">
@@ -232,6 +247,12 @@
 
 
 <div class="clear"></div>
+<div id="lb-2022april-21" class="notice-popup4 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_april/april21.jpg" alt="">
+    </div>
+</div>
+
 <div id="summer_camp-may01" class="notice-popup5 mfp-hide">
     <div class="notice-popup_content">
         <img src="img/wisdom/may_e01.jpeg" alt="">
@@ -240,6 +261,17 @@
 
  <script>
     $(function(){
+
+        $('.lb-2022april-21').magnificPopup({
+            items: {
+                src: '#lb-2022april-21',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
     
         $('.summer_camp-may01').magnificPopup({
             items: {
