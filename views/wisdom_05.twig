@@ -27,6 +27,27 @@
 					<h6>雙語學習</h6>
 				</div>
 
+                
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd lb-2022july-16 hover-finger">
+                            <img src="img/wisdom/2022_july/july16s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd lb-2022july-17 hover-finger">
+                            <img src="img/wisdom/2022_july/july17s.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <h5>你的孩子喜歡大自然嗎？</h5>
+                        <p>Look! <br>
+                            The donkey is old.<br>
+                            donkey? <br> 
+                            我只有看到孩子們可愛又甜美的笑容耶，你們呢？<br>
+                            幼兒美語透過繪本故事和美勞手作，讓孩子們開心的學習單字和自然發音！<br>
+                            讓他們像學母語那樣學習。</p>
+                    </div>
+                </div>
+
 
                 <div class="seminar ">
                     <div class="slick_photo slider">
@@ -220,6 +241,18 @@
 
 
 <div class="clear"></div>
+<div id="lb-2022july-16" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_july/july16.jpg" alt="">
+    </div>
+</div>
+<div id="lb-2022july-17" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_july/july17.jpg" alt="">
+    </div>
+</div>
+
+
 <div id="lb-2022may-16" class="notice-popup4 mfp-hide">
     <div class="notice-popup_content">
         <img src="img/wisdom/2022_may/may16.jpg" alt="">
@@ -315,6 +348,25 @@
 
 
     $(function(){
+        $('.lb-2022july-16').magnificPopup({
+            items: {
+                src: '#lb-2022july-16',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.lb-2022july-17').magnificPopup({
+            items: {
+                src: '#lb-2022july-17',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
         $('.summer_camp-aug04').magnificPopup({
             items: {
                 src: '#summer_camp-aug04',

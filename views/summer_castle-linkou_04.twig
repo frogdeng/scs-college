@@ -26,6 +26,27 @@
 				</div>
                 
                 <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd lb-2022july-06 hover-finger">
+                            <img src="img/wisdom/2022_july/july06s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd lb-2022july-07 hover-finger">
+                            <img src="img/wisdom/2022_july/july07s.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <p>閱讀可以是舒服的， <br>
+                            閱讀可以是與戶外結合的。<br>
+                            在明亮的陽光下，<br>
+                            鋪著野餐墊、搭起小帳篷，<br>
+                            讓夏日微風陪著我們一起感受圖文帶來的魅力....<br>
+                            這就是 夏哲森幼兒園</p>
+                    </div>
+                </div>
+
+
+
+                <div class="seminar ">
 					<div class="slick_photo slider">
 						<div class="img_item-sd lb-2022april-08 hover-finger">
                             <img src="img/wisdom/2022_april/april08s.jpg" alt="">
@@ -327,18 +348,26 @@
                             祝好。</p>
                     </div>
                 </div>
-
-
 			</div>
 		</div>
-
 	</div>
 
 </div>
 
-
-
 <div class="clear"></div>
+
+<div id="lb-2022july-06" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_july/july06.jpg" alt="">
+    </div>
+</div>
+<div id="lb-2022july-07" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_july/july07.jpg" alt="">
+    </div>
+</div>
+
+
 <div id="lb-2022april-08" class="notice-popup4 mfp-hide">
     <div class="notice-popup_content">
         <img src="img/wisdom/2022_april/april08.jpg" alt="">
@@ -522,6 +551,24 @@
 
 <script>
     $(function(){
+        $('.lb-2022july-06').magnificPopup({
+            items: {
+                src: '#lb-2022july-06',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.lb-2022july-07').magnificPopup({
+            items: {
+                src: '#lb-2022july-07',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
 
         $('.lb-2022april-08').magnificPopup({
             items: {
@@ -532,6 +579,7 @@
             removalDelay: 300,
             midClick: true
         });
+
         $('.lb-2022april-09').magnificPopup({
             items: {
                 src: '#lb-2022april-09',

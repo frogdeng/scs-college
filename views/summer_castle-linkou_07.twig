@@ -26,6 +26,33 @@
 				<div class="seminar ">
 					<h6>節慶／典</h6>
 				</div>
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-video-b4 hover-finger" >
+                            <div class="play_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                            </div>
+                            <img src="http://i3.ytimg.com/vi/CR1D8esZivQ/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t-text">
+                        <p>去年9月開學時的場景如此清晰， <br>
+                            每日早晨的問候、放學回家時一句「明天見」，<br>
+                            讓不停下腳步的時間滴答滴答的走到了畢業的時節。<br>
+                            今年是夏哲森幼兒園林口校區的第一屆畢業典禮，<br>
+                            孩子，謝謝你在這一年的陪伴，<br>
+                            希望夏哲森幼兒園帶給你充滿溫馨、愉快的滿滿回憶。<br>
+                            期許你帶著夏哲森PRECIOUS特質迎向新的學習歷程。<br>
+                            也別忘了要經常回來找我們一起玩喔!<br>
+                            因為愛你的朋友、老師們一直都在夏哲森幼兒園。
+                        </p>
+                    </div>
+                </div>
+
+
+
                 <div class="seminar ">
                     <div class="slick_photo slider">
                         <div class="video_item js-open-video-b3 hover-finger" >
@@ -108,6 +135,12 @@
 
 <div class="clear"></div>
 
+<div id="notice-popup-b4" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+        <iframe src="https://www.youtube.com/embed/CR1D8esZivQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
 <div id="notice-popup-b3" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
         <iframe src="https://www.youtube.com/embed/jbUsQ02prUk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -129,6 +162,16 @@
 
 <script>
     $(function(){
+        $('.js-open-video-b4').magnificPopup({
+            items: {
+                src: '#notice-popup-b4',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
         $('.js-open-video-b3').magnificPopup({
             items: {
                 src: '#notice-popup-b3',

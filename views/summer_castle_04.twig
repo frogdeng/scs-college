@@ -28,6 +28,38 @@
 				</div>
 				
 				<div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd lb-2022july-08 hover-finger">
+                            <img src="img/wisdom/2022_july/july08s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd lb-2022july-09 hover-finger">
+                            <img src="img/wisdom/2022_july/july09s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd lb-2022july-10 hover-finger">
+                            <img src="img/wisdom/2022_july/july10s.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <p>學習的各種可能性， <br>
+							遊戲的各種可能性。<br>
+							
+							你印象中的數數是什麼樣子？<br>
+							你記憶中學數學的過程是什麼樣子？<br>
+							
+							想起看過一個影片，<br>
+							爸爸教小孩點數怎樣都數不好，
+							小孩哭了，爸爸後來也哭了...<br>
+							
+							但其實，
+							我們不需要孩子用我們學習的方式學習，
+							還有很多，讓他們愛上探索求知的方法。</p>
+                    </div>
+                </div>
+
+
+
+
+				<div class="seminar ">
 					<div class="slick_photo slider">
 						<div class="img_item-sd lb-2022may-08 hover-finger">
 							<img src="img/wisdom/2022_may/may08s.jpg" alt="">
@@ -511,6 +543,22 @@
 
 <div class="clear"></div>
 
+<div id="lb-2022july-08" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_july/july08.jpg" alt="">
+    </div>
+</div>
+<div id="lb-2022july-09" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_july/july09.jpg" alt="">
+    </div>
+</div>
+<div id="lb-2022july-10" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_july/july10.jpg" alt="">
+    </div>
+</div>
+
 <div id="lb-2022may-08" class="notice-popup4 mfp-hide">
     <div class="notice-popup_content">
         <img src="img/wisdom/2022_may/may08.jpg" alt="">
@@ -787,6 +835,34 @@
 
 <script>
     $(function(){
+		$('.lb-2022july-08').magnificPopup({
+            items: {
+                src: '#lb-2022july-08',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+		$('.lb-2022july-09').magnificPopup({
+            items: {
+                src: '#lb-2022july-09',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+		$('.lb-2022july-10').magnificPopup({
+            items: {
+                src: '#lb-2022july-10',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
 		$('.lb-2022may-08').magnificPopup({
             items: {
                 src: '#lb-2022may-08',

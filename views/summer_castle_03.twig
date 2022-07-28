@@ -24,7 +24,24 @@
             <div class="seminar ">
                 <h6>照片</h6>
             </div>
-            
+            <div class="seminar ">
+                <div class="slick_photo slider">
+                    <div class="img_item-sd lb-2022july-11 hover-finger">
+                        <img src="img/wisdom/2022_july/july11s.jpg" alt="">
+                    </div>
+                </div>
+                <div class="t-text">
+                    <p>如果孩子有一百種語言， <br>
+                        如果孩子有一百種樣貌，<br>
+                        那麼我們努力，讓孩子們可以在鷹架中，<br>
+                        發展出自己美好的樣子...<br>
+                        花有自己的花期，<br>
+                        樹有自己的姿態，<br>
+                        孩子也都會有自己的亮點。<br>
+                        我們是，夏哲森。</p>
+                </div>
+            </div>
+
             <div class="seminar ">
                 <div class="slick_photo slider">
                     <div class="img_item-sd lb-2022may-04 hover-finger">
@@ -681,6 +698,12 @@
 
 <div class="clear"></div>
 
+<div id="lb-2022july-11" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_july/july11.jpg" alt="">
+    </div>
+</div>
+
 <div id="lb-2022may-04" class="notice-popup4 mfp-hide">
     <div class="notice-popup_content">
         <img src="img/wisdom/2022_may/may04.jpg" alt="">
@@ -950,6 +973,15 @@
 
 <script>
     $(function(){
+        $('.lb-2022july-11').magnificPopup({
+            items: {
+                src: '#lb-2022july-11',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
         $('.lb-2022may-04').magnificPopup({
             items: {
                 src: '#lb-2022may-04',

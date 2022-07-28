@@ -26,6 +26,26 @@
             
             <div class="seminar ">
                 <div class="slick_photo slider">
+                    <div class="img_item-sd lb-2022june-01 hover-finger">
+                        <img src="img/wisdom/2022_june/june01s.jpg" alt="">
+                    </div>
+                </div>
+                <div class="t-text">
+                    <h5>寶貝們，粽子開吃了嗎？</h5>
+                    <p>今天在教室裡，老師提問：「用葉子把飯飯包起來就好了嗎？」 <br>
+                        「可是葉子沒有固定好，會一直打開耶！」<br>
+                        「這樣裡面的糯米飯、香菇就通通都會掉出來了！」<br>
+                        寶貝回答：「用膠帶黏起來呀！」多麼可愛、純真呀！<br>
+                        不知道有沒有哪一個寶貝，回到家之後，飯菜都不肯吃一口，只願意等待著一顆還在電鍋裡做桑拿的粽子呢？<br>
+                        快快曬出你的夏哲森粽子來！</p>
+                </div>
+            </div>
+
+
+
+
+            <div class="seminar ">
+                <div class="slick_photo slider">
                     <div class="img_item-sd notice-popup-oct-01 hover-finger">
                         <img src="img/wisdom/oct/m01s.jpeg" alt="">
                     </div>
@@ -286,6 +306,13 @@
 {% include '_partial/popup-video.twig' %}
 
 
+<div id="lb-2022june-01" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_june/june01.jpg" alt="">
+    </div>
+</div>
+
+
 <div id="notice-popup-may-01" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
     <iframe src="https://www.youtube.com/embed/yrhPVt7-H0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -440,6 +467,19 @@
 
 <script>
     $(function(){
+        $('.lb-2022june-01').magnificPopup({
+            items: {
+                src: '#lb-2022june-01',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+
+
+
         $('.notice-popup-oct-01').magnificPopup({
             items: {
                 src: '#notice-popup-oct-01',

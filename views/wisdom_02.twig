@@ -25,6 +25,26 @@
 				<div class="seminar ">
 					<h6>營隊／體驗</h6>
 				</div>
+                
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd lb-2022july-14 hover-finger">
+                            <img src="img/wisdom/2022_july/july14s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd lb-2022july-15 hover-finger">
+                            <img src="img/wisdom/2022_july/july15s.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <h5>你的孩子喜歡大自然嗎？</h5>
+                        <p>不曉得你是否也覺得喜歡昆蟲的孩子都特別勇敢、觀察力也特別敏銳呢？<br>
+                            昆蟲老師除了帶蜥蜴、守宮、蛇等寶貝來到哲哲外，還會帶著孩子們製作標本喔！<br>
+                            
+                            哲哲夏令營-爬蟲之美<br>
+                            等你來欣賞</p>
+                    </div>
+                </div>
+
 
 
                 <div class="seminar ">
@@ -210,6 +230,17 @@
 
 
 <div class="clear"></div>
+<div id="lb-2022july-14" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_july/july14.jpg" alt="">
+    </div>
+</div>
+<div id="lb-2022july-15" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_july/july15.jpg" alt="">
+    </div>
+</div>
+
 <div id="wisdom-02" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
     <iframe src="https://www.youtube.com/embed/_6k-arxMvXg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -270,6 +301,24 @@
 
  <script>
     $(function(){
+        $('.lb-2022july-14').magnificPopup({
+            items: {
+                src: '#lb-2022july-14',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.lb-2022july-15').magnificPopup({
+            items: {
+                src: '#lb-2022july-15',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
         $('.summer_camp-april-01').magnificPopup({
             items: {
                 src: '#summer_camp-april-01',
