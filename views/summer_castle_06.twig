@@ -28,6 +28,29 @@
                 
                 <div class="seminar ">
                     <div class="slick_photo slider">
+                        <div class="img_item-sd lb-2022aug-03 hover-finger">
+                            <img src="img/wisdom/2022_aug/aug_03s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd lb-2022aug-04 hover-finger">
+                            <img src="img/wisdom/2022_aug/aug_04s.jpg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="t-text">
+                        <p>喔！杯子破洞了... <br>
+                            滴答滴答，喔...流下來了，<br>
+                            顏色兩種變成一種了！<br>
+                            石頭好像在洗澡喔，<br>
+                            變成另外一種顏色了♥️<br>
+                            孩子們眼睛裡的光，<br>
+                            就是老師前進的力量.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
                         <div class="img_item-sd lb-2022july-12 hover-finger">
                             <img src="img/wisdom/2022_july/july12s.jpg" alt="">
                         </div>
@@ -410,6 +433,20 @@
 
 <div class="clear"></div>
 
+<div id="lb-2022aug-03" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+		<img src="img/wisdom/2022_aug/aug_03.jpg" alt="">
+    </div>
+</div>
+<div id="lb-2022aug-04" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+		<img src="img/wisdom/2022_aug/aug_04.jpg" alt="">
+    </div>
+</div>
+
+
+
+
 <div id="lb-2022july-12" class="notice-popup5 mfp-hide">
     <div class="notice-popup_content">
         <img src="img/wisdom/2022_july/july12.jpg" alt="">
@@ -568,6 +605,26 @@
 
 <script>
     $(function(){
+        $('.lb-2022aug-03').magnificPopup({
+            items: {
+                src: '#lb-2022aug-03',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+		$('.lb-2022aug-04').magnificPopup({
+            items: {
+                src: '#lb-2022aug-04',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+
         $('.lb-2022july-12').magnificPopup({
             items: {
                 src: '#lb-2022july-12',

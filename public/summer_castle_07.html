@@ -208,6 +208,40 @@
             
             <div class="seminar ">
                 <div class="slick_photo slider">
+                    <div class="video_item js-open-video-a4 hover-finger" >
+                        <div class="play_btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                        </div>
+                        <img src="http://i3.ytimg.com/vi/Scbrc1trYWs/hqdefault.jpg" alt="">
+                    </div>
+                </div>
+                <div class="t-text">
+                    <p>我們這一代，爸爸像山， <br>
+                        嚴肅不多話，卻總是讓我們能安心仰望著， <br>
+                        然而越是長大，距離也越大... <br>
+                        現在，我們也成為爸爸媽媽， <br>
+                        我們能不能，做孩子們的依靠， <br>
+                        卻也是他們的朋友、玩伴。 <br>
+                        
+                        有時候回顧成長的歷程， <br>
+                        一定也會有想起來還是會難過的事， <br>
+                        而現在的我們能做的， <br>
+                        就是希望能夠成為一個很棒的大人， <br>
+                        陪伴我們的孩子有完整的童年跟成長。 <br>
+                        父親節快樂，每個孩子心中的英雄， <br>
+                        父親節快樂，要照顧好自己當孩子們的山， <br>
+                        父親節快樂，當孩子們最棒的玩伴♥️ <br>
+                        父親節快樂，對孩子們來說， <br>
+                        你是他的全世界🙂 <br>
+                    </p>
+                        <br>
+                </div>
+            </div>
+
+
+
+            <div class="seminar ">
+                <div class="slick_photo slider">
                     <div class="img_item-sd lb-2022june-01 hover-finger">
                         <img src="img/wisdom/2022_june/june01s.jpg" alt="">
                     </div>
@@ -737,6 +771,12 @@
     </div>
 </div>
 
+<div id="notice-popup-a4" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/Scbrc1trYWs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
 <div id="notice-popup-a3" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
     <iframe src="https://www.youtube.com/embed/yrhPVt7-H0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -1012,6 +1052,16 @@
         $('.summer_camp_may').magnificPopup({
             items: {
                 src: '#summer_camp_may',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+        $('.js-open-video-a4').magnificPopup({
+            items: {
+                src: '#notice-popup-a4',
                 type: 'inline'
             },
             mainClass: 'mfp-fade',

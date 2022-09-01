@@ -26,6 +26,44 @@
 				<div class="seminar ">
 					<h6>節慶／典</h6>
 				</div>
+                
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-video-b5 hover-finger" >
+                            <div class="play_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                            </div>
+                            <img src="http://i3.ytimg.com/vi/47QKKqufAIs/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t-text">
+                        <p>爸爸是孩子心中的山， <br>
+                            是牽著他們溫暖的手，<br>
+                            是他們心中的超人，<br>
+                            是能夠把他們高高舉起的巨人...<br>
+                            傳統的華人社會，<br>
+                            爸爸像是我們不斷仰望的背影，<br>
+                            不習慣說愛，不習慣親近，<br>
+                            雖然總是能為我們擋風遮雨，<br>
+                            卻總有著距離...<br>
+                            讓我們一起當不一樣的大人，<br>
+                            當孩子的大樹，<br>
+                            可以陪他們玩耍，<br>
+                            給他們力量，<br>
+                            也會有脆弱的時候，<br>
+                            但是沒有距離感，<br>
+                            能夠一直給孩子們溫暖...<br>
+                            讓我們當個勇敢說愛的大人，<br>
+                            當孩子對我們表達愛的時候，<br>
+                            我們也能夠坦然地告訴孩子們，我們很愛他！<br>
+                            父親節快樂♥️<br>
+                            忙碌之餘，也要好好照顧自己，<br>
+                            空下時間，好好陪伴孩子們一起長大☀️
+                        </p>
+                    </div>
+                </div>
+
 
                 <div class="seminar ">
                     <div class="slick_photo slider">
@@ -135,6 +173,12 @@
 
 <div class="clear"></div>
 
+<div id="notice-popup-b5" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+        <iframe src="https://www.youtube.com/embed/47QKKqufAIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
 <div id="notice-popup-b4" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
         <iframe src="https://www.youtube.com/embed/CR1D8esZivQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -162,6 +206,15 @@
 
 <script>
     $(function(){
+        $('.js-open-video-b5').magnificPopup({
+            items: {
+                src: '#notice-popup-b5',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
         $('.js-open-video-b4').magnificPopup({
             items: {
                 src: '#notice-popup-b4',
