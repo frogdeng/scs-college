@@ -205,6 +205,28 @@
 				<div class="seminar ">
 					<h6>平日課程</h6>
 				</div>
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd lb-2022oct-11 hover-finger">
+                            <img src="img/wisdom/2022_oct/oct_11s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd lb-2022oct-12 hover-finger">
+                            <img src="img/wisdom/2022_oct/oct_12s.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <p>如果你是小丑魚，你會想要做什麼呢？ <br>
+                            春夏秋冬，會不會跟我們一樣有不同的心情？<br>
+                            住在大海裡會想要去哪裡玩呢？<br>
+                            會不會也跟尼莫一樣，有時候想要去探險？<br>
+                            如果你是小丑魚，你的每天是怎麼樣？</p>
+                    </div>
+                </div>
+
+
+
+
                 
                 <div class="seminar ">
                     <div class="slick_photo slider">
@@ -302,6 +324,19 @@
 
 <div class="clear"></div>
 
+<div id="lb-2022oct-11" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_oct/oct_11.jpg" alt="">
+    </div>
+</div>
+<div id="lb-2022oct-12" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_oct/oct_12.jpg" alt="">
+    </div>
+</div>
+
+
+
 <div id="lb-2022aug-09" class="notice-popup5 mfp-hide">
     <div class="notice-popup_content">
 		<img src="img/wisdom/2022_aug/aug_09.jpg" alt="">
@@ -338,6 +373,26 @@
 
  <script>
     $(function(){
+
+        $('.lb-2022oct-11').magnificPopup({
+            items: {
+                src: '#lb-2022oct-11',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.lb-2022oct-12').magnificPopup({
+            items: {
+                src: '#lb-2022oct-12',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        
 
         $('.lb-2022aug-09').magnificPopup({
             items: {

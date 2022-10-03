@@ -209,6 +209,58 @@
                 
                 <div class="seminar ">
                     <div class="slick_photo slider">
+                        <div class="img_item-sd lb-2022oct-06 hover-finger">
+                            <img src="img/wisdom/2022_oct/oct_06s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd lb-2022oct-07 hover-finger">
+                            <img src="img/wisdom/2022_oct/oct_07s.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <p>你有讀過小藍跟小黃的繪本嗎？ <br>
+
+                            當兩個不同的顏色擁抱， <br>
+                            就會成為新的顏色... <br>
+                            
+                            每個人也都是不同的個體， <br>
+                            但是當我們能夠open mind， <br>
+                            去擁抱每個人的美好， <br>
+                            就可能會有不同的火花產生♥️</p>
+                    </div>
+                </div>
+                
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-video-b8 hover-finger" >
+                            <div class="play_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                            </div>
+                            <img src="http://i3.ytimg.com/vi/jaP_zrNjLPQ/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <p>猜到了嗎？ <br>
+                            孩子們今天做的是手搖鮮奶油哦！<br>
+                            
+                            站著搖、坐著搖，<br>
+                            大家搖的很賣力...<br>
+                            
+                            配著午餐的水果，<br>
+                            沾著自己手搖的鮮奶油，<br>
+                            感覺是世界上最美味的點心了♥️<br>
+                            
+                            假日的時候也可以跟孩子們一起做做看喔😊</p>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
                         <div class="img_item-sd lb-2022july-01 hover-finger">
                             <img src="img/wisdom/2022_july/july01s.jpg" alt="">
                         </div>
@@ -438,6 +490,26 @@
 
 <div class="clear"></div>
 
+<div id="notice-popup-01" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/jaP_zrNjLPQ " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+<div id="lb-2022oct-06" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_oct/oct_06.jpg" alt="">
+    </div>
+</div>
+
+<div id="lb-2022oct-07" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_oct/oct_07.jpg" alt="">
+    </div>
+</div>
+
+
 <div id="lb-2022july-01" class="notice-popup5 mfp-hide">
     <div class="notice-popup_content">
         <img src="img/wisdom/2022_july/july01.jpg" alt="">
@@ -577,6 +649,39 @@
 
 <script>
     $(function(){
+
+        $('.js-open-video-b8').magnificPopup({
+            items: {
+                src: '#notice-popup-01',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+
+
+        $('.lb-2022oct-06').magnificPopup({
+            items: {
+                src: '#lb-2022oct-06',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+        $('.lb-2022oct-07').magnificPopup({
+            items: {
+                src: '#lb-2022oct-07',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
 
         $('.lb-2022july-01').magnificPopup({
             items: {
