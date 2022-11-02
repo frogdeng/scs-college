@@ -205,6 +205,22 @@
                 </a>
 
                 <div class="seminar ">
+                    <div class="slick_photo slider lb-2022nov-01">
+                        <img src="img/wisdom/2022_nov/nov_01s.jpg" alt="">
+                    </div>
+                    <div class="t-text">
+                        <p>
+                            號外！！！ <br>
+                            2023夏哲森新的學用品跟週邊出爐囉！ 
+                            之後會公開預購跟加購的訊息喔♥️<br>
+                            敬請期待...<br>
+                            小聲的說，小編自己已經收到保溫杯了，
+                            超級美麗，超棒！！！ <br>
+                            #Rico陶瓷保溫杯</p>
+                    </div>
+                </div>
+
+                <div class="seminar ">
                     <div class="slick_photo slider">
                         <div class="img_item-sd summer_camp-aug01 hover-finger">
                             <img src="img/wisdom/aug/aug_03s.jpeg" alt="">
@@ -413,6 +429,13 @@
 
 <div class="clear"></div>
 
+<div id="lb-2022nov-01" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_nov/nov_01.png" alt="">
+    </div>
+</div>
+
+
 <div id="notice-popup-01" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
 		<iframe src="https://www.youtube.com/embed/zHZ8RYDvNuI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -506,6 +529,19 @@
 
 <script>
     $(function(){
+
+        $('.lb-2022nov-01').magnificPopup({
+            items: {
+                src: '#lb-2022nov-01',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+
+        
         $('.summer_camp-aug01').magnificPopup({
             items: {
                 src: '#summer_camp-aug01',
