@@ -209,6 +209,49 @@
                 
                 <div class="seminar ">
                     <div class="slick_photo slider">
+                        <div class="video_item js-open-2022video-b1 hover-finger" >
+                            <div class="play_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                            </div>
+                            <img src="http://i3.ytimg.com/vi/MKLDFQGzYVQ/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <h5>Happy Thanksgiving</h5> 
+                        <p>平時不會說出口的感謝
+                            在感恩節表達出來
+                            讓小朋友做一張溫馨的卡片
+                            用英文表達對爸爸、媽媽、老師的感謝
+                            大聲的對爸爸、媽媽說
+                            I Love You❤️
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="img_item-sd lb-2022dd-08 hover-finger">
+                            <img src="img/wisdom/2022_dec/dd_08s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd lb-2022dd-09 hover-finger">
+                            <img src="img/wisdom/2022_dec/dd_09s.jpg" alt="">
+                        </div>
+                        <div class="img_item-sd lb-2022dd-10 hover-finger">
+                            <img src="img/wisdom/2022_dec/dd_10s.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <h5>創意美術課主題—雪梨歌劇院</h5>
+                        <p>運用蠟筆繪畫有別於以往的動物，今日畫出位於澳洲的知名地標，也是世界文化遺產之一的雪梨歌劇院。
+                            先介紹有名的劇院，接著引導學生如何精準的畫出建築物的線條。
+                            畫完很有成就感喔！</p>
+                    </div>
+                </div>
+
+            
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
                         <div class="img_item-sd lb-2022nov-12 hover-finger">
                             <img src="img/wisdom/2022_nov/nov_12s.jpg" alt="">
                         </div>
@@ -240,6 +283,22 @@
 
 
 <div class="clear"></div>
+<div id="lb-2022dd-08" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_dec/dd_08.jpg" alt="">
+    </div>
+</div>
+<div id="lb-2022dd-09" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_dec/dd_09.jpg" alt="">
+    </div>
+</div>
+<div id="lb-2022dd-10" class="notice-popup5 mfp-hide">
+    <div class="notice-popup_content">
+        <img src="img/wisdom/2022_dec/dd_10.jpg" alt="">
+    </div>
+</div>
+
 
 <div id="lb-2022nov-12" class="notice-popup5 mfp-hide">
     <div class="notice-popup_content">
@@ -257,17 +316,54 @@
     </div>
 </div>
 
-
-
-
-
-
-
-
+<div id="js-open-2022video-b1" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/MKLDFQGzYVQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
 
 
 <script>
     $(function(){
+        $('.lb-2022dd-08').magnificPopup({
+            items: {
+                src: '#lb-2022dd-08',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.lb-2022dd-09').magnificPopup({
+            items: {
+                src: '#lb-2022dd-09',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.lb-2022dd-10').magnificPopup({
+            items: {
+                src: '#lb-2022dd-10',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+        $('.js-open-2022video-b1').magnificPopup({
+            items: {
+                src: '#js-open-2022video-b1',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
+
         $('.lb-2022nov-12').magnificPopup({
             items: {
                 src: '#lb-2022nov-12',

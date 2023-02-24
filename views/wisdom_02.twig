@@ -28,6 +28,28 @@
                 
                 <div class="seminar ">
                     <div class="slick_photo slider">
+                        <div class="video_item js-open-video-02 hover-finger" >
+                            <div class="play_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                            </div>
+                            <img src="http://i3.ytimg.com/vi/w_FIB81L-1Q/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <h5>孩子喜歡下棋或想要培養孩子專注和耐心的爸媽看過來!</h5>
+                        <p>
+                            哲哲學苑除了開常態班的圍棋課 <br>
+                            冬令營也有安排各式的棋類體驗喔!<br>
+                            英國十字棋、雙陸棋、動物將棋、路徑棋、貫星棋...<br>
+                            什麼?好多棋類沒看過! <br>
+                            那就快加入我們的冬令營吧!</p>
+                    </div>
+                </div>
+
+
+
+                <div class="seminar ">
+                    <div class="slick_photo slider">
                         <div class="video_item js-open-video-01 hover-finger" >
                             <div class="play_btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
@@ -277,7 +299,7 @@
 				<div class="seminar ">
                     <div class="slick_photo slider">
                         <div class="video_item js-open-video-b1 hover-finger" >
-                        	<div class="play_btn">
+                            <div class="play_btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
                             </div>
                             <img src="http://i3.ytimg.com/vi/aGiFGUcUaQE/hqdefault.jpg" alt="">
@@ -289,7 +311,7 @@
 							一步一步找尋合適指令的分類技巧， <br>
 							還要團體溝通、合作、推測、記憶， <br>
 							小孩笑著說：「這活動好好玩！」
-                         </p>
+                        </p>
                     </div>
                 </div>
 					
@@ -304,6 +326,11 @@
 
 
 <div class="clear"></div>
+<div id="notice-popup-02" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/w_FIB81L-1Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
 <div id="notice-popup-01" class="notice-popup mfp-hide">
     <div class="notice-popup_content">
     <iframe src="https://www.youtube.com/embed/76nLasNrMas" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -415,6 +442,16 @@
 
  <script>
     $(function(){
+        $('.js-open-video-02').magnificPopup({
+            items: {
+                src: '#notice-popup-02',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+
         $('.js-open-video-01').magnificPopup({
             items: {
                 src: '#notice-popup-01',

@@ -206,7 +206,25 @@
 				<div class="seminar ">
 					<h6>照片</h6>
 				</div>
-                
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-video-b9 hover-finger" >
+                            <div class="play_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                            </div>
+                            <img src="http://i3.ytimg.com/vi/FKKr41Mecyo/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <h5>Maple採訪隊出發~</h5>
+                        <p>夏哲森幼兒園課程設計的發展方向從自我到家庭、社區、台灣最後到世界，希冀在這樣的主題課程脈絡中讓孩子未來在世界的舞台上帶著自己故鄉的故事、文化分享給世界友人們。
+                            中班的孩子來到社區除了主題高峰會議前的探訪學校旁的警察局、消防局以外，孩子將眼光聚焦到每天陪伴著他們長大的爸爸媽媽職業，老師們跟著孩子一起持續寫下故事的篇章。
+                            讓我們一起來看看這次我們採訪的是什麼職業呢?</p>
+                    </div>
+                </div>
+
+
+
                 <div class="seminar ">
                     <div class="slick_photo slider">
                         <div class="img_item-sd lb-2022oct-06 hover-finger">
@@ -495,6 +513,11 @@
     <iframe src="https://www.youtube.com/embed/jaP_zrNjLPQ " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
+<div id="notice-popup-02" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/FKKr41Mecyo " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
 
 
 <div id="lb-2022oct-06" class="notice-popup5 mfp-hide">
@@ -653,6 +676,15 @@
         $('.js-open-video-b8').magnificPopup({
             items: {
                 src: '#notice-popup-01',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.js-open-video-b9').magnificPopup({
+            items: {
+                src: '#notice-popup-02',
                 type: 'inline'
             },
             mainClass: 'mfp-fade',

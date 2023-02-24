@@ -25,6 +25,24 @@
                 <div class="seminar ">
                     <h6>主題活動</h6>
                 </div>
+                <div class="seminar ">
+                    <div class="slick_photo slider">
+                        <div class="video_item js-open-2022video-b4 hover-finger" >
+                            <div class="play_btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="100px" height="100px" style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path d="M238.23 342.43l89.09-74.13a16 16 0 0 0 0-24.6l-89.09-74.13A16 16 0 0 0 212 181.86v148.28a16 16 0 0 0 26.23 12.29z" fill="currentColor"/><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+                            </div>
+                            <img src="http://i3.ytimg.com/vi/RB-ExohMmQQ/hqdefault.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="t-text">
+                        <h5>Happy Thanksgiving</h5> 
+                        <p>不曉得孩子們回家後有沒有好好表達感謝呢?
+                            不好意思用說的，就用寫的吧!✍️
+                            不管是爸爸媽媽，還是朋友或老師...
+                            常懷感恩的心、學習感謝生命中的美好，是件很重要的事喔!
+                        </p>
+                    </div>
+                </div>
 
                 <div class="seminar ">
                     <div class="slick_photo slider">
@@ -198,6 +216,11 @@
     <iframe src="https://www.youtube.com/embed/w6fcuhl_d04" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
+<div id="js-open-2022video-b4" class="notice-popup mfp-hide">
+    <div class="notice-popup_content">
+    <iframe src="https://www.youtube.com/embed/RB-ExohMmQQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
 
 
 
@@ -276,6 +299,15 @@
         $('.js-open-2022video-b3').magnificPopup({
             items: {
                 src: '#js-open-2022video-b3',
+                type: 'inline'
+            },
+            mainClass: 'mfp-fade',
+            removalDelay: 300,
+            midClick: true
+        });
+        $('.js-open-2022video-b4').magnificPopup({
+            items: {
+                src: '#js-open-2022video-b4',
                 type: 'inline'
             },
             mainClass: 'mfp-fade',
